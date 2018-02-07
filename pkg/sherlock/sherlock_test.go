@@ -5,7 +5,7 @@ import (
 )
 
 
-
+// nolint
 func testSherlock(t *testing.T) {
 	  Run("some config file")
 }

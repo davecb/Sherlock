@@ -3,14 +3,12 @@
 In agile companies, one still needs a
 "Sherlock Holmes"[1] style of log reader:  
 ```
-Read the log from a failing program,
-but only show us the new lines, the 
-lines that weren't there until we 
-had the problem. 
+Read the log from a failing program, but only show us the new lines, the 
+lines that weren't there until we had the problem. 
 ```
 
 However, the original implementation, 
-"antilog" was a batch program run by cron. 
+"antilog", was a batch program run by cron. 
 It's more common now to want immediate 
 notification. 
 
@@ -27,8 +25,7 @@ all using the same basic algorithm.
 [1. "It is an old maxim of mine that when you have 
 excluded the impossible, whatever remains, 
 however improbable, must be the truth." 
-Sherlock Holmes, _Adventure of the Beryl Coronet._
-
+Sherlock Holmes, _Adventure of the Beryl Coronet._] 
 By this logic, 
 anything seen before the error ocurred is an
-"impossible" cause, and should be excluded.]
+"impossible" cause, and should be excluded.
