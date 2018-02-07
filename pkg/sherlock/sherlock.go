@@ -37,6 +37,7 @@ func detective() {
 
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
+	printConfig(cfg)
 	//load(cfg.Ruleset)
 	//add(cfg.Add, "", nil)
 	//subtract(cfg.Subtract)
@@ -47,11 +48,23 @@ func Try(logFile string, cfg Config) error {
 
 // Commit will update a rule file, triggering a daemon refresh
 func Commit(cfg Config) error {
+	printConfig(cfg)
 	//load(cfg.Ruleset)
 	//add(cfg.Add, cfg.Version, time.Now())
 	//save(cfg.Ruleset)   // May change daemon
 	log.Fatal("Commit is not implemented yet")
 	return nil
+}
+
+func printConfig(conf Config) {
+	log.Printf("type Config struct {\n")
+	log.Printf("    Verbose  bool = %v\n", conf.Verbose)
+	log.Printf("    Debug    bool = %v\n", conf.Debug)
+	log.Printf("    Ruleset  string = %q\n", conf.Ruleset)
+	log.Printf("    Add      string = %q\n", conf.Add)
+	log.Printf("    Subtract string = %q\n", conf.Subtract)
+	log.Printf("    Version  string = %q\n", conf.Version)
+	log.Print("}\n")
 }
 
 

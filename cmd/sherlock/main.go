@@ -14,11 +14,10 @@ var verbose, debug bool
 // usage reports how to use sherlock
 func usage() {
 	//nolint
-	fmt.Fprint(os.Stderr, "Usage: sherlock --daemonic config-file, or\n" +
-		"sherlock --options log-file\n")
+	fmt.Fprint(os.Stderr, "Usage: sherlock --daemonic ini-file, or\n" +
+		"       sherlock --options log-file\n")
 	// reserve --commit for later
 	flag.PrintDefaults()
-	os.Exit(1)
 }
 
 // main parses options and starts the work
@@ -39,11 +38,17 @@ func main() {
 	flag.BoolVar(&debug, "debug", false, "Turn debug logging on")
 	flag.Parse()
 
-	log.SetFlags(log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
+	log.SetFlags(0) //log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
 
+	if debug {
+		log.Printf("%d flags\n", flag.NFlag())
+		log.Printf("%d args\n", flag.NArg())
+		log.Printf("args=%v\n", flag.Args())
+	}
+	
 	// see if we're to be a daemon
 	if iniFile != "" {
-		if flag.NArg() < 2 {
+		if flag.NArg() < 1 {
 			usage()
 			log.Fatal( "You must supply a config file\n") //nolint
 		}
@@ -56,6 +61,7 @@ func main() {
 		log.Fatalf("You must provide a ruleset")
 	}
 
+
 	// see if we're to commit a change to the daemon
 	if commitVersion != "" {
 		commit()
@@ -63,10 +69,9 @@ func main() {
 	}
 
 	// Otherwise try running rules against one or more log files
-	if flag.NArg() < 2 {
+	if flag.NArg() < 1 {
 		usage()
-		log.Fatal( "You must supply a log file\n") //nolint
-		usage()
+		log.Fatal("You must supply a log file\n") //nolint
 	}
 	// apply a ruleset to logfiles, with and without specific rules
 	for _, arg := range flag.Args() {
