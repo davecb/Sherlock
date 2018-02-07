@@ -1,0 +1,999 @@
+2018-01-26 10:30:01.303788 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531683: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 21898 B/s rd, 21 op/s
+2018-01-26 10:30:01.356987 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:01.357019 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/472850185' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:01.363360 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:01.363400 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/684873443' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:01.487592 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:01.487609 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4061630412' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:01.544125 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:01.544140 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1596464227' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:01.586270 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:01.586291 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/842366386' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:01.630602 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:01.630633 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4063193461' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:01.640099 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:01.640127 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3212823763' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:01.744586 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:01.744628 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/515621678' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:01.769147 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:01.769176 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/804732005' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:01.845592 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:01.845616 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3782814659' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:01.846624 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:01.846671 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/963616442' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:02.170555 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:02.170603 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1417554553' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:02.305577 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531684: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8155 B/s rd, 7 op/s
+2018-01-26 10:30:03.313822 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531685: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8658 B/s rd, 8 op/s
+2018-01-26 10:30:04.320813 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531686: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 256 kB/s rd, 0 B/s wr, 347 op/s
+2018-01-26 10:30:05.327801 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531687: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 910 kB/s rd, 0 B/s wr, 1252 op/s
+2018-01-26 10:30:06.335942 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531688: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1100 kB/s rd, 0 B/s wr, 1500 op/s
+2018-01-26 10:30:07.337556 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531689: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1137 kB/s rd, 0 B/s wr, 1451 op/s
+2018-01-26 10:30:08.345749 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531690: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 945 kB/s rd, 0 B/s wr, 1241 op/s
+2018-01-26 10:30:09.351737 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531691: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 412 kB/s rd, 0 B/s wr, 617 op/s
+2018-01-26 10:30:10.358679 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531692: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 217 kB/s rd, 0 B/s wr, 291 op/s
+2018-01-26 10:30:11.095884 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:11.095915 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2340603683' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:11.165838 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:11.165860 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1269437209' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:11.233983 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:11.234009 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1015888324' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:11.349194 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:11.349215 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2773349054' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:11.364984 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531693: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 120 kB/s rd, 120 op/s
+2018-01-26 10:30:11.365976 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:11.366003 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1947570542' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:11.387573 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:11.387598 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3641710253' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:11.425486 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:11.425517 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2033395406' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:11.528044 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:11.528095 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1477580407' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:11.559118 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:11.559142 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/572458572' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:11.627657 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:11.627690 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1487273983' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:11.775620 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:11.775658 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4226906415' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:11.915098 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:11.915166 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1784722070' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:12.367996 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531694: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 65739 B/s rd, 64 op/s
+2018-01-26 10:30:13.374550 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531695: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4585 B/s rd, 4 op/s
+2018-01-26 10:30:14.382475 7fd648513700  1 leveldb: Compacting 1@1 + 7@2 files
+2018-01-26 10:30:14.383260 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531696: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:14.393158 7fd648513700  1 leveldb: Generated table #2118192: 7040 keys, 2104468 bytes
+2018-01-26 10:30:14.402922 7fd648513700  1 leveldb: Generated table #2118193: 7040 keys, 2104295 bytes
+2018-01-26 10:30:14.412292 7fd648513700  1 leveldb: Generated table #2118194: 7040 keys, 2104329 bytes
+2018-01-26 10:30:14.421339 7fd648513700  1 leveldb: Generated table #2118195: 7040 keys, 2104323 bytes
+2018-01-26 10:30:14.430278 7fd648513700  1 leveldb: Generated table #2118196: 7040 keys, 2104255 bytes
+2018-01-26 10:30:14.439098 7fd648513700  1 leveldb: Generated table #2118197: 7040 keys, 2104326 bytes
+2018-01-26 10:30:14.441425 7fd648513700  1 leveldb: Generated table #2118198: 1693 keys, 505360 bytes
+2018-01-26 10:30:14.441435 7fd648513700  1 leveldb: Compacted 1@1 + 7@2 files => 13131356 bytes
+2018-01-26 10:30:14.441617 7fd648513700  1 leveldb: compacted to: files[ 0 1 151 67 0 0 0 ]
+2018-01-26 10:30:14.441992 7fd648513700  1 leveldb: Delete type=2 #2118176
+
+2018-01-26 10:30:14.442588 7fd648513700  1 leveldb: Delete type=2 #2118178
+
+2018-01-26 10:30:14.443036 7fd648513700  1 leveldb: Delete type=2 #2118186
+
+2018-01-26 10:30:14.443178 7fd648513700  1 leveldb: Delete type=2 #2118181
+
+2018-01-26 10:30:14.443718 7fd648513700  1 leveldb: Delete type=2 #2118177
+
+2018-01-26 10:30:14.444297 7fd648513700  1 leveldb: Delete type=2 #2118179
+
+2018-01-26 10:30:14.444876 7fd648513700  1 leveldb: Delete type=2 #2118180
+
+2018-01-26 10:30:14.445321 7fd648513700  1 leveldb: Delete type=2 #2118182
+
+2018-01-26 10:30:15.388925 7fd648513700  1 leveldb: Compacting 1@1 + 1@2 files
+2018-01-26 10:30:15.390169 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531697: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:15.393093 7fd648513700  1 leveldb: Generated table #2118199: 230 keys, 1360450 bytes
+2018-01-26 10:30:15.393110 7fd648513700  1 leveldb: Compacted 1@1 + 1@2 files => 1360450 bytes
+2018-01-26 10:30:15.393508 7fd648513700  1 leveldb: compacted to: files[ 0 0 151 67 0 0 0 ]
+2018-01-26 10:30:15.393758 7fd648513700  1 leveldb: Delete type=2 #2118168
+
+2018-01-26 10:30:15.393989 7fd648513700  1 leveldb: Delete type=2 #2118185
+
+2018-01-26 10:30:16.395607 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531698: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:17.400489 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531699: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1017 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:30:18.403630 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531700: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 417 kB/s rd, 692 kB/s wr, 50 op/s
+2018-01-26 10:30:19.409777 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531701: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 505 kB/s rd, 1024 kB/s wr, 56 op/s
+2018-01-26 10:30:20.415801 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531702: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 165 kB/s rd, 382 kB/s wr, 27 op/s
+2018-01-26 10:30:21.242897 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:21.242927 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/380754758' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:21.281577 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:21.281605 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/612100697' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:21.356638 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:21.356656 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3875900342' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:21.389320 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:21.389337 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3849652812' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:21.418006 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531703: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 845 kB/s rd, 1107 kB/s wr, 37 op/s
+2018-01-26 10:30:21.461927 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:21.461956 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1563313614' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:21.530770 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:21.530804 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/650222499' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:21.605687 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:21.605741 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2258146034' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:21.649775 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:21.649801 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3393974265' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:21.747717 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:21.747749 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3380676653' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:21.835690 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:21.835720 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2881063653' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:21.888407 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:21.888466 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4027769630' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:22.124721 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:22.124760 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/575341563' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:22.427675 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531704: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 771 kB/s rd, 1054 kB/s wr, 24 op/s
+2018-01-26 10:30:23.432698 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531705: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2544 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:30:24.435029 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531706: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:30:25.442110 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531707: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 10697 B/s rd, 0 B/s wr, 15 op/s
+2018-01-26 10:30:26.453309 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531708: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 26444 B/s rd, 508 B/s wr, 34 op/s
+2018-01-26 10:30:27.457357 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531709: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 27451 B/s rd, 508 B/s wr, 35 op/s
+2018-01-26 10:30:28.459592 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531710: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 18840 B/s rd, 0 B/s wr, 25 op/s
+2018-01-26 10:30:29.465555 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531711: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 10695 B/s rd, 0 B/s wr, 12 op/s
+2018-01-26 10:30:30.472578 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531712: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 923 kB/s rd, 7123 B/s wr, 23 op/s
+2018-01-26 10:30:31.380971 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:31.381000 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1745598836' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:31.416785 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:31.416811 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3414637153' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:31.478932 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531713: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 920 kB/s rd, 7120 B/s wr, 20 op/s
+2018-01-26 10:30:31.520022 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:31.520051 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/4135443619' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:31.538338 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:31.538375 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2178134546' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:31.578392 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:31.578421 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/4147303177' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:31.597730 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:31.597759 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2372801662' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:31.648434 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:31.648483 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1218825426' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:31.698111 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:31.698133 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/755650364' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:31.812780 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:31.812831 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2151451975' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:31.822155 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:31.822187 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/4139811424' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:31.883805 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:31.883858 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3243443381' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:32.067062 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:32.067105 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2627554468' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:32.487570 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531714: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 508 B/s rd, 0 op/s
+2018-01-26 10:30:33.493701 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531715: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:34.498106 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531716: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:35.501212 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531717: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:36.503690 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531718: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:37.511808 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531719: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:38.514271 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531720: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6620 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:30:39.522993 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531721: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 13766 B/s rd, 0 B/s wr, 16 op/s
+2018-01-26 10:30:40.524262 7fd648513700  1 leveldb: Compacting 1@2 + 4@3 files
+2018-01-26 10:30:40.528183 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531722: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 19344 B/s rd, 509 B/s wr, 23 op/s
+2018-01-26 10:30:40.530409 7fd648513700  1 leveldb: Generated table #2118200: 967 keys, 2116757 bytes
+2018-01-26 10:30:40.535523 7fd648513700  1 leveldb: Generated table #2118201: 174 keys, 2115820 bytes
+2018-01-26 10:30:40.540632 7fd648513700  1 leveldb: Generated table #2118202: 174 keys, 2113436 bytes
+2018-01-26 10:30:40.544358 7fd648513700  1 leveldb: Generated table #2118203: 142 keys, 1610098 bytes
+2018-01-26 10:30:40.544370 7fd648513700  1 leveldb: Compacted 1@2 + 4@3 files => 7956111 bytes
+2018-01-26 10:30:40.544575 7fd648513700  1 leveldb: compacted to: files[ 0 0 150 67 0 0 0 ]
+2018-01-26 10:30:40.544780 7fd648513700  1 leveldb: Delete type=2 #2118154
+
+2018-01-26 10:30:40.544985 7fd648513700  1 leveldb: Delete type=2 #2118151
+
+2018-01-26 10:30:40.545389 7fd648513700  1 leveldb: Delete type=2 #2118199
+
+2018-01-26 10:30:40.545706 7fd648513700  1 leveldb: Delete type=2 #2118153
+
+2018-01-26 10:30:40.546122 7fd648513700  1 leveldb: Delete type=2 #2118152
+
+2018-01-26 10:30:40.877550 7fd64a517700  0 mon.pt-ceph-001@0(leader).data_health(314) update_stats avail 89% total 147 GB, used 10333 MB, avail 131 GB
+2018-01-26 10:30:41.181636 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:41.181658 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/388861863' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:41.295491 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:41.295507 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/49186455' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:41.308939 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:41.308960 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2567305645' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:41.371470 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:41.371491 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/373603337' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:41.536421 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531723: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 30555 B/s rd, 509 B/s wr, 37 op/s
+2018-01-26 10:30:41.547544 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:41.547569 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2751575669' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:41.554157 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:41.554194 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1289932046' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:41.580458 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:41.580507 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1246588309' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:41.689629 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:41.689683 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2943151598' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:41.713571 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:41.713600 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/812898967' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:41.755648 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:41.755690 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2103835399' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:41.959816 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:41.959842 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3950208634' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:42.195037 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:42.195075 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3760983875' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:42.539891 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531724: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 21888 B/s rd, 0 B/s wr, 25 op/s
+2018-01-26 10:30:43.545543 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531725: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4071 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:30:44.547933 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531726: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2037 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:30:45.554024 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531727: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6112 B/s rd, 509 B/s wr, 10 op/s
+2018-01-26 10:30:46.563618 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531728: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 26457 B/s rd, 508 B/s wr, 33 op/s
+2018-01-26 10:30:47.567459 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531729: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 23924 B/s rd, 0 B/s wr, 27 op/s
+2018-01-26 10:30:48.569771 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531730: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4585 B/s rd, 4 op/s
+2018-01-26 10:30:49.578746 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531731: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8145 B/s rd, 7 op/s
+2018-01-26 10:30:50.584654 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531732: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8143 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:30:51.252311 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:51.252344 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/4053942324' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:51.359939 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:51.359971 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3217237720' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:51.407877 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:51.407904 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1574936756' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:51.411881 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:51.411895 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1252925639' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:51.489867 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:51.489895 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/106916651' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:51.551729 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:51.551765 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/969581104' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:51.572362 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:30:51.572398 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/901307708' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:30:51.589479 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531733: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3055 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:30:51.590778 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:51.590798 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3642719116' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:51.618940 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:51.618988 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1556871552' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:51.773571 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:51.773609 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3996925686' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:51.793961 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:30:51.793987 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2126779780' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:30:52.089894 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:30:52.089948 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1889257836' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:30:52.591457 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531734: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 op/s
+2018-01-26 10:30:53.596514 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531735: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:54.605149 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531736: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:30:55.610036 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531737: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2036 B/s rd, 509 B/s wr, 4 op/s
+2018-01-26 10:30:56.615815 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531738: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 5093 B/s rd, 509 B/s wr, 9 op/s
+2018-01-26 10:30:57.619973 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531739: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4075 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:30:58.625089 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531740: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1018 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:30:59.627660 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531741: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:31:00.636436 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531742: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2546 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:31:01.365618 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:01.365647 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/907945408' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:01.445243 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:01.445284 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3731410152' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:01.467495 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:01.467525 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2607398756' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:01.567337 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:01.567361 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/851097546' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:01.617178 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:01.617209 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3854091430' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:01.631306 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:01.631321 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3919578351' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:01.642637 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531743: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3563 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:31:01.699581 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:01.699611 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/137929269' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:01.724265 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:01.724310 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2605316097' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:01.809420 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:01.809462 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/577357163' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:01.898077 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:01.898097 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1529071024' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:01.963906 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:01.963939 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2874503662' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:02.141558 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:02.141602 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/971861717' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:02.646436 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531744: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1527 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:31:03.649050 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531745: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:31:04.657283 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531746: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 5093 B/s rd, 0 B/s wr, 5 op/s
+2018-01-26 10:31:05.664014 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531747: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 25456 B/s rd, 509 B/s wr, 34 op/s
+2018-01-26 10:31:06.671288 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531748: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 36657 B/s rd, 509 B/s wr, 48 op/s
+2018-01-26 10:31:07.674938 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531749: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 27486 B/s rd, 0 B/s wr, 32 op/s
+2018-01-26 10:31:08.680148 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531750: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 21895 B/s rd, 0 B/s wr, 23 op/s
+2018-01-26 10:31:09.683459 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531751: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 21910 B/s rd, 0 B/s wr, 22 op/s
+2018-01-26 10:31:10.690376 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531752: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 25964 B/s rd, 0 B/s wr, 27 op/s
+2018-01-26 10:31:11.223287 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:11.223319 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3776010898' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:11.260492 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:11.260515 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2317961183' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:11.293242 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:11.293260 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/713225329' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:11.389053 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:11.389089 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3127719860' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:11.402903 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:11.402933 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/4198607587' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:11.496717 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:11.496746 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2821151290' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:11.560347 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:11.560394 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4161707270' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:11.605609 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:11.605649 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2131148366' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:11.672287 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:11.672310 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2646328733' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:11.701358 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531753: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 28978 B/s rd, 0 B/s wr, 29 op/s
+2018-01-26 10:31:11.751111 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:11.751142 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1332310349' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:11.895714 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:11.895743 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2206184474' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:12.118330 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:12.118370 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2392436680' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:12.705917 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531754: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 18304 B/s rd, 0 B/s wr, 18 op/s
+2018-01-26 10:31:13.710564 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531755: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7124 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:31:14.713649 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531756: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4584 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:31:15.719799 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531757: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4074 B/s rd, 1018 B/s wr, 9 op/s
+2018-01-26 10:31:16.730123 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531758: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 5593 B/s rd, 1017 B/s wr, 12 op/s
+2018-01-26 10:31:17.734496 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531759: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3560 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:31:18.739676 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531760: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:31:19.745609 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531761: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:31:20.748967 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531762: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1528 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:31:21.258991 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:21.259018 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3610401282' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:21.331329 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:21.331346 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2750848417' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:21.389938 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:21.389964 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3949959613' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:21.480261 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:21.480288 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/639514884' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:21.524633 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:21.524671 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2753604779' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:21.533898 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:21.533927 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1348347429' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:21.695350 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:21.695398 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2082299835' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:21.695800 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:21.695824 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3576546660' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:21.719664 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:21.719695 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/799365004' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:21.757682 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531763: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4580 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:31:21.876190 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:21.876274 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3388929346' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:21.981097 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:21.981123 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/998040579' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:22.253099 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:22.253161 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2755305463' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:22.763616 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531764: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3561 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:31:23.768327 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531765: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:31:24.773712 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531766: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1527 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:31:25.779198 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531767: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7640 B/s rd, 509 B/s wr, 14 op/s
+2018-01-26 10:31:26.782932 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531768: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 14266 B/s rd, 1019 B/s wr, 24 op/s
+2018-01-26 10:31:27.791536 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531769: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 12214 B/s rd, 508 B/s wr, 17 op/s
+2018-01-26 10:31:28.793926 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531770: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 20354 B/s rd, 0 B/s wr, 24 op/s
+2018-01-26 10:31:29.799720 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531771: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 32601 B/s rd, 38 op/s
+2018-01-26 10:31:30.805241 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531772: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 17823 B/s rd, 0 B/s wr, 21 op/s
+2018-01-26 10:31:31.244427 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:31.244474 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1050404571' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:31.367027 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:31.367069 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/778375670' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:31.409258 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:31.409290 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2281857685' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:31.424897 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:31.424928 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3031486990' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:31.517460 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:31.517503 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/276688875' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:31.612775 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:31.612804 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/627290777' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:31.613310 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:31.613344 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1443616495' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:31.686844 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:31.686861 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1581011986' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:31.788494 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:31.788558 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1227476874' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:31.815862 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531773: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2544 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:31:31.839563 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:31.839611 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1908778898' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:31.845171 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:31.845198 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1040626694' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:32.120263 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:32.120304 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/4029595878' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:32.816606 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531774: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1527 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:31:33.824965 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531775: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1488 kB/s rd, 2036 B/s wr, 17 op/s
+2018-01-26 10:31:34.827169 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531776: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1655 kB/s rd, 4073 B/s wr, 39 op/s
+2018-01-26 10:31:35.830378 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531777: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 442 kB/s rd, 6633 B/s wr, 126 op/s
+2018-01-26 10:31:36.839798 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531778: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 495 kB/s rd, 8664 B/s wr, 134 op/s
+2018-01-26 10:31:37.842501 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531779: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1523 kB/s rd, 5088 B/s wr, 41 op/s
+2018-01-26 10:31:38.849162 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531780: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1974 kB/s rd, 1018 B/s wr, 17 op/s
+2018-01-26 10:31:39.855904 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531781: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 676 kB/s rd, 12 op/s
+2018-01-26 10:31:40.864863 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531782: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 19317 B/s rd, 508 B/s wr, 22 op/s
+2018-01-26 10:31:40.878185 7fd64a517700  0 mon.pt-ceph-001@0(leader).data_health(314) update_stats avail 89% total 147 GB, used 10336 MB, avail 131 GB
+2018-01-26 10:31:41.231245 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:41.231274 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3453771317' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:41.296353 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:41.296382 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3805496474' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:41.414082 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:41.414104 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2822013557' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:41.419752 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:41.419769 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4166513453' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:41.509450 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:41.509468 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2344929815' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:41.594299 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:41.594350 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2169915830' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:41.596397 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:41.596435 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/541942112' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:41.607400 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:41.607452 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3751542831' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:41.698983 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:41.699021 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1057131531' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:41.792736 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:41.792796 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/442223457' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:41.868462 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531783: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 29515 B/s rd, 508 B/s wr, 34 op/s
+2018-01-26 10:31:41.873919 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:41.873942 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/589935422' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:42.091743 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:42.091789 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/569338244' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:42.878372 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531784: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 16786 B/s rd, 0 B/s wr, 19 op/s
+2018-01-26 10:31:43.883509 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531785: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2541 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:31:44.889166 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531786: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1018 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:31:45.896334 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531787: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6618 B/s rd, 509 B/s wr, 13 op/s
+2018-01-26 10:31:46.899377 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531788: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 9165 B/s rd, 509 B/s wr, 16 op/s
+2018-01-26 10:31:47.908043 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531789: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6103 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:31:48.912732 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531790: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6611 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:31:49.918354 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531791: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6621 B/s rd, 0 B/s wr, 7 op/s
+2018-01-26 10:31:50.921215 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531792: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 5095 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:31:51.239967 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:51.239985 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3154950446' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:51.248417 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:51.248441 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/700195593' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:51.339915 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:51.339938 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3422802817' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:51.402681 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:51.402729 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2971143030' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:51.435155 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:51.435203 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1054697430' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:51.483202 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:51.483222 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2111662496' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:51.528517 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:31:51.528535 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/414507951' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:31:51.603084 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:51.603108 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2666910125' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:51.626312 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:51.626366 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/353394460' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:51.687947 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:51.687988 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3594877395' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:51.719115 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:31:51.719145 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1395778962' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:31:51.929982 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531793: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3564 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:31:51.977827 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:31:51.977860 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3647219539' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:31:52.932630 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531794: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1018 B/s rd, 0 op/s
+2018-01-26 10:31:53.940629 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531795: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2544 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:31:54.942676 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531796: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6618 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:31:55.947946 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531797: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 5607 B/s rd, 0 B/s wr, 7 op/s
+2018-01-26 10:31:55.950831 7fd648513700  1 leveldb: Level-0 table #2118205: started
+2018-01-26 10:31:55.964016 7fd648513700  1 leveldb: Level-0 table #2118205: 5056257 bytes OK
+2018-01-26 10:31:55.964998 7fd648513700  1 leveldb: Delete type=0 #2118183
+
+2018-01-26 10:31:55.966221 7fd648513700  1 leveldb: Manual compaction at level-0 from 'paxos\x0017433456' @ 72057594037927935 : 1 .. 'paxos\x0017433708' @ 0 : 0; will stop at 'pgmap_pg\x009.e' @ 483545134 : 1
+
+2018-01-26 10:31:55.966229 7fd648513700  1 leveldb: Compacting 1@0 + 0@1 files
+2018-01-26 10:31:55.970735 7fd648513700  1 leveldb: Generated table #2118206: 250 keys, 1555783 bytes
+2018-01-26 10:31:55.971014 7fd648513700  1 leveldb: Generated table #2118207: 26 keys, 7610 bytes
+2018-01-26 10:31:55.976425 7fd648513700  1 leveldb: Generated table #2118208: 461 keys, 2163861 bytes
+2018-01-26 10:31:55.978401 7fd648513700  1 leveldb: Generated table #2118209: 464 keys, 582016 bytes
+2018-01-26 10:31:55.978407 7fd648513700  1 leveldb: Compacted 1@0 + 0@1 files => 4309270 bytes
+2018-01-26 10:31:55.978587 7fd648513700  1 leveldb: compacted to: files[ 0 4 150 67 0 0 0 ]
+2018-01-26 10:31:55.978964 7fd648513700  1 leveldb: Delete type=2 #2118205
+
+2018-01-26 10:31:55.979752 7fd648513700  1 leveldb: Manual compaction at level-0 from 'pgmap_pg\x009.e' @ 483545134 : 1 .. 'paxos\x0017433708' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:31:55.979794 7fd648513700  1 leveldb: Manual compaction at level-1 from 'paxos\x0017433456' @ 72057594037927935 : 1 .. 'paxos\x0017433708' @ 0 : 0; will stop at 'paxos\x0017434168' @ 483547760 : 1
+
+2018-01-26 10:31:55.979798 7fd648513700  1 leveldb: Compacting 1@1 + 3@2 files
+2018-01-26 10:31:55.985080 7fd648513700  1 leveldb: Generated table #2118210: 157 keys, 2123498 bytes
+2018-01-26 10:31:55.990298 7fd648513700  1 leveldb: Generated table #2118211: 202 keys, 2137080 bytes
+2018-01-26 10:31:55.994485 7fd648513700  1 leveldb: Generated table #2118212: 1329 keys, 1717082 bytes
+2018-01-26 10:31:55.994493 7fd648513700  1 leveldb: Compacted 1@1 + 3@2 files => 5977660 bytes
+2018-01-26 10:31:55.994646 7fd648513700  1 leveldb: compacted to: files[ 0 3 150 67 0 0 0 ]
+2018-01-26 10:31:55.994865 7fd648513700  1 leveldb: Delete type=2 #2118208
+
+2018-01-26 10:31:55.995289 7fd648513700  1 leveldb: Delete type=2 #2118189
+
+2018-01-26 10:31:55.995687 7fd648513700  1 leveldb: Delete type=2 #2118188
+
+2018-01-26 10:31:55.996071 7fd648513700  1 leveldb: Delete type=2 #2118190
+
+2018-01-26 10:31:55.996665 7fd648513700  1 leveldb: Manual compaction at level-1 from 'paxos\x0017434168' @ 483547760 : 1 .. 'paxos\x0017433708' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:31:56.958324 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531798: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4581 B/s rd, 0 B/s wr, 7 op/s
+2018-01-26 10:31:57.959714 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531799: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3054 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:31:58.967313 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531800: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:31:59.972656 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531801: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:32:00.977921 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531802: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2547 B/s rd, 0 B/s wr, 5 op/s
+2018-01-26 10:32:01.302064 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:01.302102 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3766087135' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:01.478777 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:01.478802 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3572881540' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:01.485740 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:01.485777 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3894698576' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:01.496505 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:01.496533 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1130183583' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:01.545793 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:01.545821 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3862363318' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:01.660071 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:01.660097 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3214410789' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:01.681695 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:01.681720 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/84689430' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:01.682856 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:01.682883 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/895467352' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:01.791352 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:01.791370 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3654352772' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:01.849175 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:01.849207 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2488443927' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:01.861548 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:01.861584 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/696638516' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:01.985124 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531803: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4584 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:32:02.055622 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:02.055662 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3150923553' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:02.985678 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531804: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2547 B/s rd, 0 B/s wr, 5 op/s
+2018-01-26 10:32:03.993306 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531805: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:32:04.998937 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531806: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3055 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:32:06.004812 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531807: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 11714 B/s rd, 509 B/s wr, 21 op/s
+2018-01-26 10:32:07.007175 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531808: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 23435 B/s rd, 1528 B/s wr, 38 op/s
+2018-01-26 10:32:08.010257 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531809: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 33662 B/s rd, 1020 B/s wr, 49 op/s
+2018-01-26 10:32:09.019738 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531810: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 51972 B/s rd, 0 B/s wr, 65 op/s
+2018-01-26 10:32:10.023897 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531811: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 68192 B/s rd, 0 B/s wr, 85 op/s
+2018-01-26 10:32:11.027552 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531812: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 91205 B/s rd, 0 B/s wr, 121 op/s
+2018-01-26 10:32:11.185580 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:11.185606 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2577909580' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:11.221927 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:11.221944 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/4243972763' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:11.309845 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:11.309880 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/864556545' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:11.314906 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:11.314927 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2936374624' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:11.352826 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:11.352866 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1408550489' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:11.396303 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:11.396328 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2077098439' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:11.436494 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:11.436547 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/581077737' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:11.482705 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:11.482744 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2494723754' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:11.527438 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:11.527469 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2528976786' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:11.544993 7fd648513700  1 leveldb: Level-0 table #2118214: started
+2018-01-26 10:32:11.547829 7fd648513700  1 leveldb: Level-0 table #2118214: 600854 bytes OK
+2018-01-26 10:32:11.548454 7fd648513700  1 leveldb: Delete type=0 #2118204
+
+2018-01-26 10:32:11.548841 7fd648513700  1 leveldb: Manual compaction at level-0 from 'logm\x008745605' @ 72057594037927935 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at 'pgmap_pg\x006.b' @ 483549130 : 1
+
+2018-01-26 10:32:11.548851 7fd648513700  1 leveldb: Compacting 1@0 + 3@1 files
+2018-01-26 10:32:11.555975 7fd648513700  1 leveldb: Generated table #2118215: 787 keys, 1753166 bytes
+2018-01-26 10:32:11.556396 7fd648513700  1 leveldb: Generated table #2118216: 29 keys, 8504 bytes
+2018-01-26 10:32:11.558178 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:11.558218 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1637639699' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:11.560574 7fd648513700  1 leveldb: Generated table #2118217: 511 keys, 895842 bytes
+2018-01-26 10:32:11.560585 7fd648513700  1 leveldb: Compacted 1@0 + 3@1 files => 2657512 bytes
+2018-01-26 10:32:11.560769 7fd648513700  1 leveldb: compacted to: files[ 0 3 150 67 0 0 0 ]
+2018-01-26 10:32:11.561091 7fd648513700  1 leveldb: Delete type=2 #2118214
+
+2018-01-26 10:32:11.561372 7fd648513700  1 leveldb: Delete type=2 #2118209
+
+2018-01-26 10:32:11.561665 7fd648513700  1 leveldb: Delete type=2 #2118206
+
+2018-01-26 10:32:11.562059 7fd648513700  1 leveldb: Delete type=2 #2118207
+
+2018-01-26 10:32:11.562119 7fd648513700  1 leveldb: Manual compaction at level-0 from 'pgmap_pg\x006.b' @ 483549130 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.562183 7fd648513700  1 leveldb: Manual compaction at level-1 from 'logm\x008745605' @ 72057594037927935 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at 'logm\x00last_committed' @ 483549260 : 1
+
+2018-01-26 10:32:11.562189 7fd648513700  1 leveldb: Compacting 1@1 + 0@2 files
+2018-01-26 10:32:11.568581 7fd648513700  1 leveldb: Generated table #2118218: 787 keys, 1753166 bytes
+2018-01-26 10:32:11.568594 7fd648513700  1 leveldb: Compacted 1@1 + 0@2 files => 1753166 bytes
+2018-01-26 10:32:11.568755 7fd648513700  1 leveldb: compacted to: files[ 0 2 151 67 0 0 0 ]
+2018-01-26 10:32:11.569178 7fd648513700  1 leveldb: Delete type=2 #2118215
+
+2018-01-26 10:32:11.569719 7fd648513700  1 leveldb: Manual compaction at level-1 from 'logm\x00last_committed' @ 483549260 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.569777 7fd648513700  1 leveldb: Manual compaction at level-2 from 'logm\x008745605' @ 72057594037927935 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at 'logm\x00last_committed' @ 483549260 : 1
+
+2018-01-26 10:32:11.569783 7fd648513700  1 leveldb: Compacting 1@2 + 4@3 files
+2018-01-26 10:32:11.577962 7fd648513700  1 leveldb: Generated table #2118219: 858 keys, 2150784 bytes
+2018-01-26 10:32:11.585261 7fd648513700  1 leveldb: Generated table #2118220: 180 keys, 2131424 bytes
+2018-01-26 10:32:11.592290 7fd648513700  1 leveldb: Generated table #2118221: 182 keys, 2142193 bytes
+2018-01-26 10:32:11.592860 7fd648513700  1 leveldb: Generated table #2118222: 9 keys, 86231 bytes
+2018-01-26 10:32:11.592870 7fd648513700  1 leveldb: Compacted 1@2 + 4@3 files => 6510632 bytes
+2018-01-26 10:32:11.593048 7fd648513700  1 leveldb: compacted to: files[ 0 2 150 67 0 0 0 ]
+2018-01-26 10:32:11.593373 7fd648513700  1 leveldb: Delete type=2 #2118218
+
+2018-01-26 10:32:11.593920 7fd648513700  1 leveldb: Delete type=2 #2118201
+
+2018-01-26 10:32:11.594520 7fd648513700  1 leveldb: Delete type=2 #2118202
+
+2018-01-26 10:32:11.595106 7fd648513700  1 leveldb: Delete type=2 #2118200
+
+2018-01-26 10:32:11.595643 7fd648513700  1 leveldb: Delete type=2 #2118203
+
+2018-01-26 10:32:11.596034 7fd648513700  1 leveldb: Manual compaction at level-2 from 'logm\x00last_committed' @ 483549260 : 1 .. 'logm\x008745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.596101 7fd648513700  1 leveldb: Level-0 table #2118224: started
+2018-01-26 10:32:11.596116 7fd648513700  1 leveldb: Level-0 table #2118224: 0 bytes OK
+2018-01-26 10:32:11.596562 7fd648513700  1 leveldb: Delete type=0 #2118213
+
+2018-01-26 10:32:11.596633 7fd648513700  1 leveldb: Manual compaction at level-0 from 'logm\x00full_8745605' @ 72057594037927935 : 1 .. 'logm\x00full_8745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.596649 7fd648513700  1 leveldb: Manual compaction at level-1 from 'logm\x00full_8745605' @ 72057594037927935 : 1 .. 'logm\x00full_8745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.596685 7fd648513700  1 leveldb: Manual compaction at level-2 from 'logm\x00full_8745605' @ 72057594037927935 : 1 .. 'logm\x00full_8745859' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:32:11.707184 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:11.707208 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1503263796' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:11.783940 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:11.783977 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/763880990' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:12.039148 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531813: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 108 kB/s rd, 0 B/s wr, 151 op/s
+2018-01-26 10:32:13.044007 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531814: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 61493 B/s rd, 0 B/s wr, 84 op/s
+2018-01-26 10:32:14.049476 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531815: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6104 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:32:15.052794 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531816: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2037 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:32:16.062479 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531817: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3561 B/s rd, 0 B/s wr, 7 op/s
+2018-01-26 10:32:17.068855 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531818: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4068 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:32:18.071866 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531819: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 460 kB/s rd, 919 kB/s wr, 88 op/s
+2018-01-26 10:32:19.075159 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531820: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2072 kB/s rd, 2111 kB/s wr, 112 op/s
+2018-01-26 10:32:20.082817 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531821: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4408 kB/s rd, 4966 kB/s wr, 100 op/s
+2018-01-26 10:32:21.088638 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531822: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6713 kB/s rd, 6363 kB/s wr, 167 op/s
+2018-01-26 10:32:21.211795 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:21.211831 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2656417620' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:21.380452 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:21.380474 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/975273144' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:21.401385 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:21.401421 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2326469280' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:21.448379 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:21.448405 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/28984980' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:21.567495 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:21.567525 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1675554827' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:21.589285 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:21.589318 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2643397775' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:21.613724 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:21.613739 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/273440784' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:21.670024 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:21.670041 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3661222057' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:21.751840 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:21.751870 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/914723379' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:21.821410 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:21.821459 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1558933044' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:21.958503 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:21.958524 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3712068080' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:22.091063 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531823: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8229 kB/s rd, 5690 kB/s wr, 159 op/s
+2018-01-26 10:32:22.258595 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:22.258637 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2892436694' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:23.100793 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531824: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 7174 kB/s rd, 5495 kB/s wr, 295 op/s
+2018-01-26 10:32:24.106196 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531825: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 2892 kB/s rd, 2509 kB/s wr, 240 op/s
+2018-01-26 10:32:25.110427 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531826: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 23930 B/s rd, 112 kB/s wr, 13 op/s
+2018-01-26 10:32:26.114501 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531827: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 4586 B/s rd, 509 B/s wr, 10 op/s
+2018-01-26 10:32:27.124546 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531828: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 14760 B/s rd, 508 B/s wr, 28 op/s
+2018-01-26 10:32:28.129490 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531829: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 194 kB/s rd, 1525 B/s wr, 37 op/s
+2018-01-26 10:32:29.134298 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531830: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 196 kB/s rd, 1527 B/s wr, 29 op/s
+2018-01-26 10:32:30.136757 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531831: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 31592 B/s rd, 14267 B/s wr, 53 op/s
+2018-01-26 10:32:31.144943 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531832: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 22920 B/s rd, 14261 B/s wr, 44 op/s
+2018-01-26 10:32:31.171157 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:31.171183 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3876502650' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:31.199737 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:31.199758 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3488276593' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:31.329304 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:31.329337 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/934587258' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:31.334921 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:31.334936 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3501580625' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:31.406192 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:31.406225 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3698091416' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:31.475171 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:31.475196 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2693679203' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:31.498602 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:31.498631 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/4271505588' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:31.542272 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:31.542307 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2410607045' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:31.613509 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:31.613552 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/778109755' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:31.639547 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:31.639583 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3370478176' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:31.784496 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:31.784547 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3900890958' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:32.061215 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:32.061262 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2338176537' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:32.146980 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531833: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 12225 B/s rd, 0 B/s wr, 15 op/s
+2018-01-26 10:32:33.155129 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531834: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 6621 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:32:34.160690 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531835: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 5090 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:32:35.163061 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531836: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 9170 B/s rd, 0 B/s wr, 14 op/s
+2018-01-26 10:32:35.165373 7fd648513700  1 leveldb: Compacting 1@1 + 7@2 files
+2018-01-26 10:32:35.176924 7fd648513700  1 leveldb: Generated table #2118225: 7040 keys, 2104473 bytes
+2018-01-26 10:32:35.187738 7fd648513700  1 leveldb: Generated table #2118226: 7040 keys, 2104286 bytes
+2018-01-26 10:32:35.198143 7fd648513700  1 leveldb: Generated table #2118227: 7040 keys, 2104331 bytes
+2018-01-26 10:32:35.208555 7fd648513700  1 leveldb: Generated table #2118228: 7040 keys, 2104325 bytes
+2018-01-26 10:32:35.218170 7fd648513700  1 leveldb: Generated table #2118229: 7040 keys, 2104257 bytes
+2018-01-26 10:32:35.227214 7fd648513700  1 leveldb: Generated table #2118230: 7040 keys, 2104327 bytes
+2018-01-26 10:32:35.229672 7fd648513700  1 leveldb: Generated table #2118231: 1721 keys, 513725 bytes
+2018-01-26 10:32:35.229680 7fd648513700  1 leveldb: Compacted 1@1 + 7@2 files => 13139724 bytes
+2018-01-26 10:32:35.229898 7fd648513700  1 leveldb: compacted to: files[ 0 1 150 67 0 0 0 ]
+2018-01-26 10:32:35.230130 7fd648513700  1 leveldb: Delete type=2 #2118198
+
+2018-01-26 10:32:35.230355 7fd648513700  1 leveldb: Delete type=2 #2118196
+
+2018-01-26 10:32:35.230865 7fd648513700  1 leveldb: Delete type=2 #2118195
+
+2018-01-26 10:32:35.231373 7fd648513700  1 leveldb: Delete type=2 #2118194
+
+2018-01-26 10:32:35.231898 7fd648513700  1 leveldb: Delete type=2 #2118192
+
+2018-01-26 10:32:35.232405 7fd648513700  1 leveldb: Delete type=2 #2118197
+
+2018-01-26 10:32:35.232978 7fd648513700  1 leveldb: Delete type=2 #2118193
+
+2018-01-26 10:32:35.233373 7fd648513700  1 leveldb: Delete type=2 #2118216
+
+2018-01-26 10:32:36.165774 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531837: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 4081 B/s rd, 0 B/s wr, 7 op/s
+2018-01-26 10:32:36.168077 7fd648513700  1 leveldb: Compacting 1@1 + 2@2 files
+2018-01-26 10:32:36.173666 7fd648513700  1 leveldb: Generated table #2118232: 952 keys, 2143959 bytes
+2018-01-26 10:32:36.182699 7fd648513700  1 leveldb: Generated table #2118233: 3092 keys, 1735191 bytes
+2018-01-26 10:32:36.182711 7fd648513700  1 leveldb: Compacted 1@1 + 2@2 files => 3879150 bytes
+2018-01-26 10:32:36.182898 7fd648513700  1 leveldb: compacted to: files[ 0 0 150 67 0 0 0 ]
+2018-01-26 10:32:36.183244 7fd648513700  1 leveldb: Delete type=2 #2118191
+
+2018-01-26 10:32:36.183666 7fd648513700  1 leveldb: Delete type=2 #2118217
+
+2018-01-26 10:32:36.184001 7fd648513700  1 leveldb: Delete type=2 #2118212
+
+2018-01-26 10:32:37.175826 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531838: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail
+2018-01-26 10:32:38.177809 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531839: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 7126 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:32:39.184072 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531840: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 17305 B/s rd, 0 B/s wr, 18 op/s
+2018-01-26 10:32:40.191965 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531841: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 24416 B/s rd, 508 B/s wr, 24 op/s
+2018-01-26 10:32:40.879182 7fd64a517700  0 mon.pt-ceph-001@0(leader).data_health(314) update_stats avail 89% total 147 GB, used 10331 MB, avail 131 GB
+2018-01-26 10:32:41.195966 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531842: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 42282 B/s rd, 509 B/s wr, 44 op/s
+2018-01-26 10:32:41.314405 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:41.314424 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1489217279' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:41.327986 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:41.328015 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2730527342' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:41.371004 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:41.371031 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2010357588' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:41.445236 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:41.445278 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3774790278' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:41.460606 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:41.460627 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2267103434' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:41.596129 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:41.596152 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/4278075283' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:41.606011 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:41.606034 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2691673776' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:41.634219 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:41.634248 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3021238540' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:41.677897 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:41.677926 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2777375210' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:41.795878 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:41.795921 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2772806511' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:41.849253 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:41.849288 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/927120170' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:41.905602 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:41.905636 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1420410825' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:42.202555 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531843: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 47349 B/s rd, 0 B/s wr, 49 op/s
+2018-01-26 10:32:43.210218 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531844: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 22863 B/s rd, 0 B/s wr, 23 op/s
+2018-01-26 10:32:44.216778 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531845: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31523 GB used, 376 TB / 407 TB avail; 4066 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:32:45.222447 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531846: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1526 B/s rd, 508 B/s wr, 4 op/s
+2018-01-26 10:32:46.231382 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531847: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3052 B/s rd, 508 B/s wr, 8 op/s
+2018-01-26 10:32:47.233102 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531848: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 9164 B/s rd, 0 B/s wr, 13 op/s
+2018-01-26 10:32:48.235565 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531849: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7143 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:32:49.244346 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531850: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 11218 B/s rd, 10 op/s
+2018-01-26 10:32:50.248284 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531851: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 17816 B/s rd, 0 B/s wr, 19 op/s
+2018-01-26 10:32:51.255467 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531852: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7642 B/s rd, 0 B/s wr, 10 op/s
+2018-01-26 10:32:51.283410 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:51.283448 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/475964382' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:51.428031 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:51.428060 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/818550527' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:51.473249 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:51.473281 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1315590357' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:51.539220 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:51.539251 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2640147022' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:51.551050 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:32:51.551076 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3935100898' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:32:51.591164 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:51.591189 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2573708240' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:51.680617 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:51.680655 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3072055979' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:51.731857 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:51.731873 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3332209532' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:51.743414 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:32:51.743430 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/717923509' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:32:51.839759 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:51.839814 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1926406024' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:51.897068 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:51.897103 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1550078741' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:52.022346 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:32:52.022384 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3265747603' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:32:52.261323 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531853: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 9169 B/s rd, 0 B/s wr, 12 op/s
+2018-01-26 10:32:53.265916 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531854: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8142 B/s rd, 0 B/s wr, 10 op/s
+2018-01-26 10:32:54.270789 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531855: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 4073 B/s rd, 0 B/s wr, 4 op/s
+2018-01-26 10:32:55.275500 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531856: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7132 B/s rd, 0 B/s wr, 10 op/s
+2018-01-26 10:32:56.281994 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531857: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3565 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:32:57.282837 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531858: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:32:58.287976 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531859: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1528 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:32:59.295353 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531860: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1527 B/s rd, 0 B/s wr, 2 op/s
+2018-01-26 10:33:00.301132 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531861: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:33:01.284600 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:01.284627 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2525064998' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:01.306934 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531862: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:33:01.355586 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:01.355615 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1534190908' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:01.371368 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:01.371392 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/4149938064' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:01.443215 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:01.443241 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1585261234' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:01.552961 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:01.552992 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2761080558' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:01.649618 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:01.649657 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2226616622' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:01.650034 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:01.650070 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1738480570' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:01.663089 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:01.663104 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1013744417' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:01.759029 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:01.759085 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/1719911572' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:01.931720 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:01.931763 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/132698153' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:01.970777 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:01.970819 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2185617962' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:02.207005 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:02.207060 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1706227966' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:02.312031 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531863: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:33:03.316858 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531864: 3072 pgs: 2 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3065 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:33:04.319988 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531865: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 509 B/s rd, 0 B/s wr, 1 op/s
+2018-01-26 10:33:05.327782 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531866: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2037 B/s rd, 1018 B/s wr, 6 op/s
+2018-01-26 10:33:06.333184 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531867: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6109 B/s rd, 1018 B/s wr, 13 op/s
+2018-01-26 10:33:07.335405 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531868: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 19366 B/s rd, 0 B/s wr, 25 op/s
+2018-01-26 10:33:08.344271 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531869: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 31068 B/s rd, 0 B/s wr, 36 op/s
+2018-01-26 10:33:09.348820 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531870: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 42257 B/s rd, 0 B/s wr, 46 op/s
+2018-01-26 10:33:10.357749 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531871: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 71704 B/s rd, 0 B/s wr, 77 op/s
+2018-01-26 10:33:11.289267 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:11.289300 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1853724234' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:11.365333 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531872: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 86937 B/s rd, 0 B/s wr, 94 op/s
+2018-01-26 10:33:11.382182 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:11.382214 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/4131992117' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:11.431602 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:11.431636 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2088679687' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:11.456136 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:11.456156 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3725889954' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:11.521212 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:11.521235 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2966858' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:11.599425 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:11.599441 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3076056475' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:11.618283 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:11.618305 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2117828672' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:11.660676 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:11.660716 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3068900188' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:11.743825 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:11.743847 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2780866152' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:11.792841 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:11.792871 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2657480426' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:11.810535 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:11.810575 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1459893328' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:12.023299 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:12.023327 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/607550730' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:12.366662 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531873: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 83517 B/s rd, 0 B/s wr, 89 op/s
+2018-01-26 10:33:13.374828 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531874: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 44790 B/s rd, 0 B/s wr, 48 op/s
+2018-01-26 10:33:14.377765 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531875: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3054 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:33:15.383897 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531876: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 7640 B/s rd, 1018 B/s wr, 14 op/s
+2018-01-26 10:33:16.389953 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531877: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 8143 B/s rd, 1526 B/s wr, 16 op/s
+2018-01-26 10:33:17.398460 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531878: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3051 B/s rd, 508 B/s wr, 5 op/s
+2018-01-26 10:33:18.400149 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531879: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2036 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:33:19.405017 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531880: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:33:20.412035 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531881: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1018 B/s rd, 1018 B/s wr, 4 op/s
+2018-01-26 10:33:21.205898 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:21.205925 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3035856857' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:21.354278 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:21.354301 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3358127924' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:21.377030 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:21.377058 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2916885728' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:21.400634 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:21.400651 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3113282391' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:21.415423 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531882: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2548 B/s rd, 1019 B/s wr, 7 op/s
+2018-01-26 10:33:21.540097 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:21.540116 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/998306546' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:21.554967 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:21.554981 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2489747934' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:21.589874 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:21.589918 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2397830781' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:21.646395 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:21.646428 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/3377639605' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:21.737781 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:21.737822 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3494809630' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:21.810083 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:21.810120 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/1518493394' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:21.856731 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:21.856746 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1048658097' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:22.056009 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:22.056052 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2747020033' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:22.424758 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531883: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3055 B/s rd, 0 B/s wr, 6 op/s
+2018-01-26 10:33:23.429731 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531884: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1526 B/s rd, 0 B/s wr, 3 op/s
+2018-01-26 10:33:24.432424 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531885: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail
+2018-01-26 10:33:25.440356 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531886: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 2036 B/s rd, 1018 B/s wr, 7 op/s
+2018-01-26 10:33:26.443532 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531887: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 3564 B/s rd, 1527 B/s wr, 10 op/s
+2018-01-26 10:33:26.552705 7fd648513700  1 leveldb: Level-0 table #2118235: started
+2018-01-26 10:33:26.561023 7fd648513700  1 leveldb: Level-0 table #2118235: 2800216 bytes OK
+2018-01-26 10:33:26.561741 7fd648513700  1 leveldb: Delete type=0 #2118223
+
+2018-01-26 10:33:26.562462 7fd648513700  1 leveldb: Manual compaction at level-0 from 'pgmap\x008531132' @ 72057594037927935 : 1 .. 'pgmap\x008531387' @ 0 : 0; will stop at 'pgmap_pg\x009.e' @ 483550017 : 1
+
+2018-01-26 10:33:26.562470 7fd648513700  1 leveldb: Compacting 1@0 + 0@1 files
+2018-01-26 10:33:26.565305 7fd648513700  1 leveldb: Generated table #2118236: 152 keys, 956752 bytes
+2018-01-26 10:33:26.565581 7fd648513700  1 leveldb: Generated table #2118237: 17 keys, 4923 bytes
+2018-01-26 10:33:26.569824 7fd648513700  1 leveldb: Generated table #2118238: 706 keys, 1542868 bytes
+2018-01-26 10:33:26.569833 7fd648513700  1 leveldb: Compacted 1@0 + 0@1 files => 2504543 bytes
+2018-01-26 10:33:26.569976 7fd648513700  1 leveldb: compacted to: files[ 0 3 150 67 0 0 0 ]
+2018-01-26 10:33:26.570269 7fd648513700  1 leveldb: Delete type=2 #2118235
+
+2018-01-26 10:33:26.570814 7fd648513700  1 leveldb: Manual compaction at level-0 from 'pgmap_pg\x009.e' @ 483550017 : 1 .. 'pgmap\x008531387' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:33:26.570860 7fd648513700  1 leveldb: Manual compaction at level-1 from 'pgmap\x008531132' @ 72057594037927935 : 1 .. 'pgmap\x008531387' @ 0 : 0; will stop at 'pgmap_pg\x009.e' @ 483550209 : 1
+
+2018-01-26 10:33:26.570863 7fd648513700  1 leveldb: Compacting 1@1 + 2@2 files
+2018-01-26 10:33:26.576032 7fd648513700  1 leveldb: Generated table #2118239: 225 keys, 2158441 bytes
+2018-01-26 10:33:26.580783 7fd648513700  1 leveldb: Generated table #2118240: 2079 keys, 2144141 bytes
+2018-01-26 10:33:26.583207 7fd648513700  1 leveldb: Generated table #2118241: 1713 keys, 965333 bytes
+2018-01-26 10:33:26.583213 7fd648513700  1 leveldb: Compacted 1@1 + 2@2 files => 5267915 bytes
+2018-01-26 10:33:26.583351 7fd648513700  1 leveldb: compacted to: files[ 0 2 151 67 0 0 0 ]
+2018-01-26 10:33:26.583554 7fd648513700  1 leveldb: Delete type=2 #2118232
+
+2018-01-26 10:33:26.583938 7fd648513700  1 leveldb: Delete type=2 #2118238
+
+2018-01-26 10:33:26.584202 7fd648513700  1 leveldb: Delete type=2 #2118233
+
+2018-01-26 10:33:26.584619 7fd648513700  1 leveldb: Manual compaction at level-1 from 'pgmap_pg\x009.e' @ 483550209 : 1 .. 'pgmap\x008531387' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:33:26.584702 7fd648513700  1 leveldb: Level-0 table #2118243: started
+2018-01-26 10:33:26.584713 7fd648513700  1 leveldb: Level-0 table #2118243: 0 bytes OK
+2018-01-26 10:33:26.585009 7fd648513700  1 leveldb: Delete type=0 #2118234
+
+2018-01-26 10:33:26.585083 7fd648513700  1 leveldb: Manual compaction at level-0 from 'pgmap\x00full_8531132' @ 72057594037927935 : 1 .. 'pgmap\x00full_8531387' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:33:26.585099 7fd648513700  1 leveldb: Manual compaction at level-1 from 'pgmap\x00full_8531132' @ 72057594037927935 : 1 .. 'pgmap\x00full_8531387' @ 0 : 0; will stop at (end)
+
+2018-01-26 10:33:27.449498 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531888: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 10185 B/s rd, 509 B/s wr, 18 op/s
+2018-01-26 10:33:28.452197 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531889: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 13252 B/s rd, 0 B/s wr, 21 op/s
+2018-01-26 10:33:29.457656 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531890: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 17333 B/s rd, 0 B/s wr, 18 op/s
+2018-01-26 10:33:30.464392 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531891: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 22912 B/s rd, 0 B/s wr, 28 op/s
+2018-01-26 10:33:31.182746 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:31.182801 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/1108595715' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:31.356337 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:31.356369 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2079402067' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:31.369867 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:31.369890 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3750097494' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:31.441822 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:31.441848 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3392175181' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:31.473194 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531892: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 11193 B/s rd, 0 B/s wr, 15 op/s
+2018-01-26 10:33:31.567127 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:31.567161 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/3811601610' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:31.621110 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:31.621132 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/51769231' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:31.633591 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:31.633619 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2911627817' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:31.669059 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:31.669089 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/1419136203' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:31.810841 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:31.810883 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/650146253' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:31.834559 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:31.834593 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/130075665' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:31.942186 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:31.942212 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/2733441160' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:32.210833 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:32.210876 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/369244404' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:32.477962 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531893: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6106 B/s rd, 0 B/s wr, 8 op/s
+2018-01-26 10:33:33.480188 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531894: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 6113 B/s rd, 0 B/s wr, 9 op/s
+2018-01-26 10:33:34.484944 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531895: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1334 kB/s rd, 1018 B/s wr, 14 op/s
+2018-01-26 10:33:35.494182 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531896: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1366 kB/s rd, 1018 B/s wr, 79 op/s
+2018-01-26 10:33:36.499979 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531897: 3072 pgs: 1 active+clean+scrubbing, 3 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3066 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 106 kB/s rd, 700 kB/s wr, 77 op/s
+2018-01-26 10:33:37.502253 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531898: 3072 pgs: 1 active+clean+scrubbing, 2 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3067 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 359 kB/s rd, 704 kB/s wr, 41 op/s
+2018-01-26 10:33:38.511585 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531899: 3072 pgs: 1 active+clean+scrubbing, 2 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3067 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1780 kB/s rd, 11199 B/s wr, 85 op/s
+2018-01-26 10:33:39.517582 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531900: 3072 pgs: 1 active+clean+scrubbing, 2 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3067 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 1510 kB/s rd, 8140 B/s wr, 71 op/s
+2018-01-26 10:33:40.522945 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531901: 3072 pgs: 1 active+clean+scrubbing, 2 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3067 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 43786 B/s rd, 509 B/s wr, 47 op/s
+2018-01-26 10:33:40.879887 7fd64a517700  0 mon.pt-ceph-001@0(leader).data_health(314) update_stats avail 89% total 147 GB, used 10333 MB, avail 131 GB
+2018-01-26 10:33:41.212468 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:41.212505 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2521597915' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:41.299407 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:41.299439 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/4090053927' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:41.341329 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:41.341354 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3065757740' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:41.409644 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:41.409682 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/2144257535' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:41.465556 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:41.465588 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/2687346581' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:41.531730 7fd64d0d0700  0 log_channel(cluster) log [INF] : pgmap v8531902: 3072 pgs: 1 active+clean+scrubbing, 2 active+clean+scrubbing+deep, 2 active+clean+inconsistent, 3067 active+clean; 15466 GB data, 31522 GB used, 376 TB / 407 TB avail; 67201 B/s rd, 509 B/s wr, 72 op/s
+2018-01-26 10:33:41.533864 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "status", "format": "json"} v 0) v1
+2018-01-26 10:33:41.533890 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.4:0/454187485' entity='client.admin' cmd=[{"prefix": "status", "format": "json"}]: dispatch
+2018-01-26 10:33:41.541825 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1
+2018-01-26 10:33:41.541849 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/2341885437' entity='client.admin' cmd=[{"prefix": "df", "format": "json"}]: dispatch
+2018-01-26 10:33:41.614868 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:41.614920 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.1:0/961906169' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:41.639879 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:41.639907 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.2:0/3515847773' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:41.764317 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "osd pool stats", "format": "json"} v 0) v1
+2018-01-26 10:33:41.764362 7fd649d16700  0 log_channel(audit) log [DBG] : from='client.? 10.92.100.3:0/3551064240' entity='client.admin' cmd=[{"prefix": "osd pool stats", "format": "json"}]: dispatch
+2018-01-26 10:33:41.766658 7fd649d16700  0 mon.pt-ceph-001@0(leader) e5 handle_command mon_command({"prefix": "df", "format": "json"} v 0) v1

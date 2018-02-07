@@ -1,0 +1,52 @@
+# normal rules, to skip uninteresting log entries
+deferred set uid:gid
+ceph version
+
+# shutdown and startup
+# Note the ' *' when you have irregular spaces
+received *signal: Hangup from *PID
+received *signal: Terminated from *PID
+handle_sigterm
+shutting down
+final shutdown
+send_request(): deleting obj
+gc::process: removing
+
+
+# realm reloader stuff
+rgw realm reloader: Store closed
+rgw realm reloader: Creating new store
+rgw realm reloader: Finishing initialization of new store
+rgw realm reloader:.* REST subsystem init
+rgw realm reloader:.* user subsystem init
+rgw realm reloader:.* usage subsystem init
+rgw realm reloader: Resuming frontends with new realm configuration.
+rgw realm reloader: Pausing frontends for realm update.
+rgw realm reloader: Frontends paused
+
+
+# civetweb stuff
+starting handler: civetweb
+starting new request
+req done
+GET / HTTP/1.
+GET /admin/log
+POST /admin
+GET /admin/metadata/bucket/instance
+GET /.*.s3.kobo.com
+PUT /.*.s3.kobo.com
+DELETE /.*.s3.kobo.com
+HEAD /.*.s3.kobo.com
+
+# errors we see every time with Kraken: this may change
+res_query() failed
+RGWGC::process() failed to acquire lock on gc
+ERROR: failed to read mdlog info with (2) No such file or directory
+fault initiating reconnect
+ERROR: a sync operation returned error
+ERROR: failure in sync, backing out
+WARNING: skipping data log entry for missing bucket
+ERROR: client_io->complete_request() returned Input/output error
+
+# restart 
+ 10:30:

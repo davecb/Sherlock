@@ -1,0 +1,9 @@
+/ceph version/ { next }
+/ms_deliver_dispatch: unhandled message/ { next }
+/pidfile_write: ignore empty --pid-file/ { next }
+/set uid:gid to/ { next }
+/mgr send_beacon standby/ { next }
+toupper($0) ~ /ERROR/ { print $0; next}
+toupper($0) ~ /WARN/ { print $0; next}
+toupper($0) ~ /CAUTION/ { print $0; next}
+/.*/ { print $0 }

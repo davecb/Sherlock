@@ -1,0 +1,6 @@
+ceph version
+ms_deliver_dispatch: unhandled message
+pidfile_write: ignore empty --pid-file
+set uid:gid to
+mgr send_beacon standby
+
