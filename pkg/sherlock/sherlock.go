@@ -14,7 +14,7 @@ type Config struct {
 	Version  string
 }
 
-// Run runs lots of consulting detectives in parallel, the daemonic case
+// Run runs lots of consulting detectives in parallel, the daemon case
 // It does not use Config, but a .ini file instead.
 func Run(configFile string) error {
 	// load initially
@@ -32,39 +32,38 @@ func detective() {
 	//    do work
 	//    wait for changes in file
 	// 	      reload on change
+	log.Panic("detective is not implemented yet")
 }
 
 
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
-	printConfig(cfg)
+	//PrintConfig(cfg)
 	//load(cfg.Ruleset)
 	//add(cfg.Add, "", nil)
 	//subtract(cfg.Subtract)
 	//evaluate(logFile)
-	log.Fatal("Try is not implemented yet")
 	return nil
 }
 
 // Commit will update a rule file, triggering a daemon refresh
 func Commit(cfg Config) error {
-	printConfig(cfg)
+	//PrintConfig(cfg)
 	//load(cfg.Ruleset)
 	//add(cfg.Add, cfg.Version, time.Now())
 	//save(cfg.Ruleset)   // May change daemon
-	log.Fatal("Commit is not implemented yet")
 	return nil
 }
 
-func printConfig(conf Config) {
-	log.Printf("type Config struct {\n")
-	log.Printf("    Verbose  bool = %v\n", conf.Verbose)
-	log.Printf("    Debug    bool = %v\n", conf.Debug)
-	log.Printf("    Ruleset  string = %q\n", conf.Ruleset)
-	log.Printf("    Add      string = %q\n", conf.Add)
-	log.Printf("    Subtract string = %q\n", conf.Subtract)
-	log.Printf("    Version  string = %q\n", conf.Version)
-	log.Print("}\n")
+func PrintConfig(conf Config) {
+		log.Print("type Config struct {\n")
+		log.Printf("    Verbose  bool = %v\n", conf.Verbose)
+		log.Printf("    Debug    bool = %v\n", conf.Debug)
+		log.Printf("    Ruleset  string = %q\n", conf.Ruleset)
+		log.Printf("    Add      string = %q\n", conf.Add)
+		log.Printf("    Subtract string = %q\n", conf.Subtract)
+		log.Printf("    Version  string = %q\n", conf.Version)
+		log.Print("}\n")
 }
 
 

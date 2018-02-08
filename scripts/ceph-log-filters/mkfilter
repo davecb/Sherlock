@@ -10,7 +10,7 @@ main() {
 	output=`basename $1 .template`.filter
 
 	if [ $# -lt 1 ]; then
-		say "$ProgName error: you must supply a parameter"
+		say "$ProgName error: you must provide a parameter"
 		say "Usage: $0 parameter"
 		exit 1
 	fi
