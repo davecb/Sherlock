@@ -119,6 +119,7 @@ func commit(conf sherlock.Config) error {
 		return fmt.Errorf("You must provide a rule to add or subtract")
 	}
 	if conf.Version == "" {
+		// belt and suspenders: this is currently unreachable
 		return fmt.Errorf("You must provide a commit version-string file")
 	}
 	err := sherlock.Commit(conf)
