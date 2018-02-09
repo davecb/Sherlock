@@ -54,7 +54,7 @@ func detective() {
 
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
-	PrintConfig(cfg)
+	//PrintConfig(cfg)
 	rules, err := load(cfg.Ruleset)
 	if err != nil {
 		return err
@@ -138,7 +138,7 @@ forloop:
 		}
 		ruleset = append(ruleset, rule{regex, time, record[2]})
 	}
-	printRuleset(ruleset)
+	//printRuleset(ruleset)
 	return ruleset, nil
 }
 
@@ -161,7 +161,9 @@ func printRuleset(set rules) {
 	log.Print("}\n")
 }
 
-// evaluate tries rule file, once
+// evaluate tries a rule file, once. Note that we loop across
+// individual compiled REs, rather that concatenating them
+// and trying to match that. The latter is ~124 times slower.
 func evaluate(logFile string, ruleset rules) error {
 	f, err := os.Open(logFile)
 	if err != nil {
@@ -169,7 +171,6 @@ func evaluate(logFile string, ruleset rules) error {
 	}
 	defer f.Close() // nolint
 	scanner := bufio.NewScanner(f)
-	
 outerLoop:
 	for scanner.Scan() {
 		if err := scanner.Err(); err != nil {
