@@ -26,6 +26,5 @@ all using the same basic algorithm.
 excluded the impossible, whatever remains, 
 however improbable, must be the truth." 
 Sherlock Holmes, _Adventure of the Beryl Coronet._] 
-By this logic, 
-anything seen before the error ocurred is an
-"impossible" cause, and should be excluded.
+By this logic, it is impossible that anything seen 
+before the error occurred could be a cause of the error.

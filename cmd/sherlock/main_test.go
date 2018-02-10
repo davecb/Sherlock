@@ -36,15 +36,15 @@ func TestSuccess(t *testing.T) {
 			{"a ruleset, add and version to commit", r, a, "", v, "", []string{""}},
 			// daemon next
 		}
-		for _, t := range tests {
-			Convey(t.descr, func() {
-				err := testableMain(t.initfile, t.log[:], sherlock.Config{// nolint:gotype
+		for _, tx := range tests {
+			Convey(tx.descr, func() {
+				err := testableMain(tx.initfile, tx.log[:], sherlock.Config{// nolint:gotype
 					Verbose: false,
 					Debug: false,
-					Ruleset: t.ruleset,
-					Add: t.add,
-					Subtract: t.subtract,
-					Version: t.version,
+					Ruleset: tx.ruleset,
+					Add: tx.add,
+					Subtract: tx.subtract,
+					Version: tx.version,
 				})
 				So(err, ShouldEqual, nil)
 
@@ -75,17 +75,17 @@ func TestFailures(t *testing.T) {
 			 {"You must provide a rule to add or subtract", r, "",
 				 "", v, "", []string{""}},
 		 }
-	     for _, t := range tests {
-			 Convey(t.match, func() {
-				 err := testableMain(t.initfile, t.log[:], sherlock.Config{ // nolint:gotype
+	     for _, tx := range tests {
+			 Convey(tx.match, func() {
+				 err := testableMain(tx.initfile, tx.log[:], sherlock.Config{ // nolint:gotype
 					 Verbose: true,
 					 Debug: true,
-					 Ruleset: t.ruleset,
-					 Add: t.add,
-					 Subtract: t.subtract,
-					 Version: t.version,
+					 Ruleset: tx.ruleset,
+					 Add: tx.add,
+					 Subtract: tx.subtract,
+					 Version: tx.version,
 				 })
-				 So( err.Error(), ShouldEqual, t.match)
+				 So( err.Error(), ShouldEqual, tx.match)
 			 })
 		 }
   	})

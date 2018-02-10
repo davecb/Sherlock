@@ -38,7 +38,7 @@ func main() {
 	flag.BoolVar(&debug, "debug", false, "Turn debug logging on")
 	flag.Parse()
 
-	log.SetFlags(0) //log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
+	log.SetFlags(0) // log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
 
 	if debug {
 		log.Printf("%d flags\n", flag.NFlag())
@@ -66,15 +66,15 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error { 
 	// see if we're to be a runDaemon
 	if initFile != "" {
 		if len(args) < 1 || args[0] == "" {
-			//usage()
-			return fmt.Errorf( "you must provide a .ini file") //nolint
+			// usage()
+			return fmt.Errorf( "you must provide a .ini file") // nolint
 		}
 		runDaemon(flag.Arg(1) ) // nolint: errcheck
 		// never exits normally
 	}
 	// all subsequent uses require a ruleset
 	if conf.Ruleset == "" {
-		//usage()
+		// usage()
 		return fmt.Errorf("you must provide a ruleset")
 	}
 
@@ -86,8 +86,8 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error { 
 
 	// Otherwise try running rules against one or more log files
 	if len(args) < 1 || args[0] == "" {
-		//usage()
-		return fmt.Errorf("you must provide a log") //nolint
+		// usage()
+		return fmt.Errorf("you must provide a log") // nolint
 	}
 	// apply a ruleset to logfiles, with and without specific rules
 	for _, arg := range args {
