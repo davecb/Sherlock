@@ -9,7 +9,7 @@ import (
 func BenchmarkSherlockRE(b *testing.B) {
 	for i :=0; i < b.N; i++ {
 		Try("./ceph.log", Config{// nolint:gotype
-			Verbose: true,
+			Verbose: false,
 			Debug: false,
 			Ruleset: "./ceph.rules",
 			Add: "",

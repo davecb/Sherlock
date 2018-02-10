@@ -39,7 +39,7 @@ func TestSuccess(t *testing.T) {
 		for _, t := range tests {
 			Convey(t.descr, func() {
 				err := testableMain(t.initfile, t.log[:], sherlock.Config{// nolint:gotype
-					Verbose: true,
+					Verbose: false,
 					Debug: false,
 					Ruleset: t.ruleset,
 					Add: t.add,

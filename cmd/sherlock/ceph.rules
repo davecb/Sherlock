@@ -1,18 +1,19 @@
-active+clean,Mon Jan 2 15:04:05 2006,0.0
+# harmless log messages to supress
+active\+clean,Mon Jan 2 15:04:05 2006,0.0
 scrub starts,Mon Jan 2 15:04:05 2006,0.0
 scrub ok,Mon Jan 2 15:04:05 2006,0.0
-upgrading scrub to deep-scrub,Mon Jan 2 15:04:05 2006,0.0
-cluster [INF] HEALTH_OK,Mon Jan 2 15:04:05 2006,0.0
+cluster \[INF\] HEALTH_OK,Mon Jan 2 15:04:05 2006,0.0
 currently reached_pg,Mon Jan 2 15:04:05 2006,0.0
 ScrubResult,Mon Jan 2 15:04:05 2006,0.0
 
-# Simple rrors supressed: they cause deep scrubs,Mon Jan 2 15:04:05 2006,0.0
+# Simple errors supressed: they cause deep scrubs
 scrub errors,Mon Jan 2 15:04:05 2006,0.0
 requests are blocked,Mon Jan 2 15:04:05 2006,0.0
 slow requests,Mon Jan 2 15:04:05 2006,0.0
 
-# Supresssed deep scrub errors: maybe fixed in Luminous,Mon Jan 2 15:04:05 2006,0.0
+# Supresssed deep scrub errors: maybe fixed in Luminous
+upgrading scrub to deep-scrub,Mon Jan 2 15:04:05 2006,0.0
 head candidate had a read error,Mon Jan 2 15:04:05 2006,0.0
-deep-scrub.*errors,Mon Jan 2 15:04:05 2006,0.0
-deep-scrub.*missing,Mon Jan 2 15:04:05 2006,0.0
-deep-scrub.*inconsistent,Mon Jan 2 15:04:05 2006,0.0
+deep-scrub *errors,Mon Jan 2 15:04:05 2006,0.0
+deep-scrub *missing,Mon Jan 2 15:04:05 2006,0.0
+deep-scrub *inconsistent,Mon Jan 2 15:04:05 2006,0.0

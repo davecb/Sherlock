@@ -53,8 +53,10 @@ func detective() {
 
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
-	//PrintConfig(cfg)
-	ruleset, err := load(cfg.Ruleset)
+	if cfg.Verbose {
+		PrintConfig(cfg)
+	}
+	ruleset, err := load(cfg.Ruleset, cfg.Verbose)
 	if err != nil {
 		return err
 	}
@@ -65,8 +67,10 @@ func Try(logFile string, cfg Config) error {
 
 // Commit will update a rule file, triggering a daemon refresh
 func Commit(cfg Config) error {
-	//PrintConfig(cfg)
-	//load(cfg.Ruleset)
+	if cfg.Verbose {
+		PrintConfig(cfg)
+	}
+	//load(cfg.Ruleset, cfg.Verbose)
 	//add(cfg.Add, cfg.Version, time.Now())
 	//save(cfg.Ruleset)   // May change daemon
 	return nil
@@ -89,9 +93,9 @@ func PrintConfig(conf Config) {
 // without specific rules
 
 // Load a rule file.
-func load(ruleFile string) (rules, error) {  // nolint: gocyclo
+func load(ruleFile string, verbose bool) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
-	var warned= false
+	var warned = false
 
 	// precondition(ruleFile == "", "Programmer error:  no load-test .csv file")
 	f, err := os.Open(ruleFile)
@@ -158,22 +162,26 @@ forloop:
 		}
 		ruleset = append(ruleset, rule{regex, date, record[2]})
 	}
-	//printRuleset(ruleset)
+	if verbose {
+		printRuleset(ruleset)
+	}
 	return ruleset, nil
 }
 
 
+// printRuleset does just that
 func printRuleset(ruleset rules) {  // nolint
 	log.Print("type []rule {\n")
+	log.Print("    // pat, date, vers\n")
 	for _, r := range ruleset {
 		log.Printf("    { %q, %q, %q }\n", r.pat, r.date, r.vers)
 	}
 	log.Print("}\n")
 }
 
-// evaluate tries a rule file, once. Note that we loop across
-// individual compiled4:1 difference REs, rather that concatenating them
-// and trying to match that. The latter is ~124 times slower.
+// evaluate tries a rule file, once.
+// Note that we loop across individual REs, rather that concatenating
+// them and trying to match that. The latter is ~124 times slower.
 func evaluate(logFile string, ruleset rules) error {
 	f, err := os.Open(logFile)
 	if err != nil {
@@ -183,7 +191,7 @@ func evaluate(logFile string, ruleset rules) error {
 	scanner := bufio.NewScanner(f)
 outerLoop:
 	for scanner.Scan() {
-		if err := scanner.Err(); err != nil {
+		if err = scanner.Err(); err != nil {
 			log.Printf("Bad line ignored, %v\n", err)
 			continue
 		}
