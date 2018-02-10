@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"io"
 	"regexp"
-	"strings"
 	"bufio"
 )
 
@@ -55,14 +54,13 @@ func detective() {
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
 	//PrintConfig(cfg)
-	rules, err := load(cfg.Ruleset)
+	ruleset, err := load(cfg.Ruleset)
 	if err != nil {
 		return err
 	}
 	//add(cfg.Add, "", nil)
 	//subtract(cfg.Subtract)
-	evaluate(logFile, rules)
-	return nil
+	return evaluate(logFile, ruleset)
 }
 
 // Commit will update a rule file, triggering a daemon refresh
@@ -74,6 +72,7 @@ func Commit(cfg Config) error {
 	return nil
 }
 
+// PrintConfig displays a config struct's contents
 func PrintConfig(conf Config) {
 		log.Print("type Config struct {\n")
 		log.Printf("    Verbose  bool = %v\n", conf.Verbose)
@@ -89,18 +88,15 @@ func PrintConfig(conf Config) {
 // other operations, allowing one to try out new rules or search
 // without specific rules
 
-// Load a rule file
-func load(ruleFile string) (rules, error) {
+// Load a rule file.
+func load(ruleFile string) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
+	var warned= false
 
-	if ruleFile == "" {
-		// FIXME. This is belt-and-suspenders: better as a precondition?
-		// precondition(ruleFile == "", "Programmer error:  no load-test .csv file")
-		return nil, fmt.Errorf("No load-test .csv file provided, halting.\n")
-	}
+	// precondition(ruleFile == "", "Programmer error:  no load-test .csv file")
 	f, err := os.Open(ruleFile)
 	if err != nil {
-		return nil, fmt.Errorf("%s, halting.", err)
+		return nil, fmt.Errorf("%s, halting", err)
 	}
 	defer f.Close() // nolint
 
@@ -108,66 +104,80 @@ func load(ruleFile string) (rules, error) {
 	r.Comma = ','
 	r.Comment = '#'
 	r.FieldsPerRecord = -1 // ignore differences
+	
 forloop:
 	for line := 1; ; line++ {
 		record, err := r.Read()
-		switch {
-		case err == io.EOF:
+		switch err {
+		case io.EOF:
 			break forloop
-		case err != nil:
-			return nil, fmt.Errorf("Fatal error mid-way in %s: %s\n", ruleFile, err)
+		case nil:
+			// the desired case, fall through
+		default:
+			return nil, fmt.Errorf("fatal error at line %d " +
+				"in %q: %v", line, ruleFile, err)
 		}
-		if len(record) < 3 {
-			log.Printf("ill-formed record %d (%q) ignored\n",
-				line, record)
+
+
+		switch len(record) {
+		case 0:
+			// skip blank lines quietly
+			continue
+		case 1:
+			// warn once
+			if !warned {
+				warned = true
+				log.Print("Lines with only the pattern field " +
+					" encountered in %q, missing dates and versions " +
+					"ignored\n", ruleFile)
+			}
+		case 3:
+				// the desired case, fall out of the switch
+		default:
+			// ignore UFOs
+			log.Printf("Ill-formed record %d (%q) ignored in %q\n",
+				line, record, ruleFile)
 			continue
 		}
 
-		regex, err := createRegexp(record[0])
+		// Compile the pattern into a regexp.
+		// prepend "(?i)" to make it case-insensitive
+		regex, err := regexp.Compile(record[0])
 		if err != nil {
-			log.Printf("ill-formed regexp %q ignored in line %d\n",
-				record[0], line)
+			log.Printf("Ill-formed regexp %q in line %d of %q, skipped\n",
+				record[0], line, ruleFile)
 			continue
 		}
 
-		time, err := time.Parse(time.ANSIC, record[1])
+		// Parse the time, as an ANSI C date/time
+		date, err := time.Parse(time.ANSIC, record[1])
 		if err != nil {
-			log.Printf("ill-formed time %q ignored in line %d\n",
-				record[1], line)
-			continue
+			log.Printf("Ill-formed time %q in line %d of %q, ignored\n",
+				record[1], line, ruleFile)
+			date = time.Now()
 		}
-		ruleset = append(ruleset, rule{regex, time, record[2]})
+		ruleset = append(ruleset, rule{regex, date, record[2]})
 	}
 	//printRuleset(ruleset)
 	return ruleset, nil
 }
 
-// createRegexp removes RE characters, which may or may not be a bad idea...
-// right now it's very desirable
-func createRegexp(s string) (*regexp.Regexp, error) {
-	// remove RE characters EXCEPT . and *, which I use
-	for _, x := range []string{"[", "]", "+", "?", "\\", "{", "}" } {
-		s = strings.Replace(s, x, ".",-1)
-	}
-	// prepend "(?i)" to make it case-insensitive
-	return regexp.Compile(s)
-}
 
-func printRuleset(set rules) {
+func printRuleset(ruleset rules) {  // nolint
 	log.Print("type []rule {\n")
-	for _, r := range set {
+	for _, r := range ruleset {
 		log.Printf("    { %q, %q, %q }\n", r.pat, r.date, r.vers)
 	}
 	log.Print("}\n")
 }
 
 // evaluate tries a rule file, once. Note that we loop across
-// individual compiled REs, rather that concatenating them
+// individual compiled4:1 difference REs, rather that concatenating them
 // and trying to match that. The latter is ~124 times slower.
 func evaluate(logFile string, ruleset rules) error {
 	f, err := os.Open(logFile)
 	if err != nil {
-		return fmt.Errorf("%s, halting.", err)
+		return fmt.Errorf("%s, halting", err)
 	}
 	defer f.Close() // nolint
 	scanner := bufio.NewScanner(f)

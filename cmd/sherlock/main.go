@@ -10,11 +10,10 @@ import (
 )
 
 // usage reports how to use sherlock
-func usage() {
-	//nolint
-	fmt.Fprint(os.Stderr, "Usage: sherlock --fred ini-file, or\n" +
+func usage() {  // nolint
+	fmt.Fprint(os.Stderr, "Usage: sherlock --deamon ini-file, or\n" +
 		"       sherlock --options log-file\n")
-	// reserve "--commit" for later
+	// FIXME "--commit" later
 	flag.PrintDefaults()
 }
 
@@ -24,7 +23,7 @@ func main() {
 	var verbose, debug bool
 
 	// run as a daemon, or
-	flag.StringVar(&initFile, "fred", "", "specify daemon's .ini file")
+	flag.StringVar(&initFile, "deamon", "", "specify daemon's .ini file")
 
 	// add a rule to a ruleset, with a version and date
 	flag.StringVar(&commitVersion, "commit", "", "commit to a specified version")
@@ -62,21 +61,21 @@ func main() {
 }
 
 // testableMain, for use with BDD tests
-func testableMain(initFile string, args []string, conf sherlock.Config) error {
+func testableMain(initFile string, args []string, conf sherlock.Config) error {  // nolint: gotype
 	
 	// see if we're to be a runDaemon
 	if initFile != "" {
 		if len(args) < 1 || args[0] == "" {
 			//usage()
-			return fmt.Errorf( "You must provide a .ini file") //nolint
+			return fmt.Errorf( "you must provide a .ini file") //nolint
 		}
-		runDaemon(flag.Arg(1) )
+		runDaemon(flag.Arg(1) ) // nolint: errcheck
 		// never exits normally
 	}
 	// all subsequent uses require a ruleset
 	if conf.Ruleset == "" {
 		//usage()
-		return fmt.Errorf("You must provide a ruleset")
+		return fmt.Errorf("you must provide a ruleset")
 	}
 
 
@@ -88,7 +87,7 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error {
 	// Otherwise try running rules against one or more log files
 	if len(args) < 1 || args[0] == "" {
 		//usage()
-		return fmt.Errorf("You must provide a log") //nolint
+		return fmt.Errorf("you must provide a log") //nolint
 	}
 	// apply a ruleset to logfiles, with and without specific rules
 	for _, arg := range args {
@@ -105,7 +104,7 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error {
 // syntactially checks config file
 func runDaemon(iniFile string) error {
 	if iniFile == "" {
-		fmt.Errorf("You must provide a .ini file")
+		return fmt.Errorf("you must provide a .ini file")
 	}
 	sherlock.Run(iniFile) // nolint
 	// should never exit
@@ -114,27 +113,27 @@ func runDaemon(iniFile string) error {
 
 // commit tries to update a config file, thus updating any daemons
 // syntactially checks add and version
-func commit(conf sherlock.Config) error {
+func commit(conf sherlock.Config) error { // nolint: gotype
 	if conf.Add == "" && conf.Subtract == "" {
-		return fmt.Errorf("You must provide a rule to add or subtract")
+		return fmt.Errorf("you must provide a rule to add or subtract")
 	}
 	if conf.Version == "" {
 		// belt and suspenders: this is currently unreachable
-		return fmt.Errorf("You must provide a commit version-string file")
+		return fmt.Errorf("you must provide a commit version-string file")
 	}
-	err := sherlock.Commit(conf)
+	err := sherlock.Commit(conf) // nolint: gotype
 	if err != nil {
-		return fmt.Errorf("Update of ruleset %q with rule %q failed, %v",
+		return fmt.Errorf("update of ruleset %q with rule %q failed, %v",
 			conf.Ruleset, conf.Add, err)
 	}
 	return nil
 }
 
 // try to evaluate one file
-func try(logFile string, conf sherlock.Config ) error {
-	err := sherlock.Try(logFile, conf)
+func try(logFile string, conf sherlock.Config ) error { // nolint: gotype
+	err := sherlock.Try(logFile, conf) // nolint: gotype
 	if err != nil {
-		return fmt.Errorf("Failed to evaluate log %q using ruleset %q, %v\n",
+		return fmt.Errorf("failed to evaluate log %q using ruleset %q, %v",
 			logFile, conf.Ruleset, err)
 	}
 	return nil

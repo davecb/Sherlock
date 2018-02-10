@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# log2ruleset -- turn a logfile into a draft ruleset
+#	The -s is the amount to skip at the beginning of lines
+#	Start with log2ruleset -s 0 file.log | more
+#	and then increase the s value until needless dups
+#	have been filtered out.
+#
+ProgName=`basename $0`
+Skip=0
+
+main() {
+	while :; do
+		case "$1" in
+		-s) # skip
+			Skip=$2
+			shift
+			;;
+		-*) # bad
+			say "$ProgName: unknown option $2 ignored"
+			;;
+		*) break
+		esac
+		shift
+	done
+
+	if [ $# -lt 1 ]; then
+		say "$ProgName error: you must supply a log to prepare"
+		say "Usage: $0 [-s skip] file.log"
+		exit 1
+	fi
+
+	cat $1 |\
+	if [ $Skip -gt 0 ]; then
+		cut -b ${Skip}- $1
+	else
+		cat $1
+	fi |\
+	# Quote any RE characters in the raw input file
+	# plus any commas: the rules file will be a .csv
+	sed -e 's/\\/\\\\/g' \
+	    -e 's/\./\\\./g ' \
+	    -e 's/,/./g ' \
+	    -e 's/\*/s\\\*./g' \
+	    -e 's/\[/\\\[/g' \
+	    -e 's/\]/\\\]/g' \
+    	    -e 's/\+/\\\+/g' \
+	    -e 's/\?/\\\?/g' \
+	    -e 's/{/\\{/g' \
+	    -e 's/}/\\}/g' |\
+	# Unique what we have thus far
+	sort -u
+}
+
+say() {
+	echo "$@" 1>&2
+}
+
+main "$@"
