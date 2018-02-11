@@ -208,7 +208,7 @@ outerLoop:
 				continue outerLoop
 			}
 		}
-		log.Printf("new stuff: %q\n",  s)
+		fmt.Printf("new stuff: %q\n",  s)
 	}
 	return nil
 }
@@ -235,8 +235,8 @@ func compileRule(rule, today, version string) (*regexp.Regexp, time.Time, string
 	// Parse the time, as an ANSI C date/time
 	date, err := time.Parse(time.ANSIC, today)
 	if err != nil {
-		log.Printf("Ill-formed time %q, ignored\n",
-			today)
+		log.Printf("Ill-formed time %q in rule { %q, %q, %q }, ignored\n",
+			today, rule, today, version)
 		date = time.Now()
 	}
 	return regex, date, version, nil
