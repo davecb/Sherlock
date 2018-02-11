@@ -56,7 +56,7 @@ func Try(logFile string, cfg Config) error {
 	if cfg.Verbose {
 		printConfig(cfg)
 	}
-	ruleset, err := load(cfg.Ruleset, cfg.Verbose)
+	ruleset, err := load(cfg.Ruleset)
 	if err != nil {
 		return err
 	}
@@ -72,6 +72,9 @@ func Try(logFile string, cfg Config) error {
 			return err
 		}
 	}
+	if cfg.Verbose {
+		printRuleset(ruleset)
+	}
 	return evaluate(logFile, ruleset)
 }
 
@@ -80,7 +83,7 @@ func Commit(cfg Config) error {
 	if cfg.Verbose {
 		printConfig(cfg)
 	}
-	// load(cfg.Ruleset, cfg.Verbose)
+	// load(cfg.Ruleset)
 	// add(cfg.Add, cfg.Version, time.Now())
 	// save(cfg.Ruleset)   // May change daemon
 	return nil
@@ -103,7 +106,7 @@ func printConfig(conf Config) {
 // without specific rules
 
 // Load a rule file.
-func load(ruleFile string, verbose bool) (rules, error) {  // nolint: gocyclo
+func load(ruleFile string) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
 	var record []string
 	var version string
@@ -151,25 +154,27 @@ forloop:
 					" encountered in %q, missing dates and versions " +
 					"ignored\n", ruleFile)
 			}
+			regex, date, version, err = compileRule(record[0], "", "")
+			if err != nil {
+				log.Printf("Can't compile an RE from %q, line %d of %q, ignored",
+					record, line, ruleFile)
+				continue
+			}
 		case 3:
-				// the desired case, fall out of the switch
+			// the desired case,
+			regex, date, version, err = compileRule(record[0], record[1], record[2])
+			if err != nil {
+				log.Printf("Can't compile an RE from %q, line %d of %q, ignored",
+					record, line, ruleFile)
+				continue
+			}
 		default:
 			// ignore UFOs, loudly
 			log.Printf("Ill-formed record %d (%q) ignored in %q\n",
 				line, record, ruleFile)
 			continue
 		}
-
-		regex, date, version, err = compileRule(record[0], record[1], record[2])
-		if err != nil {
-			log.Printf("Can't compile an RE from %q, line %d of %q, ignored",
-				record, line, ruleFile)
-			   continue
-		}
 		ruleset = append(ruleset, rule{regex, date, version})
-	}
-	if verbose {
-		printRuleset(ruleset)
 	}
 	return ruleset, nil
 }
@@ -202,6 +207,10 @@ outerLoop:
 			continue
 		}
 		s := scanner.Text()
+		if s == "" {
+			// empty lines
+			continue
+		}
 		for _, r := range ruleset {
 			if r.pat.FindStringIndex(s) != nil {
 				// we found it, skip this whole line
@@ -213,7 +222,7 @@ outerLoop:
 	return nil
 }
 
-// // Add a rule to a rule file, but only in memory.
+// Add a rule to a rule file, but only in memory.
 func add(ruleset rules, newRule, today, version string) (rules, error) {
 	regex, date, version, err := compileRule(newRule, today, version)
 	if err != nil {
@@ -224,20 +233,29 @@ func add(ruleset rules, newRule, today, version string) (rules, error) {
 
 // compileRule compiles a RE and optional date and version  FIXME use twice
 func compileRule(rule, today, version string) (*regexp.Regexp, time.Time, string, error){
+	var regex *regexp.Regexp
+	var date time.Time
+	var err error
+	
 	// Compile the pattern into a regexp.
 	// prepend "(?i)" if you need to make it case-insensitive
-	regex, err := regexp.Compile(rule)
+	regex, err = regexp.Compile(rule)
 	if err != nil {
 		return nil, time.Time{}, "", fmt.Errorf("ill-formed regexp %q",
 			rule)
 	}
 
 	// Parse the time, as an ANSI C date/time
-	date, err := time.Parse(time.ANSIC, today)
-	if err != nil {
-		log.Printf("Ill-formed time %q in rule { %q, %q, %q }, ignored\n",
-			today, rule, today, version)
+	if today == "" {
+		// if empty, it's now.
 		date = time.Now()
+	} else {
+		date, err = time.Parse(time.ANSIC, today)
+		if err != nil {
+			log.Printf("Ill-formed time %q in rule { %q, %q, %q }, ignored\n",
+				today, rule, today, version)
+			date = time.Now()
+		}
 	}
 	return regex, date, version, nil
 
@@ -245,13 +263,14 @@ func compileRule(rule, today, version string) (*regexp.Regexp, time.Time, string
 }
 
  // Subtract a rule from a rule file, only in memory
-func subtract(ruleset rules, newRule, today, version string) (rules, error) {
-	//regex, date, version, err := compileRule(newRule, today, version)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//return append(ruleset, rule{regex, date, version}), nil
-	return nil, fmt.Errorf("subtract is not implemented yet")
+func subtract(ruleset rules, removeRule, today, version string) (rules, error) {
+	b := make(rules,0)
+	for _, x := range ruleset {
+		if !x.pat.MatchString(removeRule) {
+			b = append(b, x)
+		}
+	}
+	return b, nil
  }
 
 // // Save a rule file to disk

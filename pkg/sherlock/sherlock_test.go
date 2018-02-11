@@ -31,4 +31,5 @@ func BenchmarkSherlockRE(b *testing.B) {
 // PASS
 // ok  	github.com/davecb/Sherlock/pkg/sherlock	1.308s
 
-// Heavily concatenated REs with .*s can take very high times
+// Heavily concatenated REs with .*s can take very long times,
+// in this case ~120 times longer. Less with " *", but still large.
