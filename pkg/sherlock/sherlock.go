@@ -30,24 +30,24 @@ type rule struct {
 
 
 // Run runs lots of consulting detectives in parallel, the daemon case
-// It does not use Config, but a .ini file instead.
-func Run(configFile string) error {
+// It uses an .ini file to direct it.
+func Run(iniFile string) error {
 	// load initially
 	// for each section
 	//   create a detective
-		 detective()
+		 return detective()
 	// loop reading worker output
-	return nil
+	//return nil
 }
 
 // run one detective until told to stop
-func detective() {
+func detective() error {
 	// load specific file
 	// loop on select
 	//    do work
 	//    wait for changes in file
 	// 	      reload on change
-	log.Panic("detective is not implemented yet")
+	return fmt.Errorf("detective is not implemented yet")
 }
 
 
@@ -60,8 +60,18 @@ func Try(logFile string, cfg Config) error {
 	if err != nil {
 		return err
 	}
-	// add(cfg.Add, "", nil)
-	// subtract(cfg.Subtract)
+	if cfg.Add != "" {
+		ruleset, err = add(ruleset, cfg.Add,  "", "")
+		if err != nil {
+			return err
+		}
+	}
+	if cfg.Subtract != "" {
+		ruleset, err = subtract(ruleset, cfg.Subtract,  "", "")
+		if err != nil {
+			return err
+		}
+	}
 	return evaluate(logFile, ruleset)
 }
 
@@ -96,7 +106,9 @@ func printConfig(conf Config) {
 func load(ruleFile string, verbose bool) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
 	var record []string
+	var version string
 	var regex *regexp.Regexp
+	var date time.Time
 	var warned = false
 
 	// precondition(ruleFile == "", "Programmer error:  no load-test .csv file")
@@ -116,10 +128,12 @@ forloop:
 		record, err = r.Read()
 		switch err {
 		case io.EOF:
+			// eof is not an error
 			break forloop
 		case nil:
 			// the desired case, fall through
 		default:
+			// everything else is an error
 			return nil, fmt.Errorf("fatal error at line %d " +
 				"in %q: %v", line, ruleFile, err)
 		}
@@ -140,29 +154,19 @@ forloop:
 		case 3:
 				// the desired case, fall out of the switch
 		default:
-			// ignore UFOs
+			// ignore UFOs, loudly
 			log.Printf("Ill-formed record %d (%q) ignored in %q\n",
 				line, record, ruleFile)
 			continue
 		}
 
-		// Compile the pattern into a regexp.
-		// prepend "(?i)" to make it case-insensitive
-		regex, err = regexp.Compile(record[0])
+		regex, date, version, err = compileRule(record[0], record[1], record[2])
 		if err != nil {
-			log.Printf("Ill-formed regexp %q in line %d of %q, skipped\n",
-				record[0], line, ruleFile)
-			continue
+			log.Printf("Can't compile an RE from %q, line %d of %q, ignored",
+				record, line, ruleFile)
+			   continue
 		}
-
-		// Parse the time, as an ANSI C date/time
-		date, err := time.Parse(time.ANSIC, record[1])
-		if err != nil {
-			log.Printf("Ill-formed time %q in line %d of %q, ignored\n",
-				record[1], line, ruleFile)
-			date = time.Now()
-		}
-		ruleset = append(ruleset, rule{regex, date, record[2]})
+		ruleset = append(ruleset, rule{regex, date, version})
 	}
 	if verbose {
 		printRuleset(ruleset)
@@ -209,11 +213,46 @@ outerLoop:
 	return nil
 }
 
-// // Add a rule to a rule file, but only in memory
-// func add(rule, version string, today time.Time) {}
-//
-// // Subtract a rule from a rule file, only in memory
-// func subtract(rule string) {}
-//
+// // Add a rule to a rule file, but only in memory.
+func add(ruleset rules, newRule, today, version string) (rules, error) {
+	regex, date, version, err := compileRule(newRule, today, version)
+	if err != nil {
+		return nil, err
+	}
+	return append(ruleset, rule{regex, date, version}), nil
+}
+
+// compileRule compiles a RE and optional date and version  FIXME use twice
+func compileRule(rule, today, version string) (*regexp.Regexp, time.Time, string, error){
+	// Compile the pattern into a regexp.
+	// prepend "(?i)" if you need to make it case-insensitive
+	regex, err := regexp.Compile(rule)
+	if err != nil {
+		return nil, time.Time{}, "", fmt.Errorf("ill-formed regexp %q",
+			rule)
+	}
+
+	// Parse the time, as an ANSI C date/time
+	date, err := time.Parse(time.ANSIC, today)
+	if err != nil {
+		log.Printf("Ill-formed time %q, ignored\n",
+			today)
+		date = time.Now()
+	}
+	return regex, date, version, nil
+
+
+}
+
+ // Subtract a rule from a rule file, only in memory
+func subtract(ruleset rules, newRule, today, version string) (rules, error) {
+	//regex, date, version, err := compileRule(newRule, today, version)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//return append(ruleset, rule{regex, date, version}), nil
+	return nil, fmt.Errorf("subtract is not implemented yet")
+ }
+
 // // Save a rule file to disk
 // func save(ruleFile string) {}

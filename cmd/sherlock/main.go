@@ -69,7 +69,7 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error { 
 			// usage()
 			return fmt.Errorf( "you must provide a .ini file") // nolint
 		}
-		runDaemon(flag.Arg(1) ) // nolint: errcheck
+		runDaemon(flag.Arg(1) ) // nolint
 		// never exits normally
 	}
 	// all subsequent uses require a ruleset
