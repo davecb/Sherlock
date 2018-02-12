@@ -29,32 +29,10 @@ type rule struct {
 }
 
 
-// Run runs lots of consulting detectives in parallel, the daemon case
-// It uses an .ini file to direct it.
-func Run(iniFile string) error {
-	// load initially
-	// for each section
-	//   create a detective
-		 return detective()
-	// loop reading worker output
-	//return nil
-}
-
-// run one detective until told to stop
-func detective() error {
-	// load specific file
-	// loop on select
-	//    do work
-	//    wait for changes in file
-	// 	      reload on change
-	return fmt.Errorf("detective is not implemented yet")
-}
-
-
 // Try running the rules on a single log file
 func Try(logFile string, cfg Config) error {
 	if cfg.Verbose {
-		printConfig(cfg)
+		PrintConfig(cfg)
 	}
 	ruleset, err := load(cfg.Ruleset)
 	if err != nil {
@@ -73,7 +51,7 @@ func Try(logFile string, cfg Config) error {
 		}
 	}
 	if cfg.Verbose {
-		printRuleset(ruleset)
+		PrintRuleset(ruleset)
 	}
 	return evaluate(logFile, ruleset)
 }
@@ -81,7 +59,7 @@ func Try(logFile string, cfg Config) error {
 // Commit will update a rule file, triggering a daemon refresh
 func Commit(cfg Config) error {
 	if cfg.Verbose {
-		printConfig(cfg)
+		PrintConfig(cfg)
 	}
 	// load(cfg.Ruleset)
 	// add(cfg.Add, cfg.Version, time.Now())
@@ -89,8 +67,8 @@ func Commit(cfg Config) error {
 	return nil
 }
 
-// printConfig displays a config struct's contents
-func printConfig(conf Config) {
+// PrintConfig displays a config struct's contents
+func PrintConfig(conf Config) {
 		log.Print("type Config struct {\n")
 		log.Printf("    Verbose  bool = %v\n", conf.Verbose)
 		log.Printf("    Debug    bool = %v\n", conf.Debug)
@@ -180,8 +158,8 @@ forloop:
 }
 
 
-// printRuleset does just that
-func printRuleset(ruleset rules) {  // nolint
+// PrintRuleset does just that
+func PrintRuleset(ruleset rules) {  // nolint
 	log.Print("type []rule {\n")
 	log.Print("    // pat, date, vers\n")
 	for _, r := range ruleset {

@@ -40,11 +40,6 @@ func main() {
 
 	log.SetFlags(0) // log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
 
-	if debug {
-		log.Printf("%d flags\n", flag.NFlag())
-		log.Printf("%d args\n", flag.NArg())
-		log.Printf("args=%v\n", flag.Args())
-	}
 	err := testableMain(initFile, flag.Args(), sherlock.Config {  // nolint:gotype
 		Verbose:    verbose,
 		Debug:      debug,
@@ -62,14 +57,11 @@ func main() {
 
 // testableMain, for use with BDD tests
 func testableMain(initFile string, args []string, conf sherlock.Config) error {  // nolint: gotype
-	
-	// see if we're to be a runDaemon
+
+	// see if we're to be a daemon
 	if initFile != "" {
-		if len(args) < 1 || args[0] == "" {
-			// usage()
-			return fmt.Errorf( "you must provide a .ini file") // nolint
-		}
-		runDaemon(flag.Arg(1) ) // nolint
+		err := runDaemon(initFile) // nolint
+		log.Fatalf("could not run daemon, %v\n", err)
 		// never exits normally
 	}
 	// all subsequent uses require a ruleset
@@ -103,12 +95,11 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error { 
 // runDaemon runs a runDaemon from an ini file
 // syntactially checks config file
 func runDaemon(iniFile string) error {
-	if iniFile == "" {
-		return fmt.Errorf("you must provide a .ini file")
-	}
-	sherlock.Run(iniFile) // nolint
+
+	log.Printf("iniFile=%s\n", iniFile)
+	err := sherlock.Run(iniFile) // nolint
 	// should never exit
-	return fmt.Errorf("sherlock.Run exited unexpectedly, halting")
+	return err
 }
 
 // commit tries to update a config file, thus updating any daemons
