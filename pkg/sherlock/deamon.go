@@ -37,7 +37,7 @@ func Run(iniFile string) error {
 	}
 
 	<- stopChan
-	return fmt.Errorf("deamon is not finished yet")
+	return fmt.Errorf("deamon is not fully written yet")
 
 
 	// load initially
