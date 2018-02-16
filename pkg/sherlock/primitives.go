@@ -28,7 +28,7 @@ func PrintConfig(conf Config) {
 // other operations, allowing one to try out new rules or search
 // without specific rules
 
-// Load a rule file.
+// load a rule file.
 func load(ruleFile string) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
 	var record []string

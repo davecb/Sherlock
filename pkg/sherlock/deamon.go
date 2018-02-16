@@ -4,7 +4,11 @@ import (
 	"fmt"
 	ini "gopkg.in/ini.v1"
 	"log"
+	"os"
+	"gopkg.in/fsnotify.v1"
+	"io"
 	"time"
+	"bufio"
 )
 
 var stopChan = make(chan bool)
@@ -14,22 +18,23 @@ var stopChan = make(chan bool)
 func Run(iniFile string) error {
 	var err error
 
-
 	cfg, err := ini.InsensitiveLoad(iniFile)
 	if err != nil {
 		return err
 	}
 
-	names := cfg.SectionStrings()
-	for _, name := range (names) {
+	sectionNames := cfg.SectionStrings()
+	for _, name := range (sectionNames) {
 		if name == "default" {
 			continue
 		}
-		if !cfg.Section(name).HasKey("input") { // FIXME?
-			return fmt.Errorf("missing input=<value> in %q, halting", name)
+		if !cfg.Section(name).HasKey("input") {
+			return fmt.Errorf("missing input=<value> line for [%s] in %q, halting",
+				name, iniFile)
 		}
 		if !cfg.Section(name).HasKey("rules") {
-			return fmt.Errorf("missing rules=<value> in %q, halting", name)
+			return fmt.Errorf("missing rules=<value> line dor [%s] in %q, halting",
+				name, iniFile)
 		}
 		input := cfg.Section(name).Key("input").String()
 		rules := cfg.Section(name).Key("rules").String()
@@ -38,25 +43,85 @@ func Run(iniFile string) error {
 
 	<- stopChan
 	return fmt.Errorf("deamon is not fully written yet")
-
-
-	// load initially
-	// for each section
-	//   create a detective
-	
-	// loop reading worker output
-	//return nil
 }
 
 // run one detective until told to stop
-func detective(input, rules string) {
-	log.Printf("daemon(%s, %s)\n", input, rules)
-	time.Sleep(1 * time.Second)
-	stopChan <- true
+func detective(logFile, ruleFile string) {
+	var err error
+
+	log.Printf("daemon(%s, %s)\n", logFile, ruleFile)
+	rules,  err := load(ruleFile)
+	log.Printf("rules=%q\n", rules)
+	if err != nil {
+		log.Fatalf("failed to load %f, %v, halting\n", ruleFile, err)
+	}
+
+	f, err := os.Open(logFile)
+	if err != nil {
+		log.Fatalf("%s, halting", err)
+	}
+	defer f.Close() // nolint
+	r := bufio.NewReader(f)
+
+	watcher, err := createWatcher(err, logFile)
+	if  err != nil {
+		log.Fatalf("%s", err)
+	}
+	defer watcher.Close() // nolint
+
+	for {
+		record, err := r.ReadString('\n') 
+		switch {
+		case err == io.EOF:
+			// just keep reading, even if we truncate...
+			if watcher == nil {
+				time.Sleep(100 * time.Millisecond)
+			} else {
+				//log.Print("waiting for fsnotify\n")
+				if err = waitForChange(watcher); err != nil {
+					log.Fatalf("Fatal error waiting for fsnotify on %s, %v\n", logFile, err)
+				}
+			}
+			continue
+		case err != nil:
+			log.Fatalf("Fatal error mid-way in %s: %s\n", logFile, err)
+		}
+		log.Printf("%s\n", record)
+	}
 	// load specific file
 	// loop on select
 	//    do work
 	//    wait for changes in file
 	// 	      reload on change
+	time.Sleep(1 * time.Second)
+	stopChan <- true
+
+}
+func createWatcher(err interface{}, logFile string) (*fsnotify.Watcher, error) {
+	var watcher *fsnotify.Watcher
+
+	watcher, _ = fsnotify.NewWatcher()
+	if err != nil {
+		return nil, nil	// to fall back to polling, we set watcher to nil
+	}
+	err = watcher.Add(logFile)
+	if err != nil {
+		return nil, fmt.Errorf("Fatal error addding %s to fsnotify: %s", logFile, err)
+	}
+	return watcher, nil
 }
 
+// waitForChange waits for the tail of a file to be written to
+// cargo courtesy Satyajit Ranjeev, http://satran.in/2017/11/15/Implementing_tails_follow_in_go.html
+func waitForChange(w *fsnotify.Watcher) error {
+	for {
+		select {
+		case event := <-w.Events:
+			if event.Op&fsnotify.Write == fsnotify.Write {
+				return nil
+			}
+		case err := <-w.Errors:
+			return err
+		}
+	}
+}
