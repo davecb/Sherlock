@@ -1,0 +1,51 @@
+ascdb-errors,Mon Jan 2 15:04:05 2006,0.0
+profiles needed to be cached,Mon Jan 2 15:04:05 2006,0.0
+Bad positionID. siteID,Mon Jan 2 15:04:05 2006,0.0
+Bid cache IDs returned from bid cache service failed validation,Mon Jan 2 15:04:05 2006,0.0
+BidCache - request size,Mon Jan 2 15:04:05 2006,0.0
+Checking mail directories,Mon Jan 2 15:04:05 2006,0.0
+Child Process,Mon Jan 2 15:04:05 2006,0.0
+stats: requests received:,Mon Jan 2 15:04:05 2006,0.0
+Corrupt UDS entry detected for request,Mon Jan 2 15:04:05 2006,0.0
+Error detected reading POST data,Mon Jan 2 15:04:05 2006,0.0
+Error detected reading POST data,Mon Jan 2 15:04:05 2006,0.0
+error profile socket connect when retrieving profile: timeout,Mon Jan 2 15:04:05 2006,0.0
+error profile socket read when retrieving profile: timeout,Mon Jan 2 15:04:05 2006,0.0
+error profile socket write when retrieving profile: Connection refused,Mon Jan 2 15:04:05 2006,0.0
+Error retrieving cmid,Mon Jan 2 15:04:05 2006,0.0
+IB Child [0-9]* exiting,Mon Jan 2 15:04:05 2006,0.0
+idlelog,Mon Jan 2 15:04:05 2006,0.0
+Invalid browser found. useragent =,Mon Jan 2 15:04:05 2006,0.0
+Janus Child [0-9]* exiting,Mon Jan 2 15:04:05 2006,0.0
+loadlog,Mon Jan 2 15:04:05 2006,0.0
+memcache: [0-9]* profile requests made.,Mon Jan 2 15:04:05 2006,0.0
+New child [0-9]* ready to serve,Mon Jan 2 15:04:05 2006,0.0
+New Parent [0-9]* is Ready,Mon Jan 2 15:04:05 2006,0.0
+Nightingale messages sent:,Mon Jan 2 15:04:05 2006,0.0
+Parent [0-9]*: exiting. see you later,Mon Jan 2 15:04:05 2006,0.0
+Parent [0-9]*: received kill signal exiting,Mon Jan 2 15:04:05 2006,0.0
+PE-4 - RES - DSP,Mon Jan 2 15:04:05 2006,0.0
+PE-4 - UA - DSP,Mon Jan 2 15:04:05 2006,0.0
+PE-4 - REQ - DSP,Mon Jan 2 15:04:05 2006,0.0
+PE-4 - WIN - DSP,Mon Jan 2 15:04:05 2006,0.0
+Process cycle started at,Mon Jan 2 15:04:05 2006,0.0
+casalemedia.com. storing as empty profile,Mon Jan 2 15:04:05 2006,0.0
+profile from,Mon Jan 2 15:04:05 2006,0.0
+Rebalanced:,Mon Jan 2 15:04:05 2006,0.0
+has unknown override site:,Mon Jan 2 15:04:05 2006,0.0
+GetMultiMessage encountered warns: GetMultiMessage requests:,Mon Jan 2 15:04:05 2006,0.0
+Unable to receive multi-message from IB,Mon Jan 2 15:04:05 2006,0.0
+Request is on the secure page but the redirect URL,Mon Jan 2 15:04:05 2006,0.0
+Request rejected by ASC. dsp=,Mon Jan 2 15:04:05 2006,0.0
+Request's POST body size exceeds LimitRequestBody,Mon Jan 2 15:04:05 2006,0.0
+Robot found. useragent =,Mon Jan 2 15:04:05 2006,0.0
+updates failed to be sent,Mon Jan 2 15:04:05 2006,0.0
+Sleeping,Mon Jan 2 15:04:05 2006,0.0
+Stats:,Mon Jan 2 15:04:05 2006,0.0
+stats: requests received:,Mon Jan 2 15:04:05 2006,0.0
+Server exceeded REMOTE_PROFILE_REQUEST_FAILURE_THRESHOLD,Mon Jan 2 15:04:05 2006,0.0
+Throttling,Mon Jan 2 15:04:05 2006,0.0
+timeouts: ascdb connect:,Mon Jan 2 15:04:05 2006,0.0
+requests were skipped,Mon Jan 2 15:04:05 2006,0.0
+Won't count traffic for blacklisted ip,Mon Jan 2 15:04:05 2006,0.0
+which belongs to a different publisher,Mon Jan 2 15:04:05 2006,0.0
