@@ -28,7 +28,7 @@ func Try(logFile string, cfg Config) error {
 	if cfg.Verbose {
 		PrintConfig(cfg)
 	}
-	ruleset, err := load(cfg.Ruleset)
+	ruleset, err := LoadRules(cfg.Ruleset)
 	if err != nil {
 		return err
 	}

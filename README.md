@@ -1,4 +1,5 @@
 # Sherlock
+![Sherlock Gopher](./scripts/sherlock.jpeg)
 
 In agile companies, one still needs a
 "Sherlock Holmes"[1] style of log reader:  

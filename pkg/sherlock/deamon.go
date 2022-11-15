@@ -50,27 +50,43 @@ func detective(logFile, ruleFile string) {
 	var err error
 
 	log.Printf("daemon(%s, %s)\n", logFile, ruleFile)
-	rules,  err := load(ruleFile)
-	log.Printf("rules=%q\n", rules)
+	rules,  err := LoadRules(ruleFile)
 	if err != nil {
-		log.Fatalf("failed to load %f, %v, halting\n", ruleFile, err)
+		log.Fatalf("failed to load %v, %v, halting\n", ruleFile, err)
 	}
 
 	f, err := os.Open(logFile)
 	if err != nil {
 		log.Fatalf("%s, halting", err)
 	}
-	defer f.Close() // nolint
+	defer func() {
+		if err = f.Close(); err != nil {
+			log.Fatal(err)
+		}
+	}()
 	r := bufio.NewReader(f)
 
 	watcher, err := createWatcher(err, logFile)
 	if  err != nil {
 		log.Fatalf("%s", err)
 	}
-	defer watcher.Close() // nolint
+	defer func() {
+		if err = watcher.Close(); err != nil {
+			log.Fatal(err)
+		}
+	}()
 
+	fred(r, watcher, rules, logFile)
+
+	//time.Sleep(1 * time.Second)
+	//stopChan <- true
+
+}
+
+// fred loops madly...
+func fred(r *bufio.Reader, watcher *fsnotify.Watcher, rules rules, logFile string) {
 	for {
-		record, err := r.ReadString('\n') 
+		record, err := r.ReadString('\n')
 		switch {
 		case err == io.EOF:
 			// just keep reading, even if we truncate...
@@ -87,15 +103,8 @@ func detective(logFile, ruleFile string) {
 			log.Fatalf("Fatal error mid-way in %s: %s\n", logFile, err)
 		}
 		log.Printf("%s\n", record)
+		// reload on change
 	}
-	// load specific file
-	// loop on select
-	//    do work
-	//    wait for changes in file
-	// 	      reload on change
-	time.Sleep(1 * time.Second)
-	stopChan <- true
-
 }
 func createWatcher(err interface{}, logFile string) (*fsnotify.Watcher, error) {
 	var watcher *fsnotify.Watcher

@@ -11,7 +11,7 @@ import (
 
 // usage reports how to use sherlock
 func usage() {  // nolint
-	fmt.Fprint(os.Stderr, "Usage: sherlock --deamon ini-file, or\n" +
+	fmt.Fprint(os.Stderr, "Usage: sherlock --deamon ini-file, or\n" +   // nolint:gas
 		"       sherlock --options log-file\n")
 	// FIXME "--commit" later
 	flag.PrintDefaults()

@@ -28,8 +28,8 @@ func PrintConfig(conf Config) {
 // other operations, allowing one to try out new rules or search
 // without specific rules
 
-// load a rule file.
-func load(ruleFile string) (rules, error) {  // nolint: gocyclo
+// LoadRules loads a rule file.
+func LoadRules(ruleFile string) (rules, error) {  // nolint: gocyclo
 	var ruleset rules
 	var record []string
 	var version string
@@ -42,7 +42,11 @@ func load(ruleFile string) (rules, error) {  // nolint: gocyclo
 	if err != nil {
 		return nil, fmt.Errorf("%s, halting", err)
 	}
-	defer f.Close() // nolint
+	defer func() {
+        if err = f.Close(); err != nil {
+            log.Fatal(err)
+        }
+    }()
 
 	r := csv.NewReader(f)
 	r.Comma = ','
@@ -121,7 +125,11 @@ func evaluate(logFile string, ruleset rules) error {
 	if err != nil {
 		return fmt.Errorf("%s, halting", err)
 	}
-	defer f.Close() // nolint
+	defer func() {
+        if err = f.Close(); err != nil {
+            log.Fatal(err)
+        }
+    }()
 	scanner := bufio.NewScanner(f)
 outerLoop:
 	for scanner.Scan() {
