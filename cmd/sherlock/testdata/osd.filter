@@ -1,0 +1,15 @@
+/handle_connect_msg accept connect_seq/ { next }
+/fault with nothing to send/ { next }
+/bi_log_iterate_entries/ { next }
+/gc_iterate_entries/ { next }
+/Compact/ { next }
+/compacted to/ { next }
+/Delete/ { next }
+/Generated table/ { next }
+/bytes OK/ { next }
+/started/ { next }
+/scrub ok/ { next }
+/scrub starts/ { next }
+/received *signal: Hangup from *PID/ { next }
+/^[ \t]*$/ { next }
+/.*/ { print $0 }

@@ -1,0 +1,999 @@
+2018-01-26 10:30:03.695903 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6822/219807 conn(0x561db5376000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1029 vs existing csq=1029 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.696128 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6822/219807 conn(0x561db5376000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1030 vs existing csq=1029 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.756811 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6819/363563 conn(0x561db48c2000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1269 vs existing csq=1269 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.757013 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6819/363563 conn(0x561db48c2000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1270 vs existing csq=1269 existing_state=STATE_STANDBY
+2018-01-26 10:32:16.245028 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561d9a4e9000 :6820 s=STATE_OPEN pgs=35577 cs=1443 l=0).fault with nothing to send, going to standby
+2018-01-26 10:38:32.245956 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6816/217802 conn(0x561d98eeb000 :-1 s=STATE_OPEN pgs=43123 cs=1893 l=0).fault with nothing to send, going to standby
+2018-01-26 10:39:24.383492 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6825/368212 conn(0x561d9917b800 :6820 s=STATE_OPEN pgs=31079 cs=1641 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:16.647473 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561da202a800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1443 vs existing csq=1443 existing_state=STATE_STANDBY
+2018-01-26 10:47:16.647740 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561da202a800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1444 vs existing csq=1443 existing_state=STATE_STANDBY
+2018-01-26 10:47:25.505871 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99de6800 :6820 s=STATE_OPEN pgs=39977 cs=2027 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:25.850070 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6821/365066 conn(0x561d96b25000 :-1 s=STATE_OPEN pgs=30770 cs=1483 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:38.845128 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561d9be5e800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1591 vs existing csq=1591 existing_state=STATE_STANDBY
+2018-01-26 10:47:38.845358 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561d9be5e800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1592 vs existing csq=1591 existing_state=STATE_STANDBY
+2018-01-26 10:52:30.376979 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561d99dc4000 :-1 s=STATE_OPEN pgs=28909 cs=1853 l=0).fault with nothing to send, going to standby
+2018-01-26 10:56:05.565920 7fc264390700  0 log_channel(cluster) log [INF] : 10.1de deep-scrub starts
+2018-01-26 11:00:03.698744 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6822/219807 conn(0x561d96b23800 :-1 s=STATE_OPEN pgs=32685 cs=1031 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:03.757758 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6819/363563 conn(0x561d96b13000 :-1 s=STATE_OPEN pgs=37219 cs=1271 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:04.074563 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561d96b11800 :-1 s=STATE_OPEN pgs=37302 cs=1639 l=0).fault with nothing to send, going to standby
+2018-01-26 11:01:20.194189 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6826/225659 conn(0x561d9b8cd800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1359 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 11:01:20.194397 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6826/225659 conn(0x561d9b8cd800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1360 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 11:01:20.998165 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561d98f4b800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1355 vs existing csq=1355 existing_state=STATE_STANDBY
+2018-01-26 11:01:20.998524 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561d98f4b800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1356 vs existing csq=1355 existing_state=STATE_STANDBY
+2018-01-26 11:02:17.574399 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6800/205503 conn(0x561d997fc800 :6820 s=STATE_OPEN pgs=35169 cs=2053 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:38.745491 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99de6800 :6820 s=STATE_OPEN pgs=40003 cs=2029 l=0).fault with nothing to send, going to standby
+2018-01-26 11:03:57.165421 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6804/210170 conn(0x561d97f78000 :-1 s=STATE_OPEN pgs=45245 cs=1953 l=0).fault with nothing to send, going to standby
+2018-01-26 11:08:12.226003 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561da0dfd000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2029 vs existing csq=2029 existing_state=STATE_STANDBY
+2018-01-26 11:08:12.226316 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561da0dfd000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2030 vs existing csq=2029 existing_state=STATE_STANDBY
+2018-01-26 11:10:24.554468 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6820/8223046 conn(0x561d99dc1000 :6820 s=STATE_OPEN pgs=32968 cs=1849 l=0).fault with nothing to send, going to standby
+2018-01-26 11:15:35.647771 7fc266b95700  0 log_channel(cluster) log [INF] : 10.1de deep-scrub ok
+2018-01-26 11:16:20.197196 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6826/225659 conn(0x561d96b14800 :-1 s=STATE_OPEN pgs=29201 cs=1361 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:15.478107 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561daa840000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1639 vs existing csq=1639 existing_state=STATE_STANDBY
+2018-01-26 11:17:15.478385 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561daa840000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1640 vs existing csq=1639 existing_state=STATE_STANDBY
+2018-01-26 11:17:16.650011 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561d9a4e9000 :6820 s=STATE_OPEN pgs=35596 cs=1445 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:38.862620 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6816/217802 conn(0x561d98eeb000 :-1 s=STATE_OPEN pgs=43166 cs=1895 l=0).fault with nothing to send, going to standby
+2018-01-26 11:23:50.049751 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6829/1354570 conn(0x561db3144000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 69 vs existing csq=69 existing_state=STATE_STANDBY
+2018-01-26 11:23:50.050024 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6829/1354570 conn(0x561db3144000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 70 vs existing csq=69 existing_state=STATE_STANDBY
+2018-01-26 11:31:20.998998 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561d9879c800 :6820 s=STATE_OPEN pgs=32274 cs=1357 l=0).fault with nothing to send, going to standby
+2018-01-26 11:34:27.441020 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6820/8223046 conn(0x561d99dc1000 :6820 s=STATE_OPEN pgs=32982 cs=1851 l=0).fault with nothing to send, going to standby
+2018-01-26 11:37:26.461677 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561daef76800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1491 vs existing csq=1491 existing_state=STATE_STANDBY
+2018-01-26 11:37:26.461908 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561daef76800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1492 vs existing csq=1491 existing_state=STATE_STANDBY
+2018-01-26 11:38:09.170388 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6822/222405 conn(0x561d98ee8000 :-1 s=STATE_OPEN pgs=25266 cs=1825 l=0).fault with nothing to send, going to standby
+2018-01-26 11:41:05.564761 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6800/1358075 conn(0x561dab8ba000 :6820 s=STATE_OPEN pgs=40692 cs=129 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:15.377271 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6804/210170 conn(0x561d97f78000 :-1 s=STATE_OPEN pgs=45289 cs=1955 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:15.476973 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561d96b11800 :-1 s=STATE_OPEN pgs=37322 cs=1641 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:37.690377 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6815/360743 conn(0x561d99df8000 :-1 s=STATE_OPEN pgs=39599 cs=1385 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:38.849911 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561d98ee9800 :-1 s=STATE_OPEN pgs=34180 cs=1593 l=0).fault with nothing to send, going to standby
+2018-01-26 11:48:30.958012 7fc266394700  0 log_channel(cluster) log [INF] : 10.35b scrub starts
+2018-01-26 11:49:33.182222 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6810/211184 conn(0x561dab36c800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1529 vs existing csq=1529 existing_state=STATE_STANDBY
+2018-01-26 11:49:33.182483 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6810/211184 conn(0x561dab36c800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1530 vs existing csq=1529 existing_state=STATE_STANDBY
+2018-01-26 11:49:56.460495 7fc263b8f700  0 log_channel(cluster) log [INF] : 10.35b scrub ok
+2018-01-26 11:53:50.048873 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6829/1354570 conn(0x561db4e48800 :6820 s=STATE_OPEN pgs=27534 cs=71 l=0).fault with nothing to send, going to standby
+2018-01-26 12:04:27.470457 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6800/205503 conn(0x561d997fc800 :6820 s=STATE_OPEN pgs=35200 cs=2055 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:26.462549 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561d99b15000 :-1 s=STATE_OPEN pgs=34537 cs=1493 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:28.085650 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6820/8223046 conn(0x561d99dc1000 :6820 s=STATE_OPEN pgs=32990 cs=1853 l=0).fault with nothing to send, going to standby
+2018-01-26 12:08:04.123079 7fc267b97700  0 log_channel(cluster) log [INF] : 3.6f scrub starts
+2018-01-26 12:08:04.124053 7fc267b97700  0 log_channel(cluster) log [INF] : 3.6f scrub ok
+2018-01-26 12:08:09.088652 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6806/208712 conn(0x561d9a355000 :-1 s=STATE_OPEN pgs=27748 cs=1801 l=0).fault with nothing to send, going to standby
+2018-01-26 12:08:12.224537 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99de6800 :6820 s=STATE_OPEN pgs=40017 cs=2031 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:32.321597 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6821/365066 conn(0x561d96b25000 :-1 s=STATE_OPEN pgs=30811 cs=1485 l=0).fault with nothing to send, going to standby
+2018-01-26 12:19:24.893810 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d96a93000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2031 vs existing csq=2031 existing_state=STATE_STANDBY
+2018-01-26 12:19:24.894029 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d96a93000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2032 vs existing csq=2031 existing_state=STATE_STANDBY
+2018-01-26 12:19:33.184815 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6810/211184 conn(0x561d96c16000 :-1 s=STATE_OPEN pgs=33373 cs=1531 l=0).fault with nothing to send, going to standby
+2018-01-26 12:23:04.123158 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561d99dc4000 :-1 s=STATE_OPEN pgs=28944 cs=1855 l=0).fault with nothing to send, going to standby
+2018-01-26 12:23:54.245074 7fc267b97700  0 log_channel(cluster) log [INF] : 3.33f scrub starts
+2018-01-26 12:23:54.246149 7fc265392700  0 log_channel(cluster) log [INF] : 3.33f scrub ok
+2018-01-26 12:24:58.416850 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6822/222405 conn(0x561d987c1000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1825 vs existing csq=1825 existing_state=STATE_STANDBY
+2018-01-26 12:24:58.417242 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6822/222405 conn(0x561d987c1000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1826 vs existing csq=1825 existing_state=STATE_STANDBY
+2018-01-26 12:27:32.274431 7fc267396700  0 log_channel(cluster) log [INF] : 2.2 scrub starts
+2018-01-26 12:27:32.312563 7fc267396700  0 log_channel(cluster) log [INF] : 2.2 scrub ok
+2018-01-26 12:28:32.024879 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561dab36b000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1593 vs existing csq=1593 existing_state=STATE_STANDBY
+2018-01-26 12:28:32.025169 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561dab36b000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1594 vs existing csq=1593 existing_state=STATE_STANDBY
+2018-01-26 12:32:17.553767 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561d9a9a9000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1445 vs existing csq=1445 existing_state=STATE_STANDBY
+2018-01-26 12:32:17.554090 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561d9a9a9000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1446 vs existing csq=1445 existing_state=STATE_STANDBY
+2018-01-26 12:35:46.338331 7fc266b95700  0 log_channel(cluster) log [INF] : 10.328 scrub starts
+2018-01-26 12:36:50.362838 7fc266b95700  0 log_channel(cluster) log [INF] : 10.328 scrub ok
+2018-01-26 12:37:25.451929 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561daef5b800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1855 vs existing csq=1855 existing_state=STATE_STANDBY
+2018-01-26 12:37:25.452171 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561daef5b800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1856 vs existing csq=1855 existing_state=STATE_STANDBY
+2018-01-26 12:45:15.881280 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561d997fb000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1493 vs existing csq=1493 existing_state=STATE_STANDBY
+2018-01-26 12:45:15.881573 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561d997fb000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1494 vs existing csq=1493 existing_state=STATE_STANDBY
+2018-01-26 12:45:44.917253 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6814/216395 conn(0x561db6ff6000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 233 vs existing csq=233 existing_state=STATE_STANDBY
+2018-01-26 12:45:44.917520 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6814/216395 conn(0x561db6ff6000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 234 vs existing csq=233 existing_state=STATE_STANDBY
+2018-01-26 12:46:52.755409 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561dab369800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1357 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 12:46:52.755629 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561dab369800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1358 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 12:49:25.191251 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6821/365066 conn(0x561d96b25000 :-1 s=STATE_OPEN pgs=30820 cs=1487 l=0).fault with nothing to send, going to standby
+2018-01-26 12:49:26.508950 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6804/210170 conn(0x561d97f78000 :-1 s=STATE_OPEN pgs=45316 cs=1957 l=0).fault with nothing to send, going to standby
+2018-01-26 12:53:54.243336 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6807/355664 conn(0x561d99d52000 :-1 s=STATE_OPEN pgs=40663 cs=407 l=0).fault with nothing to send, going to standby
+2018-01-26 12:54:58.417633 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6822/222405 conn(0x561d98ee8000 :-1 s=STATE_OPEN pgs=25287 cs=1827 l=0).fault with nothing to send, going to standby
+2018-01-26 12:57:32.272721 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561d96b11800 :-1 s=STATE_OPEN pgs=37352 cs=1643 l=0).fault with nothing to send, going to standby
+2018-01-26 12:58:32.026941 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6823/366582 conn(0x561d98ee9800 :-1 s=STATE_OPEN pgs=34210 cs=1595 l=0).fault with nothing to send, going to standby
+2018-01-26 13:00:16.578728 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6816/217802 conn(0x561d98eeb000 :-1 s=STATE_OPEN pgs=43212 cs=1897 l=0).fault with nothing to send, going to standby
+2018-01-26 13:00:44.923025 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6814/216395 conn(0x561d9a732000 :6820 s=STATE_OPEN pgs=34761 cs=235 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:17.553973 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6818/2216733 conn(0x561d9a4e9000 :6820 s=STATE_OPEN pgs=35642 cs=1447 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.004676 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6825/368212 conn(0x561d9917b800 :6820 s=STATE_OPEN pgs=31134 cs=1643 l=0).fault with nothing to send, going to standby
+2018-01-26 13:06:03.572404 7fc266b95700  0 log_channel(cluster) log [INF] : 3.d scrub starts
+2018-01-26 13:06:03.573636 7fc266b95700  0 log_channel(cluster) log [INF] : 3.d scrub ok
+2018-01-26 13:07:25.413266 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6820/8223046 conn(0x561d99dc1000 :6820 s=STATE_OPEN pgs=33007 cs=1855 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.452609 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561d99dc4000 :-1 s=STATE_OPEN pgs=28957 cs=1857 l=0).fault with nothing to send, going to standby
+2018-01-26 13:09:24.613693 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6806/208712 conn(0x561d9a355000 :-1 s=STATE_OPEN pgs=27780 cs=1803 l=0).fault with nothing to send, going to standby
+2018-01-26 13:15:15.884310 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6824/224017 conn(0x561d99b15000 :-1 s=STATE_OPEN pgs=34566 cs=1495 l=0).fault with nothing to send, going to standby
+2018-01-26 13:16:15.652099 7fc265392700  0 log_channel(cluster) log [INF] : 6.1a deep-scrub starts
+2018-01-26 13:16:15.691592 7fc265392700  0 log_channel(cluster) log [INF] : 6.1a deep-scrub ok
+2018-01-26 13:16:52.757265 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6818/219268 conn(0x561d9879c800 :6820 s=STATE_OPEN pgs=32312 cs=1359 l=0).fault with nothing to send, going to standby
+2018-01-26 13:18:54.572475 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6815/360743 conn(0x561d99df8000 :-1 s=STATE_OPEN pgs=39660 cs=1387 l=0).fault with nothing to send, going to standby
+2018-01-26 13:19:24.896417 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99de6800 :6820 s=STATE_OPEN pgs=40046 cs=2033 l=0).fault with nothing to send, going to standby
+2018-01-26 13:31:52.504365 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6800/205503 conn(0x561d997fc800 :6820 s=STATE_OPEN pgs=35226 cs=2057 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:26.173318 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.3:6804/210170 conn(0x561d97f78000 :-1 s=STATE_OPEN pgs=45342 cs=1959 l=0).fault with nothing to send, going to standby
+2018-01-26 13:37:24.210322 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99e4f000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2033 vs existing csq=2033 existing_state=STATE_STANDBY
+2018-01-26 13:37:24.210944 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6826/3221427 conn(0x561d99e4f000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2034 vs existing csq=2033 existing_state=STATE_STANDBY
+2018-01-26 13:39:40.008640 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6824/2218244 conn(0x561d99e4d800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 361 vs existing csq=361 existing_state=STATE_STANDBY
+2018-01-26 13:39:40.009033 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6824/2218244 conn(0x561d99e4d800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 362 vs existing csq=361 existing_state=STATE_STANDBY
+2018-01-26 13:42:23.004149 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6804/207607 conn(0x561db88f8000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 227 vs existing csq=227 existing_state=STATE_STANDBY
+2018-01-26 13:42:23.004470 7fc28f2f5700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6804/207607 conn(0x561db88f8000 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 228 vs existing csq=227 existing_state=STATE_STANDBY
+2018-01-26 13:46:15.654354 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6813/359374 conn(0x561d96b11800 :-1 s=STATE_OPEN pgs=37380 cs=1645 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:16.568371 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6810/211184 conn(0x561db88f9800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1531 vs existing csq=1531 existing_state=STATE_STANDBY
+2018-01-26 13:47:16.568655 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6810/211184 conn(0x561db88f9800 :6820 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1532 vs existing csq=1531 existing_state=STATE_STANDBY
+2018-01-26 13:47:25.639735 7fc28eaf4700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6809/356849 conn(0x561d99dc4000 :-1 s=STATE_OPEN pgs=28968 cs=1859 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:25.911361 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.2:6825/368212 conn(0x561d9917b800 :6820 s=STATE_OPEN pgs=31145 cs=1645 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:26.144331 7fc28e2f3700  0 -- 10.93.100.1:6820/1249303 >> 10.93.100.4:6820/8223046 conn(0x561d99dc1000 :6820 s=STATE_OPEN pgs=33028 cs=1857 l=0).fault with nothing to send, going to standby
+2018-01-26 10:30:01.163957 7facca746700 -1 received  signal: Hangup from  PID: 2350909 task name: killall -q -1 ceph-mon ceph-mds ceph-osd ceph-fuse radosgw  UID: 0
+2018-01-26 10:30:04.072341 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6823/366582 conn(0x55cda5017800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1139 vs existing csq=1139 existing_state=STATE_STANDBY
+2018-01-26 10:30:04.072372 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cda2cd0800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1743 vs existing csq=1743 existing_state=STATE_STANDBY
+2018-01-26 10:30:04.072565 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6823/366582 conn(0x55cda5017800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1140 vs existing csq=1139 existing_state=STATE_STANDBY
+2018-01-26 10:30:04.072634 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cda2cd0800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1744 vs existing csq=1743 existing_state=STATE_STANDBY
+2018-01-26 10:30:10.652643 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6802/206532 conn(0x55cd9801b000 :6804 s=STATE_OPEN pgs=27719 cs=573 l=0).fault with nothing to send, going to standby
+2018-01-26 10:32:25.511016 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cd988b1000 :-1 s=STATE_OPEN pgs=39573 cs=1726 l=0).fault with nothing to send, going to standby
+2018-01-26 10:35:28.863921 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd97bfc000 :-1 s=STATE_OPEN pgs=36236 cs=1312 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:24.394492 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6828/2213875 conn(0x55cd99397800 :6804 s=STATE_OPEN pgs=29119 cs=1483 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:24.772907 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6804/207607 conn(0x55cd984cd800 :6804 s=STATE_OPEN pgs=33755 cs=1115 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:26.780437 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6816/217802 conn(0x55cd95c48000 :-1 s=STATE_OPEN pgs=43137 cs=1659 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:26.782511 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6800/1358075 conn(0x55cdaac72000 :6804 s=STATE_OPEN pgs=40673 cs=153 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:36.900122 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd9e05c000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1312 vs existing csq=1312 existing_state=STATE_STANDBY
+2018-01-26 10:37:36.900359 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd9e05c000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1313 vs existing csq=1312 existing_state=STATE_STANDBY
+2018-01-26 10:46:33.224358 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6800/208071 conn(0x55cd990fb000 :-1 s=STATE_OPEN pgs=32950 cs=1491 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:18.333461 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6821/365066 conn(0x55cd95c3a000 :-1 s=STATE_OPEN pgs=30769 cs=1523 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:24.933618 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6807/355664 conn(0x55cd990ed800 :6804 s=STATE_OPEN pgs=40599 cs=1325 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:25.060813 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cd98924000 :6804 s=STATE_OPEN pgs=37146 cs=1217 l=0).fault with nothing to send, going to standby
+2018-01-26 10:49:40.983211 7facd0752700  0 log_channel(cluster) log [INF] : 5.58 scrub starts
+2018-01-26 10:49:40.984501 7facd0752700  0 log_channel(cluster) log [INF] : 5.58 scrub ok
+2018-01-26 10:57:24.760381 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6818/219268 conn(0x55cd95bf5000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1457 vs existing csq=1457 existing_state=STATE_STANDBY
+2018-01-26 10:57:24.760679 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6818/219268 conn(0x55cd95bf5000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1458 vs existing csq=1457 existing_state=STATE_STANDBY
+2018-01-26 10:59:28.191140 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6817/362105 conn(0x55cd97381000 :-1 s=STATE_OPEN pgs=38283 cs=1813 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:03.205080 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6818/2216733 conn(0x55cd9db35000 :-1 s=STATE_OPEN pgs=35587 cs=679 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:04.074627 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cd95c49800 :-1 s=STATE_OPEN pgs=33342 cs=1745 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:04.074736 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6823/366582 conn(0x55cd95c3d000 :-1 s=STATE_OPEN pgs=34170 cs=1141 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:17.038565 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6816/217802 conn(0x55cd95c48000 :-1 s=STATE_OPEN pgs=43164 cs=1661 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:27.291130 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cdb489b800 :6804 s=STATE_OPEN pgs=27514 cs=217 l=0).fault with nothing to send, going to standby
+2018-01-26 11:04:24.580598 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6827/369870 conn(0x55cd990de800 :-1 s=STATE_OPEN pgs=25917 cs=1315 l=0).fault with nothing to send, going to standby
+2018-01-26 11:07:35.662830 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6828/2213875 conn(0x55cd99397800 :6804 s=STATE_OPEN pgs=29137 cs=1485 l=0).fault with nothing to send, going to standby
+2018-01-26 11:07:36.901243 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd97bfc000 :-1 s=STATE_OPEN pgs=36260 cs=1314 l=0).fault with nothing to send, going to standby
+2018-01-26 11:08:11.971764 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cdacbf3800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1726 vs existing csq=1726 existing_state=STATE_STANDBY
+2018-01-26 11:08:11.971999 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cdacbf3800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1727 vs existing csq=1726 existing_state=STATE_STANDBY
+2018-01-26 11:10:25.006430 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6812/212504 conn(0x55cd986e9800 :-1 s=STATE_OPEN pgs=30662 cs=1281 l=0).fault with nothing to send, going to standby
+2018-01-26 11:15:03.725525 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6826/225659 conn(0x55cd95c3e800 :-1 s=STATE_OPEN pgs=29188 cs=1857 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:15.289190 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cda44c2800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1805 vs existing csq=1805 existing_state=STATE_STANDBY
+2018-01-26 11:17:15.289475 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cda44c2800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1806 vs existing csq=1805 existing_state=STATE_STANDBY
+2018-01-26 11:17:17.484354 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6822/219807 conn(0x55cd99110000 :6804 s=STATE_OPEN pgs=32688 cs=1310 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:17.805020 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6800/1358075 conn(0x55cdaac72000 :6804 s=STATE_OPEN pgs=40686 cs=155 l=0).fault with nothing to send, going to standby
+2018-01-26 11:19:27.026086 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cda5019000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1217 vs existing csq=1217 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.026374 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cda5019000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1218 vs existing csq=1217 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.434903 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6826/225659 conn(0x55cd999bd800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1857 vs existing csq=1857 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.435163 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6826/225659 conn(0x55cd999bd800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1858 vs existing csq=1857 existing_state=STATE_STANDBY
+2018-01-26 11:27:24.760705 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6818/219268 conn(0x55cd988af800 :-1 s=STATE_OPEN pgs=32271 cs=1459 l=0).fault with nothing to send, going to standby
+2018-01-26 11:32:16.962920 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cd9b68b000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 217 vs existing csq=217 existing_state=STATE_STANDBY
+2018-01-26 11:32:16.963151 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cd9b68b000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 218 vs existing csq=217 existing_state=STATE_STANDBY
+2018-01-26 11:32:17.141730 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6803/353482 conn(0x55cdae89b800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1519 vs existing csq=1519 existing_state=STATE_STANDBY
+2018-01-26 11:32:17.142066 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6803/353482 conn(0x55cdae89b800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1520 vs existing csq=1519 existing_state=STATE_STANDBY
+2018-01-26 11:34:27.026449 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cd98924000 :6804 s=STATE_OPEN pgs=37182 cs=1219 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:11.974737 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cd988b1000 :-1 s=STATE_OPEN pgs=39610 cs=1728 l=0).fault with nothing to send, going to standby
+2018-01-26 11:41:47.395361 7facd2756700  0 log_channel(cluster) log [INF] : 3.3f6 scrub starts
+2018-01-26 11:41:47.396260 7facd2756700  0 log_channel(cluster) log [INF] : 3.3f6 scrub ok
+2018-01-26 11:47:15.292927 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cd95ea6000 :6804 s=STATE_OPEN pgs=30253 cs=1807 l=0).fault with nothing to send, going to standby
+2018-01-26 11:49:15.773673 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cd95c49800 :-1 s=STATE_OPEN pgs=33360 cs=1747 l=0).fault with nothing to send, going to standby
+2018-01-26 11:49:25.761812 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6817/362105 conn(0x55cd97381000 :-1 s=STATE_OPEN pgs=38312 cs=1815 l=0).fault with nothing to send, going to standby
+2018-01-26 11:49:27.434160 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6826/225659 conn(0x55cd95c3e800 :-1 s=STATE_OPEN pgs=29215 cs=1859 l=0).fault with nothing to send, going to standby
+2018-01-26 11:56:47.396170 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6828/2213875 conn(0x55cd99397800 :6804 s=STATE_OPEN pgs=29157 cs=1487 l=0).fault with nothing to send, going to standby
+2018-01-26 11:57:34.049509 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cd95bf5000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1219 vs existing csq=1219 existing_state=STATE_STANDBY
+2018-01-26 11:57:34.049824 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cd95bf5000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1220 vs existing csq=1219 existing_state=STATE_STANDBY
+2018-01-26 12:02:16.965902 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cdb489b800 :6804 s=STATE_OPEN pgs=27537 cs=219 l=0).fault with nothing to send, going to standby
+2018-01-26 12:02:17.144937 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6803/353482 conn(0x55cd96ee3000 :6804 s=STATE_OPEN pgs=35514 cs=1521 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:26.190004 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6821/365066 conn(0x55cd95c3a000 :-1 s=STATE_OPEN pgs=30804 cs=1525 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:26.934303 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6819/363563 conn(0x55cd9842d800 :-1 s=STATE_OPEN pgs=37258 cs=1355 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:34.573230 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6804/207607 conn(0x55cd984cd800 :6804 s=STATE_OPEN pgs=33809 cs=1117 l=0).fault with nothing to send, going to standby
+2018-01-26 12:19:25.121974 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cd9a63f000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1807 vs existing csq=1807 existing_state=STATE_STANDBY
+2018-01-26 12:19:25.122258 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cd9a63f000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1808 vs existing csq=1807 existing_state=STATE_STANDBY
+2018-01-26 12:19:25.550992 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6817/362105 conn(0x55cda6be3000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1815 vs existing csq=1815 existing_state=STATE_STANDBY
+2018-01-26 12:19:25.551306 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6817/362105 conn(0x55cda6be3000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1816 vs existing csq=1815 existing_state=STATE_STANDBY
+2018-01-26 12:22:24.717652 7facd3758700  0 log_channel(cluster) log [INF] : 10.322 scrub starts
+2018-01-26 12:23:46.170195 7facd3758700  0 log_channel(cluster) log [INF] : 10.322 scrub ok
+2018-01-26 12:23:54.727683 7facd2f57700  0 log_channel(cluster) log [INF] : 3.2d3 scrub starts
+2018-01-26 12:23:54.728954 7facd2f57700  0 log_channel(cluster) log [INF] : 3.2d3 scrub ok
+2018-01-26 12:27:34.050629 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6824/2218244 conn(0x55cd98924000 :6804 s=STATE_OPEN pgs=37198 cs=1221 l=0).fault with nothing to send, going to standby
+2018-01-26 12:28:13.509048 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cd999bd800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1728 vs existing csq=1728 existing_state=STATE_STANDBY
+2018-01-26 12:28:13.509299 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cd999bd800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1729 vs existing csq=1728 existing_state=STATE_STANDBY
+2018-01-26 12:32:18.250322 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd999f9800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1314 vs existing csq=1314 existing_state=STATE_STANDBY
+2018-01-26 12:32:18.250601 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd999f9800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1315 vs existing csq=1314 existing_state=STATE_STANDBY
+2018-01-26 12:43:13.509790 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6815/360743 conn(0x55cd988b1000 :-1 s=STATE_OPEN pgs=39647 cs=1730 l=0).fault with nothing to send, going to standby
+2018-01-26 12:46:52.836834 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cd9a63f000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 219 vs existing csq=219 existing_state=STATE_STANDBY
+2018-01-26 12:46:52.837289 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cd9a63f000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 220 vs existing csq=219 existing_state=STATE_STANDBY
+2018-01-26 12:47:16.794311 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6800/1358075 conn(0x55cdaac72000 :6804 s=STATE_OPEN pgs=40743 cs=157 l=0).fault with nothing to send, going to standby
+2018-01-26 12:49:25.120816 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6812/215022 conn(0x55cd95ea6000 :6804 s=STATE_OPEN pgs=30270 cs=1809 l=0).fault with nothing to send, going to standby
+2018-01-26 12:49:25.550157 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6817/362105 conn(0x55cd97381000 :-1 s=STATE_OPEN pgs=38337 cs=1817 l=0).fault with nothing to send, going to standby
+2018-01-26 12:52:24.716706 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6821/365066 conn(0x55cd95c3a000 :-1 s=STATE_OPEN pgs=30821 cs=1527 l=0).fault with nothing to send, going to standby
+2018-01-26 12:53:54.726898 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6809/356849 conn(0x55cd95c1c800 :-1 s=STATE_OPEN pgs=28948 cs=1437 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.101475 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6827/369870 conn(0x55cd990de800 :-1 s=STATE_OPEN pgs=25955 cs=1317 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.249646 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6802/209116 conn(0x55cd97bfc000 :-1 s=STATE_OPEN pgs=36308 cs=1316 l=0).fault with nothing to send, going to standby
+2018-01-26 13:03:54.814109 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cd95c49800 :-1 s=STATE_OPEN pgs=33394 cs=1749 l=0).fault with nothing to send, going to standby
+2018-01-26 13:03:55.217498 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6800/208071 conn(0x55cd990fb000 :-1 s=STATE_OPEN pgs=33009 cs=1493 l=0).fault with nothing to send, going to standby
+2018-01-26 13:03:55.680047 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6828/2213875 conn(0x55cd99397800 :6804 s=STATE_OPEN pgs=29173 cs=1489 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.877959 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6812/212504 conn(0x55cd986e9800 :-1 s=STATE_OPEN pgs=30703 cs=1283 l=0).fault with nothing to send, going to standby
+2018-01-26 13:09:16.091145 7facd0f53700  0 log_channel(cluster) log [INF] : 10.2af scrub starts
+2018-01-26 13:09:24.584474 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6819/363563 conn(0x55cd9842d800 :-1 s=STATE_OPEN pgs=37289 cs=1357 l=0).fault with nothing to send, going to standby
+2018-01-26 13:12:15.314657 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6802/206532 conn(0x55cda3a81000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 573 vs existing csq=573 existing_state=STATE_STANDBY
+2018-01-26 13:12:15.314964 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6802/206532 conn(0x55cda3a81000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 574 vs existing csq=573 existing_state=STATE_STANDBY
+2018-01-26 13:13:25.563501 7facd3758700  0 log_channel(cluster) log [INF] : 10.2af scrub ok
+2018-01-26 13:16:52.841543 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6829/1354570 conn(0x55cdb489b800 :6804 s=STATE_OPEN pgs=27568 cs=221 l=0).fault with nothing to send, going to standby
+2018-01-26 13:17:44.017049 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.3:6816/217802 conn(0x55cd95c48000 :-1 s=STATE_OPEN pgs=43220 cs=1663 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:05.604796 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6812/212504 conn(0x55cd986e9800 :-1 s=STATE_OPEN pgs=30718 cs=1285 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:25.416919 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6822/219807 conn(0x55cd99110000 :6804 s=STATE_OPEN pgs=32737 cs=1312 l=0).fault with nothing to send, going to standby
+2018-01-26 13:39:16.091546 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6800/1358075 conn(0x55cdaac72000 :6804 s=STATE_OPEN pgs=40762 cs=159 l=0).fault with nothing to send, going to standby
+2018-01-26 13:42:15.317489 7facfb6b7700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6802/206532 conn(0x55cd9801b000 :6804 s=STATE_OPEN pgs=27792 cs=575 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:25.788542 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6810/211184 conn(0x55cd95c49800 :-1 s=STATE_OPEN pgs=33403 cs=1751 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:27.578392 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6809/356849 conn(0x55cd99a32800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1437 vs existing csq=1437 existing_state=STATE_STANDBY
+2018-01-26 13:47:27.578646 7facfa6b5700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.2:6809/356849 conn(0x55cd99a32800 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1438 vs existing csq=1437 existing_state=STATE_STANDBY
+2018-01-26 13:48:29.682966 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6800/205503 conn(0x55cd99101000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 588 vs existing csq=588 existing_state=STATE_STANDBY
+2018-01-26 13:48:29.683236 7facfaeb6700  0 -- 10.93.100.1:6804/1249183 >> 10.93.100.4:6800/205503 conn(0x55cd99101000 :6804 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 589 vs existing csq=588 existing_state=STATE_STANDBY
+2018-01-26 10:31:33.233636 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dff77d7800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1275 vs existing csq=1275 existing_state=STATE_STANDBY
+2018-01-26 10:31:33.233939 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dff77d7800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1276 vs existing csq=1275 existing_state=STATE_STANDBY
+2018-01-26 10:31:34.357125 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 10.30e scrub starts
+2018-01-26 10:32:17.806837 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dff4e8c000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1217 vs existing csq=1217 existing_state=STATE_STANDBY
+2018-01-26 10:32:17.807099 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dff4e8c000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1218 vs existing csq=1217 existing_state=STATE_STANDBY
+2018-01-26 10:32:28.114502 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6802/209116 conn(0x55dfe0982000 :-1 s=STATE_OPEN pgs=36240 cs=1737 l=0).fault with nothing to send, going to standby
+2018-01-26 10:33:01.899085 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 10.30e scrub ok
+2018-01-26 10:34:25.936912 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6817/362105 conn(0x55dff5c12000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1059 vs existing csq=1059 existing_state=STATE_STANDBY
+2018-01-26 10:34:25.937209 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6817/362105 conn(0x55dff5c12000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1060 vs existing csq=1059 existing_state=STATE_STANDBY
+2018-01-26 10:42:38.975687 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6808/212495 conn(0x55dfe192b000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 411 vs existing csq=411 existing_state=STATE_STANDBY
+2018-01-26 10:42:38.975992 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6808/212495 conn(0x55dfe192b000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 412 vs existing csq=411 existing_state=STATE_STANDBY
+2018-01-26 10:44:24.454507 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 10.3e deep-scrub starts
+2018-01-26 10:46:16.537681 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfde70d800 :6810 s=STATE_OPEN pgs=28860 cs=1353 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:17.209506 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6826/225659 conn(0x55dfe2a5e800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1611 vs existing csq=1611 existing_state=STATE_STANDBY
+2018-01-26 10:47:17.209781 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6826/225659 conn(0x55dfe2a5e800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1612 vs existing csq=1611 existing_state=STATE_STANDBY
+2018-01-26 10:47:17.347224 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe2353000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1773 vs existing csq=1773 existing_state=STATE_STANDBY
+2018-01-26 10:47:17.347470 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe2353000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1774 vs existing csq=1773 existing_state=STATE_STANDBY
+2018-01-26 10:47:38.213124 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe307d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1155 vs existing csq=1155 existing_state=STATE_STANDBY
+2018-01-26 10:47:38.213417 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe307d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1156 vs existing csq=1155 existing_state=STATE_STANDBY
+2018-01-26 10:49:25.940468 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6817/362105 conn(0x55dfde73c000 :-1 s=STATE_OPEN pgs=38291 cs=1061 l=0).fault with nothing to send, going to standby
+2018-01-26 10:57:38.977936 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6808/212495 conn(0x55dfde6fd000 :6810 s=STATE_OPEN pgs=28352 cs=413 l=0).fault with nothing to send, going to standby
+2018-01-26 10:58:47.222070 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6815/360743 conn(0x55dfde83d000 :6810 s=STATE_OPEN pgs=39577 cs=1667 l=0).fault with nothing to send, going to standby
+2018-01-26 10:59:27.807597 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 10.3e deep-scrub ok
+2018-01-26 11:00:16.670043 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe700b000 :6810 s=STATE_OPEN pgs=40681 cs=173 l=0).fault with nothing to send, going to standby
+2018-01-26 11:01:33.235072 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dff4ebd000 :6810 s=STATE_OPEN pgs=37159 cs=1277 l=0).fault with nothing to send, going to standby
+2018-01-26 11:01:34.355038 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6827/369870 conn(0x55dff3611000 :-1 s=STATE_OPEN pgs=25922 cs=1247 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:17.804908 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dfe1738800 :6810 s=STATE_OPEN pgs=32954 cs=1219 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:24.813850 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6800/205503 conn(0x55dfe1eae800 :-1 s=STATE_OPEN pgs=35158 cs=1733 l=0).fault with nothing to send, going to standby
+2018-01-26 11:07:36.229201 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6818/219268 conn(0x55dfe263f000 :-1 s=STATE_OPEN pgs=32258 cs=1689 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:15.439445 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfe12ea000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1277 vs existing csq=1277 existing_state=STATE_STANDBY
+2018-01-26 11:17:15.439686 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfe12ea000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1278 vs existing csq=1277 existing_state=STATE_STANDBY
+2018-01-26 11:17:15.586412 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfe9841800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1353 vs existing csq=1353 existing_state=STATE_STANDBY
+2018-01-26 11:17:15.586827 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfe9841800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1354 vs existing csq=1353 existing_state=STATE_STANDBY
+2018-01-26 11:17:17.211298 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6826/225659 conn(0x55dfe15f4800 :6810 s=STATE_OPEN pgs=29196 cs=1613 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:17.347354 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfde710800 :6810 s=STATE_OPEN pgs=35691 cs=1775 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:17.938831 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe20e1000 :6810 s=STATE_OPEN pgs=30768 cs=1851 l=0).fault with nothing to send, going to standby
+2018-01-26 11:17:38.214728 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe15f0000 :6810 s=STATE_OPEN pgs=34177 cs=1157 l=0).fault with nothing to send, going to standby
+2018-01-26 11:19:24.700811 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dfde70c000 :6810 s=STATE_OPEN pgs=43147 cs=1821 l=0).fault with nothing to send, going to standby
+2018-01-26 11:19:26.867273 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dffd548000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1851 vs existing csq=1851 existing_state=STATE_STANDBY
+2018-01-26 11:19:26.867573 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dffd548000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1852 vs existing csq=1851 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.195243 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe2a5d000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1157 vs existing csq=1157 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.195564 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe2a5d000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1158 vs existing csq=1157 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.446556 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dfedf18800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1821 vs existing csq=1821 existing_state=STATE_STANDBY
+2018-01-26 11:19:27.446885 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dfedf18800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1822 vs existing csq=1821 existing_state=STATE_STANDBY
+2018-01-26 11:24:35.756140 7fcbae9ac700  0 log_channel(cluster) log [INF] : 3.a8 scrub starts
+2018-01-26 11:24:35.780838 7fcbae9ac700  0 log_channel(cluster) log [INF] : 3.a8 scrub ok
+2018-01-26 11:25:24.621573 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6802/209116 conn(0x55dfe0982000 :-1 s=STATE_OPEN pgs=36268 cs=1739 l=0).fault with nothing to send, going to standby
+2018-01-26 11:31:20.488366 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6815/360743 conn(0x55dfde83d000 :6810 s=STATE_OPEN pgs=39605 cs=1669 l=0).fault with nothing to send, going to standby
+2018-01-26 11:31:21.092798 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6804/207607 conn(0x55dfdfcc1800 :-1 s=STATE_OPEN pgs=33782 cs=1333 l=0).fault with nothing to send, going to standby
+2018-01-26 11:32:17.459594 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6826/3221427 conn(0x55dfe307d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1149 vs existing csq=1149 existing_state=STATE_STANDBY
+2018-01-26 11:32:17.459828 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6826/3221427 conn(0x55dfe307d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1150 vs existing csq=1149 existing_state=STATE_STANDBY
+2018-01-26 11:34:26.869501 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe20e1000 :6810 s=STATE_OPEN pgs=30801 cs=1853 l=0).fault with nothing to send, going to standby
+2018-01-26 11:34:27.198938 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6823/366582 conn(0x55dfe15f0000 :6810 s=STATE_OPEN pgs=34190 cs=1159 l=0).fault with nothing to send, going to standby
+2018-01-26 11:37:27.386461 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dfe7009800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1781 vs existing csq=1781 existing_state=STATE_STANDBY
+2018-01-26 11:37:27.386778 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dfe7009800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1782 vs existing csq=1781 existing_state=STATE_STANDBY
+2018-01-26 11:37:27.403234 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6819/363563 conn(0x55dfe1928000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1269 vs existing csq=1269 existing_state=STATE_STANDBY
+2018-01-26 11:37:27.403509 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6819/363563 conn(0x55dfe1928000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1270 vs existing csq=1269 existing_state=STATE_STANDBY
+2018-01-26 11:38:11.313071 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6807/355664 conn(0x55dfe1033000 :6810 s=STATE_OPEN pgs=40623 cs=1249 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:13.105174 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6812/215022 conn(0x55dfdfcc0000 :-1 s=STATE_OPEN pgs=30251 cs=1264 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:15.440468 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dff4ebd000 :6810 s=STATE_OPEN pgs=37178 cs=1279 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:15.589757 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfde70d800 :6810 s=STATE_OPEN pgs=28886 cs=1355 l=0).fault with nothing to send, going to standby
+2018-01-26 11:47:18.345702 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6804/210170 conn(0x55dfe2955000 :6810 s=STATE_OPEN pgs=45277 cs=1631 l=0).fault with nothing to send, going to standby
+2018-01-26 11:52:27.387389 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dfe1eaa000 :-1 s=STATE_OPEN pgs=34213 cs=1783 l=0).fault with nothing to send, going to standby
+2018-01-26 11:54:35.755127 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe1b4a800 :-1 s=STATE_OPEN pgs=34533 cs=1393 l=0).fault with nothing to send, going to standby
+2018-01-26 11:55:43.765699 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6827/369870 conn(0x55dff3611000 :-1 s=STATE_OPEN pgs=25944 cs=1249 l=0).fault with nothing to send, going to standby
+2018-01-26 11:59:24.958744 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6802/209116 conn(0x55dfe0982000 :-1 s=STATE_OPEN pgs=36286 cs=1741 l=0).fault with nothing to send, going to standby
+2018-01-26 12:00:15.444477 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe700b000 :6810 s=STATE_OPEN pgs=40721 cs=175 l=0).fault with nothing to send, going to standby
+2018-01-26 12:02:17.459910 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6826/3221427 conn(0x55dfe536d800 :6810 s=STATE_OPEN pgs=40028 cs=1151 l=0).fault with nothing to send, going to standby
+2018-01-26 12:04:27.447246 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dfde70c000 :6810 s=STATE_OPEN pgs=43184 cs=1823 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:25.698416 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe0a6c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1853 vs existing csq=1853 existing_state=STATE_STANDBY
+2018-01-26 12:07:25.698665 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe0a6c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1854 vs existing csq=1853 existing_state=STATE_STANDBY
+2018-01-26 12:07:27.400550 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6819/363563 conn(0x55dfe1030000 :6810 s=STATE_OPEN pgs=37260 cs=1271 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:27.420165 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6810/211184 conn(0x55dfe1ead000 :-1 s=STATE_OPEN pgs=33370 cs=1503 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:16.225379 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6807/355664 conn(0x55dfe1033000 :6810 s=STATE_OPEN pgs=40647 cs=1251 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:33.488786 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dffd54b000 :6810 s=STATE_OPEN pgs=27544 cs=281 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:34.596581 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6800/205503 conn(0x55dfe1eae800 :-1 s=STATE_OPEN pgs=35207 cs=1735 l=0).fault with nothing to send, going to standby
+2018-01-26 12:19:24.882633 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe12ea000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 175 vs existing csq=175 existing_state=STATE_STANDBY
+2018-01-26 12:19:24.882920 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe12ea000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 176 vs existing csq=175 existing_state=STATE_STANDBY
+2018-01-26 12:19:25.962469 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dfedf18800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 281 vs existing csq=281 existing_state=STATE_STANDBY
+2018-01-26 12:19:25.962828 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dfedf18800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 282 vs existing csq=281 existing_state=STATE_STANDBY
+2018-01-26 12:28:12.953781 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfde69c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1775 vs existing csq=1775 existing_state=STATE_STANDBY
+2018-01-26 12:28:12.954064 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfde69c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1776 vs existing csq=1775 existing_state=STATE_STANDBY
+2018-01-26 12:32:16.965165 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe218b800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1393 vs existing csq=1393 existing_state=STATE_STANDBY
+2018-01-26 12:32:16.965496 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe218b800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1394 vs existing csq=1393 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.064665 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6800/205503 conn(0x55dfe700c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1735 vs existing csq=1735 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.064967 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6800/205503 conn(0x55dfe700c800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1736 vs existing csq=1735 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.275809 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfdef09000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1279 vs existing csq=1279 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.276053 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfdef09000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1280 vs existing csq=1279 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.756151 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dff20a2800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1219 vs existing csq=1219 existing_state=STATE_STANDBY
+2018-01-26 12:32:19.756532 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dff20a2800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1220 vs existing csq=1219 existing_state=STATE_STANDBY
+2018-01-26 12:42:34.367996 7fcbb01af700  0 log_channel(cluster) log [INF] : 10.249 scrub starts
+2018-01-26 12:43:47.487000 7fcbb01af700  0 log_channel(cluster) log [INF] : 10.249 scrub ok
+2018-01-26 12:46:51.814683 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dffd337000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1783 vs existing csq=1783 existing_state=STATE_STANDBY
+2018-01-26 12:46:51.815020 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dffd337000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1784 vs existing csq=1783 existing_state=STATE_STANDBY
+2018-01-26 12:49:24.880360 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe700b000 :6810 s=STATE_OPEN pgs=40732 cs=177 l=0).fault with nothing to send, going to standby
+2018-01-26 12:49:28.421487 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 3.34 scrub starts
+2018-01-26 12:49:28.422451 7fcbac9a8700  0 log_channel(cluster) log [INF] : 3.34 scrub ok
+2018-01-26 12:58:12.953601 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfde710800 :6810 s=STATE_OPEN pgs=35721 cs=1777 l=0).fault with nothing to send, going to standby
+2018-01-26 13:01:51.856884 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6810/211184 conn(0x55dfe1ead000 :-1 s=STATE_OPEN pgs=33390 cs=1505 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:15.348320 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6804/207607 conn(0x55dfdfcc1800 :-1 s=STATE_OPEN pgs=33813 cs=1335 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:16.965667 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe1b4a800 :-1 s=STATE_OPEN pgs=34559 cs=1395 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.674196 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6812/215022 conn(0x55dfdfcc0000 :-1 s=STATE_OPEN pgs=30277 cs=1266 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:19.064987 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6800/205503 conn(0x55dfe1eae800 :-1 s=STATE_OPEN pgs=35223 cs=1737 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:19.277970 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dff4ebd000 :6810 s=STATE_OPEN pgs=37216 cs=1281 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:19.338031 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6818/219268 conn(0x55dfe263f000 :-1 s=STATE_OPEN pgs=32306 cs=1691 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:19.757575 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6800/208071 conn(0x55dfe1738800 :6810 s=STATE_OPEN pgs=33000 cs=1221 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:25.972740 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe9841800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1777 vs existing csq=1777 existing_state=STATE_STANDBY
+2018-01-26 13:02:25.972994 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe9841800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1778 vs existing csq=1777 existing_state=STATE_STANDBY
+2018-01-26 13:02:26.977861 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dff62f1000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 177 vs existing csq=177 existing_state=STATE_STANDBY
+2018-01-26 13:02:26.978146 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dff62f1000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 178 vs existing csq=177 existing_state=STATE_STANDBY
+2018-01-26 13:04:25.964922 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dffd54b000 :6810 s=STATE_OPEN pgs=27552 cs=283 l=0).fault with nothing to send, going to standby
+2018-01-26 13:04:28.424843 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfde70d800 :6810 s=STATE_OPEN pgs=28922 cs=1357 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:24.754235 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6802/209116 conn(0x55dfe0982000 :-1 s=STATE_OPEN pgs=36314 cs=1743 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.700871 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe20e1000 :6810 s=STATE_OPEN pgs=30817 cs=1855 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.794592 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe218b800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1855 vs existing csq=1855 existing_state=STATE_STANDBY
+2018-01-26 13:07:25.794891 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe218b800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1856 vs existing csq=1855 existing_state=STATE_STANDBY
+2018-01-26 13:07:26.417694 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dfde834000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 283 vs existing csq=283 existing_state=STATE_STANDBY
+2018-01-26 13:07:26.417937 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dfde834000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 284 vs existing csq=283 existing_state=STATE_STANDBY
+2018-01-26 13:11:15.481171 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6812/215022 conn(0x55dff511b000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1266 vs existing csq=1266 existing_state=STATE_STANDBY
+2018-01-26 13:11:15.481539 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6812/215022 conn(0x55dff511b000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1267 vs existing csq=1266 existing_state=STATE_STANDBY
+2018-01-26 13:12:34.368519 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6802/206532 conn(0x55dfde71e000 :6810 s=STATE_OPEN pgs=27782 cs=1361 l=0).fault with nothing to send, going to standby
+2018-01-26 13:16:51.816757 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6816/215281 conn(0x55dfe1eaa000 :-1 s=STATE_OPEN pgs=34232 cs=1785 l=0).fault with nothing to send, going to standby
+2018-01-26 13:17:25.395474 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dff62ef800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1357 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 13:17:25.395979 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dff62ef800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1358 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 13:17:26.950035 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6804/210170 conn(0x55dfe2955000 :6810 s=STATE_OPEN pgs=45345 cs=1633 l=0).fault with nothing to send, going to standby
+2018-01-26 13:17:26.983498 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6800/1358075 conn(0x55dfe700b000 :6810 s=STATE_OPEN pgs=40761 cs=179 l=0).fault with nothing to send, going to standby
+2018-01-26 13:20:40.199639 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dff4e8c000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1823 vs existing csq=1823 existing_state=STATE_STANDBY
+2018-01-26 13:20:40.199896 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6816/217802 conn(0x55dff4e8c000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1824 vs existing csq=1823 existing_state=STATE_STANDBY
+2018-01-26 13:22:26.421350 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6829/1354570 conn(0x55dffd54b000 :6810 s=STATE_OPEN pgs=27577 cs=285 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:25.976788 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfde710800 :6810 s=STATE_OPEN pgs=35738 cs=1779 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:53.753368 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 3.309 scrub starts
+2018-01-26 13:32:53.805642 7fcbaf1ad700  0 log_channel(cluster) log [INF] : 3.309 scrub ok
+2018-01-26 13:37:24.230072 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe1b49000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1395 vs existing csq=1395 existing_state=STATE_STANDBY
+2018-01-26 13:37:24.230344 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6824/224017 conn(0x55dfe1b49000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1396 vs existing csq=1395 existing_state=STATE_STANDBY
+2018-01-26 13:37:25.797936 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfe20e1000 :6810 s=STATE_OPEN pgs=30843 cs=1857 l=0).fault with nothing to send, going to standby
+2018-01-26 13:41:15.486010 7fcbd690b700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6812/215022 conn(0x55dfdfcc0000 :-1 s=STATE_OPEN pgs=30289 cs=1268 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:24.272328 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfe1e7d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1281 vs existing csq=1281 existing_state=STATE_STANDBY
+2018-01-26 13:47:24.272730 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.4:6824/2218244 conn(0x55dfe1e7d800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1282 vs existing csq=1281 existing_state=STATE_STANDBY
+2018-01-26 13:47:24.681260 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfead93800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1857 vs existing csq=1857 existing_state=STATE_STANDBY
+2018-01-26 13:47:24.681584 7fcbd710c700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.2:6821/365066 conn(0x55dfead93800 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1858 vs existing csq=1857 existing_state=STATE_STANDBY
+2018-01-26 13:47:25.399134 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfde70d800 :6810 s=STATE_OPEN pgs=28932 cs=1359 l=0).fault with nothing to send, going to standby
+2018-01-26 13:47:27.015092 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe19cb000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1779 vs existing csq=1779 existing_state=STATE_STANDBY
+2018-01-26 13:47:27.015406 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6820/220798 conn(0x55dfe19cb000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1780 vs existing csq=1779 existing_state=STATE_STANDBY
+2018-01-26 13:49:24.133633 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfe1ec9000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1359 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 13:49:24.133900 7fcbd610a700  0 -- 10.93.100.1:6810/1249245 >> 10.93.100.3:6806/211308 conn(0x55dfe1ec9000 :6810 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1360 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 10:30:01.164189 7f97f60d9700 -1 received  signal: Hangup from  PID: 2350909 task name: killall -q -1 ceph-mon ceph-mds ceph-osd ceph-fuse radosgw  UID: 0
+2018-01-26 10:30:03.690722 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6802/209116 conn(0x5593693f1000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 863 vs existing csq=863 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.690954 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6802/209116 conn(0x5593693f1000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 864 vs existing csq=863 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.722846 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x5593863cc000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4009 vs existing csq=4009 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.723068 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x5593863cc000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4010 vs existing csq=4009 existing_state=STATE_STANDBY
+2018-01-26 10:30:04.079824 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 991 vs existing csq=991 existing_state=STATE_STANDBY
+2018-01-26 10:30:04.080118 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 992 vs existing csq=991 existing_state=STATE_STANDBY
+2018-01-26 10:30:38.072052 7f97f58d8700  1 leveldb: Compacting 1@2 + 5@3 files
+2018-01-26 10:30:38.119782 7f97f58d8700  1 leveldb: Generated table #171712: 41169 keys, 2146894 bytes
+2018-01-26 10:30:38.150864 7f97f58d8700  1 leveldb: Generated table #171713: 17791 keys, 2121284 bytes
+2018-01-26 10:30:38.194858 7f97f58d8700  1 leveldb: Generated table #171714: 17804 keys, 2122205 bytes
+2018-01-26 10:30:38.220183 7f97f58d8700  1 leveldb: Generated table #171715: 17809 keys, 2122590 bytes
+2018-01-26 10:30:38.294350 7f97f58d8700  1 leveldb: Generated table #171716: 145289 keys, 2131499 bytes
+2018-01-26 10:30:38.303620 7f97f58d8700  1 leveldb: Generated table #171717: 17890 keys, 224491 bytes
+2018-01-26 10:30:38.303632 7f97f58d8700  1 leveldb: Compacted 1@2 + 5@3 files => 10868963 bytes
+2018-01-26 10:30:38.303982 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 44 441 0 0 0 ]
+2018-01-26 10:30:38.304414 7f97f58d8700  1 leveldb: Delete type=2 #171617
+
+2018-01-26 10:30:38.304951 7f97f58d8700  1 leveldb: Delete type=2 #171616
+
+2018-01-26 10:30:38.330640 7f97f58d8700  1 leveldb: Delete type=2 #171618
+
+2018-01-26 10:30:38.331142 7f97f58d8700  1 leveldb: Delete type=2 #171620
+
+2018-01-26 10:30:38.331605 7f97f58d8700  1 leveldb: Delete type=2 #171619
+
+2018-01-26 10:30:38.340545 7f97f58d8700  1 leveldb: Delete type=2 #171638
+
+2018-01-26 10:32:16.693278 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x559367435800 :-1 s=STATE_OPEN pgs=43139 cs=2139 l=0).fault with nothing to send, going to standby
+2018-01-26 10:32:16.742615 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6808/212495 conn(0x559369d83000 :-1 s=STATE_OPEN pgs=28338 cs=1365 l=0).fault with nothing to send, going to standby
+2018-01-26 10:32:28.073937 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6820/220798 conn(0x559369734000 :6808 s=STATE_OPEN pgs=35663 cs=1333 l=0).fault with nothing to send, going to standby
+2018-01-26 10:34:21.962964 7f97fd8e8700  0 log_channel(cluster) log [INF] : 10.41 scrub ok
+2018-01-26 10:34:22.243634 7f97ff0eb700  0 log_channel(cluster) log [INF] : 10.183 scrub starts
+2018-01-26 10:35:37.811387 7f97ff0eb700  0 log_channel(cluster) log [INF] : 10.183 scrub ok
+2018-01-26 10:35:42.253575 7f97ff8ec700  0 log_channel(cluster) log [INF] : 1.29 deep-scrub starts
+2018-01-26 10:35:42.255179 7f97fd0e7700  0 log_channel(cluster) log [INF] : 1.29 deep-scrub ok
+2018-01-26 10:37:25.017416 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6810/213752 conn(0x559368296800 :6808 s=STATE_OPEN pgs=28045 cs=1563 l=0).fault with nothing to send, going to standby
+2018-01-26 10:37:30.290944 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x55936a62f800 :-1 s=STATE_OPEN pgs=32949 cs=1619 l=0).fault with nothing to send, going to standby
+2018-01-26 10:40:56.100366 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6816/215281 conn(0x559369383000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 881 vs existing csq=881 existing_state=STATE_STANDBY
+2018-01-26 10:40:56.100804 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6816/215281 conn(0x559369383000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 882 vs existing csq=881 existing_state=STATE_STANDBY
+2018-01-26 10:47:27.213202 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593822ce000 :6808 s=STATE_OPEN pgs=29124 cs=1779 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:27.398074 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6813/359374 conn(0x559367409800 :6808 s=STATE_OPEN pgs=37298 cs=1387 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:27.813361 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6806/211308 conn(0x559369737000 :6808 s=STATE_OPEN pgs=28863 cs=1085 l=0).fault with nothing to send, going to standby
+2018-01-26 10:50:42.253904 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6818/2216733 conn(0x55936b2a4000 :6808 s=STATE_OPEN pgs=35592 cs=2015 l=0).fault with nothing to send, going to standby
+2018-01-26 10:55:56.102294 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6816/215281 conn(0x5593676e0800 :6808 s=STATE_OPEN pgs=34194 cs=883 l=0).fault with nothing to send, going to standby
+2018-01-26 10:57:28.077758 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6812/215022 conn(0x559369e91000 :6808 s=STATE_OPEN pgs=30231 cs=1717 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:03.693032 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6802/209116 conn(0x5593676dc000 :6808 s=STATE_OPEN pgs=36254 cs=865 l=0).fault with nothing to send, going to standby
+2018-01-26 11:00:03.724959 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x559368044800 :6808 s=STATE_OPEN pgs=45263 cs=4011 l=0).fault with nothing to send, going to standby
+2018-01-26 11:02:27.638375 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6809/356849 conn(0x55936a101000 :-1 s=STATE_OPEN pgs=28915 cs=1809 l=0).fault with nothing to send, going to standby
+2018-01-26 11:04:22.247036 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6820/220798 conn(0x559369734000 :6808 s=STATE_OPEN pgs=35684 cs=1335 l=0).fault with nothing to send, going to standby
+2018-01-26 11:07:06.711212 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6807/355664 conn(0x5593735dc000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1309 vs existing csq=1309 existing_state=STATE_STANDBY
+2018-01-26 11:07:06.711629 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6807/355664 conn(0x5593735dc000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1310 vs existing csq=1309 existing_state=STATE_STANDBY
+2018-01-26 11:07:36.188303 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6824/224017 conn(0x559367437000 :-1 s=STATE_OPEN pgs=34514 cs=1801 l=0).fault with nothing to send, going to standby
+2018-01-26 11:08:12.092750 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6800/208071 conn(0x55936a67e000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1357 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 11:08:12.092977 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6800/208071 conn(0x55936a67e000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1358 vs existing csq=1357 existing_state=STATE_STANDBY
+2018-01-26 11:08:12.510231 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x5593773c0800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1707 vs existing csq=1707 existing_state=STATE_STANDBY
+2018-01-26 11:08:12.510493 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x5593773c0800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1708 vs existing csq=1707 existing_state=STATE_STANDBY
+2018-01-26 11:10:24.622355 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6822/219807 conn(0x559369ec2800 :-1 s=STATE_OPEN pgs=32696 cs=1345 l=0).fault with nothing to send, going to standby
+2018-01-26 11:11:03.180926 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6821/365066 conn(0x559369ebe000 :-1 s=STATE_OPEN pgs=30775 cs=1353 l=0).fault with nothing to send, going to standby
+2018-01-26 11:14:43.211212 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6819/363563 conn(0x559369476800 :6808 s=STATE_OPEN pgs=37214 cs=1717 l=0).fault with nothing to send, going to standby
+2018-01-26 11:22:06.713581 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6807/355664 conn(0x5593696ff000 :6808 s=STATE_OPEN pgs=40619 cs=1311 l=0).fault with nothing to send, going to standby
+2018-01-26 11:23:12.092770 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6800/208071 conn(0x559369ea3800 :-1 s=STATE_OPEN pgs=32968 cs=1359 l=0).fault with nothing to send, going to standby
+2018-01-26 11:24:35.640428 7f97fd8e8700  0 log_channel(cluster) log [INF] : 3.25d scrub starts
+2018-01-26 11:24:35.641629 7f98000ed700  0 log_channel(cluster) log [INF] : 3.25d scrub ok
+2018-01-26 11:30:03.831295 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x55938060c000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4011 vs existing csq=4011 existing_state=STATE_STANDBY
+2018-01-26 11:30:03.831585 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x55938060c000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4012 vs existing csq=4011 existing_state=STATE_STANDBY
+2018-01-26 11:32:16.866450 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1779 vs existing csq=1779 existing_state=STATE_STANDBY
+2018-01-26 11:32:16.867435 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1780 vs existing csq=1779 existing_state=STATE_STANDBY
+2018-01-26 11:32:18.008855 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x559367435800 :-1 s=STATE_OPEN pgs=43165 cs=2141 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:09.926759 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6818/2216733 conn(0x55936b2a4000 :6808 s=STATE_OPEN pgs=35609 cs=2017 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:10.289990 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6824/224017 conn(0x559367437000 :-1 s=STATE_OPEN pgs=34526 cs=1803 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:10.845726 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6818/219268 conn(0x559367789000 :-1 s=STATE_OPEN pgs=32276 cs=1577 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:11.275256 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6812/215022 conn(0x559369e91000 :6808 s=STATE_OPEN pgs=30248 cs=1719 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:12.432397 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6820/220798 conn(0x559369734000 :6808 s=STATE_OPEN pgs=35697 cs=1337 l=0).fault with nothing to send, going to standby
+2018-01-26 11:38:12.510954 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936896e000 :6808 s=STATE_OPEN pgs=34726 cs=1709 l=0).fault with nothing to send, going to standby
+2018-01-26 11:40:24.694133 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6802/206532 conn(0x559368040000 :6808 s=STATE_OPEN pgs=27737 cs=1538 l=0).fault with nothing to send, going to standby
+2018-01-26 11:45:04.086616 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x559369d84800 :-1 s=STATE_OPEN pgs=35483 cs=993 l=0).fault with nothing to send, going to standby
+2018-01-26 11:45:32.800083 7f97ff0eb700  0 log_channel(cluster) log [INF] : 3.2 deep-scrub starts
+2018-01-26 11:45:32.801266 7f97ff0eb700  0 log_channel(cluster) log [INF] : 3.2 deep-scrub ok
+2018-01-26 11:47:16.849371 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6808/212495 conn(0x5593693f1000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1365 vs existing csq=1365 existing_state=STATE_STANDBY
+2018-01-26 11:47:16.849754 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6808/212495 conn(0x5593693f1000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1366 vs existing csq=1365 existing_state=STATE_STANDBY
+2018-01-26 11:47:33.280521 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936daf6000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1709 vs existing csq=1709 existing_state=STATE_STANDBY
+2018-01-26 11:47:33.280909 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936daf6000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1710 vs existing csq=1709 existing_state=STATE_STANDBY
+2018-01-26 11:50:04.203736 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x55937e636800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 993 vs existing csq=993 existing_state=STATE_STANDBY
+2018-01-26 11:50:04.204092 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x55937e636800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 994 vs existing csq=993 existing_state=STATE_STANDBY
+2018-01-26 11:54:35.636960 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6826/225659 conn(0x559368d34000 :6808 s=STATE_OPEN pgs=29218 cs=231 l=0).fault with nothing to send, going to standby
+2018-01-26 11:59:25.012418 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6822/219807 conn(0x559369ec2800 :-1 s=STATE_OPEN pgs=32705 cs=1347 l=0).fault with nothing to send, going to standby
+2018-01-26 12:00:03.830355 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x559368044800 :6808 s=STATE_OPEN pgs=45297 cs=4013 l=0).fault with nothing to send, going to standby
+2018-01-26 12:02:16.868874 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593822ce000 :6808 s=STATE_OPEN pgs=29154 cs=1781 l=0).fault with nothing to send, going to standby
+2018-01-26 12:02:17.076335 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6809/356849 conn(0x55936a101000 :-1 s=STATE_OPEN pgs=28937 cs=1811 l=0).fault with nothing to send, going to standby
+2018-01-26 12:05:04.206573 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6803/353482 conn(0x559369d84800 :-1 s=STATE_OPEN pgs=35522 cs=995 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:25.614198 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x559367435800 :-1 s=STATE_OPEN pgs=43187 cs=2143 l=0).fault with nothing to send, going to standby
+2018-01-26 12:07:25.614245 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6813/359374 conn(0x559367409800 :6808 s=STATE_OPEN pgs=37331 cs=1389 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:16.085626 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6802/206532 conn(0x559368040000 :6808 s=STATE_OPEN pgs=27762 cs=1540 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:16.848657 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6808/212495 conn(0x559369d83000 :-1 s=STATE_OPEN pgs=28374 cs=1367 l=0).fault with nothing to send, going to standby
+2018-01-26 12:17:33.280919 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936896e000 :6808 s=STATE_OPEN pgs=34745 cs=1711 l=0).fault with nothing to send, going to standby
+2018-01-26 12:19:24.485054 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x5593673ed000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2143 vs existing csq=2143 existing_state=STATE_STANDBY
+2018-01-26 12:19:24.485284 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x5593673ed000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2144 vs existing csq=2143 existing_state=STATE_STANDBY
+2018-01-26 12:30:04.027419 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x559367392000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4013 vs existing csq=4013 existing_state=STATE_STANDBY
+2018-01-26 12:30:04.027705 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x559367392000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4014 vs existing csq=4013 existing_state=STATE_STANDBY
+2018-01-26 12:32:18.159318 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x5593765d7800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1711 vs existing csq=1711 existing_state=STATE_STANDBY
+2018-01-26 12:32:18.159599 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x5593765d7800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1712 vs existing csq=1711 existing_state=STATE_STANDBY
+2018-01-26 12:32:18.948473 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6823/366582 conn(0x5593676cb000 :6808 s=STATE_OPEN pgs=34204 cs=1465 l=0).fault with nothing to send, going to standby
+2018-01-26 12:34:25.002895 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6819/363563 conn(0x559369476800 :6808 s=STATE_OPEN pgs=37275 cs=1719 l=0).fault with nothing to send, going to standby
+2018-01-26 12:37:26.118450 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x559368cec800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1619 vs existing csq=1619 existing_state=STATE_STANDBY
+2018-01-26 12:37:26.118721 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x559368cec800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1620 vs existing csq=1619 existing_state=STATE_STANDBY
+2018-01-26 12:45:15.719203 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6822/222405 conn(0x55937972b800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1837 vs existing csq=1837 existing_state=STATE_STANDBY
+2018-01-26 12:45:15.719431 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6822/222405 conn(0x55937972b800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1838 vs existing csq=1837 existing_state=STATE_STANDBY
+2018-01-26 12:46:19.807982 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x55937972e800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1339 vs existing csq=1339 existing_state=STATE_STANDBY
+2018-01-26 12:46:19.808275 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x55937972e800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1340 vs existing csq=1339 existing_state=STATE_STANDBY
+2018-01-26 12:47:24.267002 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6821/365066 conn(0x559369ebe000 :-1 s=STATE_OPEN pgs=30818 cs=1355 l=0).fault with nothing to send, going to standby
+2018-01-26 12:52:26.122887 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x55936a62f800 :-1 s=STATE_OPEN pgs=33009 cs=1621 l=0).fault with nothing to send, going to standby
+2018-01-26 12:54:24.999840 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6820/220798 conn(0x559369734000 :6808 s=STATE_OPEN pgs=35732 cs=1339 l=0).fault with nothing to send, going to standby
+2018-01-26 13:01:19.807636 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x559369e92800 :6808 s=STATE_OPEN pgs=33826 cs=1341 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:15.350299 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6809/356849 conn(0x55936a101000 :-1 s=STATE_OPEN pgs=28947 cs=1813 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.161095 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936896e000 :6808 s=STATE_OPEN pgs=34757 cs=1713 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:18.774294 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593822ce000 :6808 s=STATE_OPEN pgs=29169 cs=1783 l=0).fault with nothing to send, going to standby
+2018-01-26 13:02:25.400782 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x559367787800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1341 vs existing csq=1341 existing_state=STATE_STANDBY
+2018-01-26 13:02:25.401064 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x559367787800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1342 vs existing csq=1341 existing_state=STATE_STANDBY
+2018-01-26 13:02:26.986145 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55937e636800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1713 vs existing csq=1713 existing_state=STATE_STANDBY
+2018-01-26 13:02:26.986434 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55937e636800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1714 vs existing csq=1713 existing_state=STATE_STANDBY
+2018-01-26 13:07:25.004773 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6806/208712 conn(0x5593676cc800 :6808 s=STATE_OPEN pgs=27779 cs=1302 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.028767 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6819/363563 conn(0x559369476800 :6808 s=STATE_OPEN pgs=37288 cs=1721 l=0).fault with nothing to send, going to standby
+2018-01-26 13:07:25.793220 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593673ed000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1783 vs existing csq=1783 existing_state=STATE_STANDBY
+2018-01-26 13:07:25.793501 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593673ed000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1784 vs existing csq=1783 existing_state=STATE_STANDBY
+2018-01-26 13:14:13.728690 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.2:6823/366582 conn(0x5593676cb000 :6808 s=STATE_OPEN pgs=34225 cs=1467 l=0).fault with nothing to send, going to standby
+2018-01-26 13:15:04.029053 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x559368044800 :6808 s=STATE_OPEN pgs=45324 cs=4015 l=0).fault with nothing to send, going to standby
+2018-01-26 13:15:15.448904 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6822/219807 conn(0x559369ec2800 :-1 s=STATE_OPEN pgs=32735 cs=1349 l=0).fault with nothing to send, going to standby
+2018-01-26 13:15:15.721235 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6822/222405 conn(0x5593696e3000 :-1 s=STATE_OPEN pgs=25300 cs=1839 l=0).fault with nothing to send, going to standby
+2018-01-26 13:15:23.408874 7f97f58d8700  1 leveldb: Level-0 table #171719: started
+2018-01-26 13:15:23.460009 7f97f58d8700  1 leveldb: Level-0 table #171719: 1582062 bytes OK
+2018-01-26 13:15:23.462647 7f97f58d8700  1 leveldb: Delete type=0 #171623
+
+2018-01-26 13:17:26.410459 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6826/3221427 conn(0x5593673c1000 :-1 s=STATE_OPEN pgs=40071 cs=1205 l=0).fault with nothing to send, going to standby
+2018-01-26 13:17:26.990248 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6814/216395 conn(0x55936896e000 :6808 s=STATE_OPEN pgs=34773 cs=1715 l=0).fault with nothing to send, going to standby
+2018-01-26 13:19:24.489328 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6816/217802 conn(0x559367435800 :-1 s=STATE_OPEN pgs=43201 cs=2145 l=0).fault with nothing to send, going to standby
+2018-01-26 13:23:27.732456 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6800/208071 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1359 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 13:23:27.732851 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6800/208071 conn(0x559375800800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1360 vs existing csq=1359 existing_state=STATE_STANDBY
+2018-01-26 13:25:31.574169 7f97fc0e5700  0 log_channel(cluster) log [INF] : 3.3af scrub starts
+2018-01-26 13:25:31.575219 7f97fe8ea700  0 log_channel(cluster) log [INF] : 3.3af scrub ok
+2018-01-26 13:30:04.182837 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x55938060c000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4015 vs existing csq=4015 existing_state=STATE_STANDBY
+2018-01-26 13:30:04.183089 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.3:6804/210170 conn(0x55938060c000 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 4016 vs existing csq=4015 existing_state=STATE_STANDBY
+2018-01-26 13:32:25.392835 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6802/206532 conn(0x559368040000 :6808 s=STATE_OPEN pgs=27788 cs=1542 l=0).fault with nothing to send, going to standby
+2018-01-26 13:32:25.405120 7f982704a700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6804/207607 conn(0x559369e92800 :6808 s=STATE_OPEN pgs=33831 cs=1343 l=0).fault with nothing to send, going to standby
+2018-01-26 13:37:24.804331 7f9826048700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6818/2216733 conn(0x55936b2a4000 :6808 s=STATE_OPEN pgs=35670 cs=2019 l=0).fault with nothing to send, going to standby
+2018-01-26 13:37:25.796084 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6802/206532 conn(0x5593773c0800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1542 vs existing csq=1542 existing_state=STATE_STANDBY
+2018-01-26 13:37:25.796436 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6802/206532 conn(0x5593773c0800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1543 vs existing csq=1542 existing_state=STATE_STANDBY
+2018-01-26 13:37:25.796553 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6828/2213875 conn(0x5593822ce000 :6808 s=STATE_OPEN pgs=29187 cs=1785 l=0).fault with nothing to send, going to standby
+2018-01-26 13:39:38.699555 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6822/219807 conn(0x559367438800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1349 vs existing csq=1349 existing_state=STATE_STANDBY
+2018-01-26 13:39:38.699839 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6822/219807 conn(0x559367438800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1350 vs existing csq=1349 existing_state=STATE_STANDBY
+2018-01-26 13:42:28.793514 7f97f58d8700  1 leveldb: Compacting 1@0 + 0@1 files
+2018-01-26 13:42:28.839700 7f97f58d8700  1 leveldb: Generated table #171720: 18946 keys, 743595 bytes
+2018-01-26 13:42:28.844667 7f97f58d8700  1 leveldb: Generated table #171721: 261 keys, 3631 bytes
+2018-01-26 13:42:28.844684 7f97f58d8700  1 leveldb: Compacted 1@0 + 0@1 files => 747226 bytes
+2018-01-26 13:42:28.845371 7f97f58d8700  1 leveldb: compacted to: files[ 0 2 44 441 0 0 0 ]
+2018-01-26 13:42:28.846183 7f97f58d8700  1 leveldb: Delete type=2 #171719
+
+2018-01-26 13:42:28.979743 7f97f58d8700  1 leveldb: Compacting 1@1 + 2@2 files
+2018-01-26 13:42:28.983735 7f97f58d8700  1 leveldb: Generated table #171722: 29 keys, 3039 bytes
+2018-01-26 13:42:28.987115 7f97f58d8700  1 leveldb: Generated table #171723: 6 keys, 727 bytes
+2018-01-26 13:42:28.990793 7f97f58d8700  1 leveldb: Generated table #171724: 8 keys, 882 bytes
+2018-01-26 13:42:28.994426 7f97f58d8700  1 leveldb: Generated table #171725: 12 keys, 1168 bytes
+2018-01-26 13:42:28.998042 7f97f58d8700  1 leveldb: Generated table #171726: 9 keys, 959 bytes
+2018-01-26 13:42:29.001624 7f97f58d8700  1 leveldb: Generated table #171727: 5 keys, 652 bytes
+2018-01-26 13:42:29.005241 7f97f58d8700  1 leveldb: Generated table #171728: 8 keys, 877 bytes
+2018-01-26 13:42:29.022684 7f97f58d8700  1 leveldb: Generated table #171729: 12233 keys, 297933 bytes
+2018-01-26 13:42:29.026307 7f97f58d8700  1 leveldb: Generated table #171730: 36 keys, 4415 bytes
+2018-01-26 13:42:29.029648 7f97f58d8700  1 leveldb: Generated table #171731: 1 keys, 198 bytes
+2018-01-26 13:42:29.069147 7f97f58d8700  1 leveldb: Generated table #171732: 20340 keys, 1314406 bytes
+2018-01-26 13:42:29.078888 7f97f58d8700  1 leveldb: Generated table #171733: 3327 keys, 220610 bytes
+2018-01-26 13:42:29.082414 7f97f58d8700  1 leveldb: Generated table #171734: 3 keys, 217 bytes
+2018-01-26 13:42:29.082427 7f97f58d8700  1 leveldb: Compacted 1@1 + 2@2 files => 1846083 bytes
+2018-01-26 13:42:29.083269 7f97f58d8700  1 leveldb: compacted to: files[ 0 1 55 441 0 0 0 ]
+2018-01-26 13:42:29.083798 7f97f58d8700  1 leveldb: Delete type=2 #171720
+
+2018-01-26 13:42:29.084069 7f97f58d8700  1 leveldb: Delete type=2 #171636
+
+2018-01-26 13:42:29.084172 7f97f58d8700  1 leveldb: Delete type=2 #171637
+
+2018-01-26 13:42:29.087672 7f97f58d8700  1 leveldb: Compacting 1@1 + 9@2 files
+2018-01-26 13:42:29.173952 7f97f58d8700  1 leveldb: Generated table #171735: 187387 keys, 2134473 bytes
+2018-01-26 13:42:29.325724 7f97f58d8700  1 leveldb: Generated table #171736: 187668 keys, 2135046 bytes
+2018-01-26 13:42:29.405623 7f97f58d8700  1 leveldb: Generated table #171737: 187703 keys, 2134039 bytes
+2018-01-26 13:42:29.485121 7f97f58d8700  1 leveldb: Generated table #171738: 187295 keys, 2134001 bytes
+2018-01-26 13:42:29.587198 7f97f58d8700  1 leveldb: Generated table #171739: 186284 keys, 2133963 bytes
+2018-01-26 13:42:29.669864 7f97f58d8700  1 leveldb: Generated table #171740: 186232 keys, 2135084 bytes
+2018-01-26 13:42:29.749688 7f97f58d8700  1 leveldb: Generated table #171741: 186981 keys, 2133613 bytes
+2018-01-26 13:42:29.832045 7f97f58d8700  1 leveldb: Generated table #171742: 187286 keys, 2134258 bytes
+2018-01-26 13:42:29.894978 7f97f58d8700  1 leveldb: Generated table #171743: 141273 keys, 1637301 bytes
+2018-01-26 13:42:29.894987 7f97f58d8700  1 leveldb: Compacted 1@1 + 9@2 files => 18711778 bytes
+2018-01-26 13:42:29.895423 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 55 441 0 0 0 ]
+2018-01-26 13:42:29.895750 7f97f58d8700  1 leveldb: Delete type=2 #170787
+
+2018-01-26 13:42:29.896310 7f97f58d8700  1 leveldb: Delete type=2 #170902
+
+2018-01-26 13:42:29.907939 7f97f58d8700  1 leveldb: Delete type=2 #171691
+
+2018-01-26 13:42:29.908262 7f97f58d8700  1 leveldb: Delete type=2 #171721
+
+2018-01-26 13:42:29.908474 7f97f58d8700  1 leveldb: Delete type=2 #170904
+
+2018-01-26 13:42:29.909111 7f97f58d8700  1 leveldb: Delete type=2 #170905
+
+2018-01-26 13:42:29.909519 7f97f58d8700  1 leveldb: Delete type=2 #170906
+
+2018-01-26 13:42:29.909899 7f97f58d8700  1 leveldb: Delete type=2 #170907
+
+2018-01-26 13:42:29.913652 7f97f58d8700  1 leveldb: Delete type=2 #170908
+
+2018-01-26 13:42:29.914077 7f97f58d8700  1 leveldb: Delete type=2 #170903
+
+2018-01-26 13:42:30.751296 7f97f58d8700  1 leveldb: Compacting 1@2 + 10@3 files
+2018-01-26 13:42:30.858419 7f97f58d8700  1 leveldb: Generated table #171744: 22149 keys, 2158475 bytes
+2018-01-26 13:42:30.890129 7f97f58d8700  1 leveldb: Generated table #171745: 22123 keys, 2160168 bytes
+2018-01-26 13:42:30.920398 7f97f58d8700  1 leveldb: Generated table #171746: 22143 keys, 2158486 bytes
+2018-01-26 13:42:30.950228 7f97f58d8700  1 leveldb: Generated table #171747: 22130 keys, 2158391 bytes
+2018-01-26 13:42:30.980800 7f97f58d8700  1 leveldb: Generated table #171748: 22159 keys, 2160072 bytes
+2018-01-26 13:42:31.010079 7f97f58d8700  1 leveldb: Generated table #171749: 22167 keys, 2159261 bytes
+2018-01-26 13:42:31.039238 7f97f58d8700  1 leveldb: Generated table #171750: 22150 keys, 2162098 bytes
+2018-01-26 13:42:31.068607 7f97f58d8700  1 leveldb: Generated table #171751: 22152 keys, 2159852 bytes
+2018-01-26 13:42:31.097803 7f97f58d8700  1 leveldb: Generated table #171752: 22141 keys, 2159311 bytes
+2018-01-26 13:42:31.099937 7f97f58d8700  1 leveldb: Generated table #171753: 133 keys, 13187 bytes
+2018-01-26 13:42:31.099945 7f97f58d8700  1 leveldb: Compacted 1@2 + 10@3 files => 19449301 bytes
+2018-01-26 13:42:31.100259 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 54 441 0 0 0 ]
+2018-01-26 13:42:31.100895 7f97f58d8700  1 leveldb: Delete type=2 #171693
+
+2018-01-26 13:42:31.101436 7f97f58d8700  1 leveldb: Delete type=2 #171694
+
+2018-01-26 13:42:31.102384 7f97f58d8700  1 leveldb: Delete type=2 #171695
+
+2018-01-26 13:42:31.126697 7f97f58d8700  1 leveldb: Delete type=2 #171725
+
+2018-01-26 13:42:31.126850 7f97f58d8700  1 leveldb: Delete type=2 #171697
+
+2018-01-26 13:42:31.127304 7f97f58d8700  1 leveldb: Delete type=2 #171696
+
+2018-01-26 13:42:31.127767 7f97f58d8700  1 leveldb: Delete type=2 #171543
+
+2018-01-26 13:42:31.129023 7f97f58d8700  1 leveldb: Delete type=2 #171544
+
+2018-01-26 13:42:31.129552 7f97f58d8700  1 leveldb: Delete type=2 #171545
+
+2018-01-26 13:42:31.129923 7f97f58d8700  1 leveldb: Delete type=2 #171546
+
+2018-01-26 13:42:31.130064 7f97f58d8700  1 leveldb: Delete type=2 #171476
+
+2018-01-26 13:42:31.131460 7f97f58d8700  1 leveldb: Compacting 1@2 + 10@3 files
+2018-01-26 13:42:31.161703 7f97f58d8700  1 leveldb: Generated table #171754: 22142 keys, 2159331 bytes
+2018-01-26 13:42:31.192054 7f97f58d8700  1 leveldb: Generated table #171755: 22153 keys, 2158216 bytes
+2018-01-26 13:42:31.220033 7f97f58d8700  1 leveldb: Generated table #171756: 22159 keys, 2156824 bytes
+2018-01-26 13:42:31.249880 7f97f58d8700  1 leveldb: Generated table #171757: 22159 keys, 2158911 bytes
+2018-01-26 13:42:31.279650 7f97f58d8700  1 leveldb: Generated table #171758: 22186 keys, 2160985 bytes
+2018-01-26 13:42:31.308923 7f97f58d8700  1 leveldb: Generated table #171759: 22163 keys, 2161655 bytes
+2018-01-26 13:42:31.338033 7f97f58d8700  1 leveldb: Generated table #171760: 22153 keys, 2159382 bytes
+2018-01-26 13:42:31.368046 7f97f58d8700  1 leveldb: Generated table #171761: 22172 keys, 2159404 bytes
+2018-01-26 13:42:31.396883 7f97f58d8700  1 leveldb: Generated table #171762: 22143 keys, 2159187 bytes
+2018-01-26 13:42:31.399063 7f97f58d8700  1 leveldb: Generated table #171763: 540 keys, 52553 bytes
+2018-01-26 13:42:31.399070 7f97f58d8700  1 leveldb: Compacted 1@2 + 10@3 files => 19486448 bytes
+2018-01-26 13:42:31.399273 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 53 441 0 0 0 ]
+2018-01-26 13:42:31.399793 7f97f58d8700  1 leveldb: Delete type=2 #171670
+
+2018-01-26 13:42:31.400624 7f97f58d8700  1 leveldb: Delete type=2 #171671
+
+2018-01-26 13:42:31.401174 7f97f58d8700  1 leveldb: Delete type=2 #171642
+
+2018-01-26 13:42:31.401651 7f97f58d8700  1 leveldb: Delete type=2 #171643
+
+2018-01-26 13:42:31.402023 7f97f58d8700  1 leveldb: Delete type=2 #171644
+
+2018-01-26 13:42:31.411909 7f97f58d8700  1 leveldb: Delete type=2 #171645
+
+2018-01-26 13:42:31.412400 7f97f58d8700  1 leveldb: Delete type=2 #171727
+
+2018-01-26 13:42:31.412576 7f97f58d8700  1 leveldb: Delete type=2 #171646
+
+2018-01-26 13:42:31.431863 7f97f58d8700  1 leveldb: Delete type=2 #171647
+
+2018-01-26 13:42:31.432311 7f97f58d8700  1 leveldb: Delete type=2 #171648
+
+2018-01-26 13:42:31.435544 7f97f58d8700  1 leveldb: Delete type=2 #171649
+
+2018-01-26 13:42:31.471363 7f97f58d8700  1 leveldb: Compacting 1@2 + 11@3 files
+2018-01-26 13:42:31.500756 7f97f58d8700  1 leveldb: Generated table #171764: 22158 keys, 2159589 bytes
+2018-01-26 13:42:31.530481 7f97f58d8700  1 leveldb: Generated table #171765: 22149 keys, 2158073 bytes
+2018-01-26 13:42:31.562134 7f97f58d8700  1 leveldb: Generated table #171766: 22172 keys, 2160661 bytes
+2018-01-26 13:42:31.593845 7f97f58d8700  1 leveldb: Generated table #171767: 21875 keys, 2161085 bytes
+2018-01-26 13:42:31.623642 7f97f58d8700  1 leveldb: Generated table #171768: 22455 keys, 2160723 bytes
+2018-01-26 13:42:31.652459 7f97f58d8700  1 leveldb: Generated table #171769: 22440 keys, 2160621 bytes
+2018-01-26 13:42:31.682811 7f97f58d8700  1 leveldb: Generated table #171770: 22440 keys, 2159854 bytes
+2018-01-26 13:42:31.742496 7f97f58d8700  1 leveldb: Generated table #171771: 28167 keys, 2152984 bytes
+2018-01-26 13:42:31.773032 7f97f58d8700  1 leveldb: Generated table #171772: 25155 keys, 2126672 bytes
+2018-01-26 13:42:31.810954 7f97f58d8700  1 leveldb: Generated table #171773: 17868 keys, 2122901 bytes
+2018-01-26 13:42:31.812814 7f97f58d8700  1 leveldb: Generated table #171774: 18 keys, 2400 bytes
+2018-01-26 13:42:31.812822 7f97f58d8700  1 leveldb: Compacted 1@2 + 11@3 files => 21525563 bytes
+2018-01-26 13:42:31.813158 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 52 441 0 0 0 ]
+2018-01-26 13:42:31.813908 7f97f58d8700  1 leveldb: Delete type=2 #171706
+
+2018-01-26 13:42:31.814352 7f97f58d8700  1 leveldb: Delete type=2 #171707
+
+2018-01-26 13:42:31.814798 7f97f58d8700  1 leveldb: Delete type=2 #171483
+
+2018-01-26 13:42:31.815223 7f97f58d8700  1 leveldb: Delete type=2 #171484
+
+2018-01-26 13:42:31.815640 7f97f58d8700  1 leveldb: Delete type=2 #171485
+
+2018-01-26 13:42:31.815997 7f97f58d8700  1 leveldb: Delete type=2 #171708
+
+2018-01-26 13:42:31.816469 7f97f58d8700  1 leveldb: Delete type=2 #171605
+
+2018-01-26 13:42:31.818584 7f97f58d8700  1 leveldb: Delete type=2 #171606
+
+2018-01-26 13:42:31.819160 7f97f58d8700  1 leveldb: Delete type=2 #171701
+
+2018-01-26 13:42:31.819562 7f97f58d8700  1 leveldb: Delete type=2 #171702
+
+2018-01-26 13:42:31.819621 7f97f58d8700  1 leveldb: Delete type=2 #171729
+
+2018-01-26 13:42:31.819850 7f97f58d8700  1 leveldb: Delete type=2 #171486
+
+2018-01-26 13:42:31.827374 7f97f58d8700  1 leveldb: Compacting 1@2 + 10@3 files
+2018-01-26 13:42:31.882440 7f97f58d8700  1 leveldb: Generated table #171775: 22156 keys, 2159481 bytes
+2018-01-26 13:42:31.922869 7f97f58d8700  1 leveldb: Generated table #171776: 22160 keys, 2159458 bytes
+2018-01-26 13:42:31.951695 7f97f58d8700  1 leveldb: Generated table #171777: 22141 keys, 2158644 bytes
+2018-01-26 13:42:31.981051 7f97f58d8700  1 leveldb: Generated table #171778: 22144 keys, 2160823 bytes
+2018-01-26 13:42:32.010937 7f97f58d8700  1 leveldb: Generated table #171779: 22159 keys, 2159677 bytes
+2018-01-26 13:42:32.041107 7f97f58d8700  1 leveldb: Generated table #171780: 22147 keys, 2158020 bytes
+2018-01-26 13:42:32.071035 7f97f58d8700  1 leveldb: Generated table #171781: 22156 keys, 2158368 bytes
+2018-01-26 13:42:32.100307 7f97f58d8700  1 leveldb: Generated table #171782: 22159 keys, 2158553 bytes
+2018-01-26 13:42:32.129339 7f97f58d8700  1 leveldb: Generated table #171783: 22166 keys, 2160067 bytes
+2018-01-26 13:42:32.131110 7f97f58d8700  1 leveldb: Generated table #171784: 48 keys, 4895 bytes
+2018-01-26 13:42:32.131118 7f97f58d8700  1 leveldb: Compacted 1@2 + 10@3 files => 19437986 bytes
+2018-01-26 13:42:32.131349 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 51 441 0 0 0 ]
+2018-01-26 13:42:32.131874 7f97f58d8700  1 leveldb: Delete type=2 #171652
+
+2018-01-26 13:42:32.132392 7f97f58d8700  1 leveldb: Delete type=2 #171653
+
+2018-01-26 13:42:32.132852 7f97f58d8700  1 leveldb: Delete type=2 #171654
+
+2018-01-26 13:42:32.133299 7f97f58d8700  1 leveldb: Delete type=2 #171656
+
+2018-01-26 13:42:32.134073 7f97f58d8700  1 leveldb: Delete type=2 #171655
+
+2018-01-26 13:42:32.134497 7f97f58d8700  1 leveldb: Delete type=2 #171657
+
+2018-01-26 13:42:32.134923 7f97f58d8700  1 leveldb: Delete type=2 #171658
+
+2018-01-26 13:42:32.135260 7f97f58d8700  1 leveldb: Delete type=2 #171659
+
+2018-01-26 13:42:32.135343 7f97f58d8700  1 leveldb: Delete type=2 #171726
+
+2018-01-26 13:42:32.135457 7f97f58d8700  1 leveldb: Delete type=2 #171598
+
+2018-01-26 13:42:32.135905 7f97f58d8700  1 leveldb: Delete type=2 #171599
+
+2018-01-26 13:42:32.136469 7f97f58d8700  1 leveldb: Compacting 1@2 + 13@3 files
+2018-01-26 13:42:32.167298 7f97f58d8700  1 leveldb: Generated table #171785: 22152 keys, 2158804 bytes
+2018-01-26 13:42:32.199230 7f97f58d8700  1 leveldb: Generated table #171786: 22164 keys, 2159925 bytes
+2018-01-26 13:42:32.228207 7f97f58d8700  1 leveldb: Generated table #171787: 22132 keys, 2159827 bytes
+2018-01-26 13:42:32.258084 7f97f58d8700  1 leveldb: Generated table #171788: 22141 keys, 2159421 bytes
+2018-01-26 13:42:32.288891 7f97f58d8700  1 leveldb: Generated table #171789: 22161 keys, 2159647 bytes
+2018-01-26 13:42:32.318077 7f97f58d8700  1 leveldb: Generated table #171790: 22138 keys, 2159185 bytes
+2018-01-26 13:42:32.346490 7f97f58d8700  1 leveldb: Generated table #171791: 22157 keys, 2159168 bytes
+2018-01-26 13:42:32.376166 7f97f58d8700  1 leveldb: Generated table #171792: 22148 keys, 2160441 bytes
+2018-01-26 13:42:32.405526 7f97f58d8700  1 leveldb: Generated table #171793: 22146 keys, 2158526 bytes
+2018-01-26 13:42:32.435396 7f97f58d8700  1 leveldb: Generated table #171794: 22144 keys, 2159165 bytes
+2018-01-26 13:42:32.440161 7f97f58d8700  1 leveldb: Generated table #171795: 2643 keys, 257910 bytes
+2018-01-26 13:42:32.440169 7f97f58d8700  1 leveldb: Compacted 1@2 + 13@3 files => 21852019 bytes
+2018-01-26 13:42:32.440413 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 50 439 0 0 0 ]
+2018-01-26 13:42:32.441344 7f97f58d8700  1 leveldb: Compacting 1@2 + 9@3 files
+2018-01-26 13:42:32.470302 7f97f58d8700  1 leveldb: Generated table #171796: 22011 keys, 2158634 bytes
+2018-01-26 13:42:32.498141 7f97f58d8700  1 leveldb: Generated table #171797: 22153 keys, 2159692 bytes
+2018-01-26 13:42:32.526738 7f97f58d8700  1 leveldb: Generated table #171798: 22130 keys, 2158683 bytes
+2018-01-26 13:42:32.557966 7f97f58d8700  1 leveldb: Generated table #171799: 22172 keys, 2159872 bytes
+2018-01-26 13:42:32.584041 7f97f58d8700  1 leveldb: Generated table #171800: 22145 keys, 2159080 bytes
+2018-01-26 13:42:32.611600 7f97f58d8700  1 leveldb: Generated table #171801: 22147 keys, 2160281 bytes
+2018-01-26 13:42:32.639792 7f97f58d8700  1 leveldb: Generated table #171802: 22146 keys, 2159690 bytes
+2018-01-26 13:42:32.671174 7f97f58d8700  1 leveldb: Generated table #171803: 22150 keys, 2159666 bytes
+2018-01-26 13:42:32.727265 7f97f58d8700  1 leveldb: Generated table #171804: 22158 keys, 2159688 bytes
+2018-01-26 13:42:32.729154 7f97f58d8700  1 leveldb: Generated table #171805: 22 keys, 2378 bytes
+2018-01-26 13:42:32.729170 7f97f58d8700  1 leveldb: Compacted 1@2 + 9@3 files => 19437664 bytes
+2018-01-26 13:42:32.729383 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 49 440 0 0 0 ]
+2018-01-26 13:42:32.729773 7f97f58d8700  1 leveldb: Delete type=2 #171681
+
+2018-01-26 13:42:32.730391 7f97f58d8700  1 leveldb: Delete type=2 #171682
+
+2018-01-26 13:42:32.731105 7f97f58d8700  1 leveldb: Delete type=2 #171683
+
+2018-01-26 13:42:32.731696 7f97f58d8700  1 leveldb: Delete type=2 #171684
+
+2018-01-26 13:42:32.733034 7f97f58d8700  1 leveldb: Delete type=2 #171674
+
+2018-01-26 13:42:32.733623 7f97f58d8700  1 leveldb: Delete type=2 #171675
+
+2018-01-26 13:42:32.734226 7f97f58d8700  1 leveldb: Delete type=2 #171676
+
+2018-01-26 13:42:32.734656 7f97f58d8700  1 leveldb: Delete type=2 #171700
+
+2018-01-26 13:42:32.735166 7f97f58d8700  1 leveldb: Delete type=2 #171686
+
+2018-01-26 13:42:32.735673 7f97f58d8700  1 leveldb: Delete type=2 #171687
+
+2018-01-26 13:42:32.736210 7f97f58d8700  1 leveldb: Delete type=2 #171688
+
+2018-01-26 13:42:32.736671 7f97f58d8700  1 leveldb: Delete type=2 #171689
+
+2018-01-26 13:42:32.737144 7f97f58d8700  1 leveldb: Delete type=2 #171678
+
+2018-01-26 13:42:32.737465 7f97f58d8700  1 leveldb: Delete type=2 #171723
+
+2018-01-26 13:42:32.737509 7f97f58d8700  1 leveldb: Delete type=2 #171589
+
+2018-01-26 13:42:32.747611 7f97f58d8700  1 leveldb: Delete type=2 #171698
+
+2018-01-26 13:42:32.748164 7f97f58d8700  1 leveldb: Delete type=2 #171699
+
+2018-01-26 13:42:32.749034 7f97f58d8700  1 leveldb: Delete type=2 #171677
+
+2018-01-26 13:42:32.749547 7f97f58d8700  1 leveldb: Delete type=2 #171455
+
+2018-01-26 13:42:32.754664 7f97f58d8700  1 leveldb: Delete type=2 #171456
+
+2018-01-26 13:42:32.754857 7f97f58d8700  1 leveldb: Delete type=2 #171679
+
+2018-01-26 13:42:32.755272 7f97f58d8700  1 leveldb: Delete type=2 #171728
+
+2018-01-26 13:42:32.755367 7f97f58d8700  1 leveldb: Delete type=2 #171680
+
+2018-01-26 13:42:32.755527 7f97f58d8700  1 leveldb: Delete type=2 #171685
+
+2018-01-26 13:42:32.802346 7f97f58d8700  1 leveldb: Compacting 1@2 + 7@3 files
+2018-01-26 13:42:32.830845 7f97f58d8700  1 leveldb: Generated table #171806: 22161 keys, 2159845 bytes
+2018-01-26 13:42:32.860281 7f97f58d8700  1 leveldb: Generated table #171807: 22153 keys, 2158803 bytes
+2018-01-26 13:42:32.887812 7f97f58d8700  1 leveldb: Generated table #171808: 22157 keys, 2158259 bytes
+2018-01-26 13:42:32.914784 7f97f58d8700  1 leveldb: Generated table #171809: 22169 keys, 2159850 bytes
+2018-01-26 13:42:32.941745 7f97f58d8700  1 leveldb: Generated table #171810: 22150 keys, 2157980 bytes
+2018-01-26 13:42:32.967933 7f97f58d8700  1 leveldb: Generated table #171811: 22143 keys, 2160082 bytes
+2018-01-26 13:42:32.994617 7f97f58d8700  1 leveldb: Generated table #171812: 22167 keys, 2159167 bytes
+2018-01-26 13:42:32.996193 7f97f58d8700  1 leveldb: Generated table #171813: 22 keys, 2384 bytes
+2018-01-26 13:42:32.996200 7f97f58d8700  1 leveldb: Compacted 1@2 + 7@3 files => 15116370 bytes
+2018-01-26 13:42:32.996510 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 48 441 0 0 0 ]
+2018-01-26 13:42:32.996874 7f97f58d8700  1 leveldb: Delete type=2 #171660
+
+2018-01-26 13:42:32.997402 7f97f58d8700  1 leveldb: Delete type=2 #171547
+
+2018-01-26 13:42:32.998141 7f97f58d8700  1 leveldb: Delete type=2 #171661
+
+2018-01-26 13:42:32.998579 7f97f58d8700  1 leveldb: Delete type=2 #171662
+
+2018-01-26 13:42:32.999090 7f97f58d8700  1 leveldb: Delete type=2 #171663
+
+2018-01-26 13:42:32.999456 7f97f58d8700  1 leveldb: Delete type=2 #171724
+
+2018-01-26 13:42:32.999587 7f97f58d8700  1 leveldb: Delete type=2 #171665
+
+2018-01-26 13:42:33.000330 7f97f58d8700  1 leveldb: Delete type=2 #171664
+
+2018-01-26 13:42:39.458957 7f97f58d8700  1 leveldb: Compacting 1@2 + 2@3 files
+2018-01-26 13:42:39.489625 7f97f58d8700  1 leveldb: Generated table #171814: 23437 keys, 2165759 bytes
+2018-01-26 13:42:39.519268 7f97f58d8700  1 leveldb: Generated table #171815: 23079 keys, 2164922 bytes
+2018-01-26 13:42:39.521344 7f97f58d8700  1 leveldb: Generated table #171816: 26 keys, 3036 bytes
+2018-01-26 13:42:39.521352 7f97f58d8700  1 leveldb: Compacted 1@2 + 2@3 files => 4333717 bytes
+2018-01-26 13:42:39.521529 7f97f58d8700  1 leveldb: compacted to: files[ 0 0 47 442 0 0 0 ]
+2018-01-26 13:42:39.521837 7f97f58d8700  1 leveldb: Delete type=2 #171703
+
+2018-01-26 13:42:39.522317 7f97f58d8700  1 leveldb: Delete type=2 #171704
+
+2018-01-26 13:42:39.522711 7f97f58d8700  1 leveldb: Delete type=2 #171722
+
+2018-01-26 13:47:26.156491 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x55937972b800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1621 vs existing csq=1621 existing_state=STATE_STANDBY
+2018-01-26 13:47:26.156878 7f9826849700  0 -- 10.93.100.1:6808/1249241 >> 10.93.100.4:6820/8223046 conn(0x55937972b800 :6808 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1622 vs existing csq=1621 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.688126 7f24c1752700  0 <cls> /build/ceph-11.2.1/src/cls/rgw/cls_rgw.cc:3190: gc_iterate_entries end_key=1_01516980603.688124471
+
+2018-01-26 10:30:03.728901 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6810/211184 conn(0x55e952aef800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1025 vs existing csq=1025 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.729138 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6810/211184 conn(0x55e952aef800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1026 vs existing csq=1025 existing_state=STATE_STANDBY
+2018-01-26 10:30:03.788790 7f24c1752700  0 <cls> /build/ceph-11.2.1/src/cls/rgw/cls_rgw.cc:3190: gc_iterate_entries end_key=1_01516980603.788786521
+
+2018-01-26 10:30:03.810727 7f24c1752700  0 <cls> /build/ceph-11.2.1/src/cls/rgw/cls_rgw.cc:3190: gc_iterate_entries end_key=1_01516980603.810725055
+
+2018-01-26 10:30:04.014701 7f24c1752700  0 <cls> /build/ceph-11.2.1/src/cls/rgw/cls_rgw.cc:3190: gc_iterate_entries end_key=1_01516980604.014699737
+
+2018-01-26 10:30:25.450069 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6812/212504 conn(0x55e93c07f800 :-1 s=STATE_OPEN pgs=30643 cs=1319 l=0).fault with nothing to send, going to standby
+2018-01-26 10:30:26.618000 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.3:6816/217802 conn(0x55e93b7fb000 :6806 s=STATE_OPEN pgs=43130 cs=1311 l=0).fault with nothing to send, going to standby
+2018-01-26 10:33:37.475858 7f24b7f3f700  1 leveldb: Level-0 table #120811: started
+2018-01-26 10:33:37.517991 7f24b7f3f700  1 leveldb: Level-0 table #120811: 1312193 bytes OK
+2018-01-26 10:33:37.519477 7f24b7f3f700  1 leveldb: Delete type=0 #120752
+
+2018-01-26 10:37:35.907221 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.3:6816/217802 conn(0x55e93c46e800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1311 vs existing csq=1311 existing_state=STATE_STANDBY
+2018-01-26 10:37:35.907507 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.3:6816/217802 conn(0x55e93c46e800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1312 vs existing csq=1311 existing_state=STATE_STANDBY
+2018-01-26 10:37:36.705829 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6821/365066 conn(0x55e93c132800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2237 vs existing csq=2237 existing_state=STATE_STANDBY
+2018-01-26 10:37:36.706110 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6821/365066 conn(0x55e93c132800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 2238 vs existing csq=2237 existing_state=STATE_STANDBY
+2018-01-26 10:38:49.139204 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6808/209914 conn(0x55e93bed0000 :-1 s=STATE_OPEN pgs=31780 cs=2053 l=0).fault with nothing to send, going to standby
+2018-01-26 10:40:47.758071 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6815/360743 conn(0x55e93a2a0800 :-1 s=STATE_OPEN pgs=39582 cs=1301 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:18.415574 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6801/352460 conn(0x55e93cbfe000 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1959 vs existing csq=1959 existing_state=STATE_STANDBY
+2018-01-26 10:47:18.415881 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6801/352460 conn(0x55e93cbfe000 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1960 vs existing csq=1959 existing_state=STATE_STANDBY
+2018-01-26 10:47:26.236746 7f24e8eb0700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6804/207607 conn(0x55e93c067800 :-1 s=STATE_OPEN pgs=33760 cs=1375 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:28.233263 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6818/2216733 conn(0x55e93d1cd800 :6806 s=STATE_OPEN pgs=35583 cs=1835 l=0).fault with nothing to send, going to standby
+2018-01-26 10:47:37.760766 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6815/360743 conn(0x55e9520e0800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1301 vs existing csq=1301 existing_state=STATE_STANDBY
+2018-01-26 10:47:37.760993 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.2:6815/360743 conn(0x55e9520e0800 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1302 vs existing csq=1301 existing_state=STATE_STANDBY
+2018-01-26 10:47:38.898179 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6802/206532 conn(0x55e9520df000 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1719 vs existing csq=1719 existing_state=STATE_STANDBY
+2018-01-26 10:47:38.898423 7f24e96b1700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6802/206532 conn(0x55e9520df000 :6806 s=STATE_ACCEPTING_WAIT_CONNECT_MSG_AUTH pgs=0 cs=0 l=0).handle_connect_msg accept connect_seq 1720 vs existing csq=1719 existing_state=STATE_STANDBY
+2018-01-26 10:50:39.116825 7f24e86af700  0 -- 10.93.100.1:6806/1249212 >> 10.93.100.4:6800/205503 conn(0x55e93a210000 :-1 s=STATE_OPEN pgs=35146 cs=1264 l=0).fault with nothing to send, going to standby
+2018-01-26 10:51:10.476501 7f24c1752700  0 log_channel(cluster) log [INF] : 10.138 scrub starts
+2018-01-26 10:51:10.618001 7f24b7f3f700  1 leveldb: Compacting 1@0 + 2@1 files
+2018-01-26 10:51:10.647469 7f24b7f3f700  1 leveldb: Generated table #120812: 15490 keys, 425580 bytes
+2018-01-26 10:51:10.649947 7f24b7f3f700  1 leveldb: Generated table #120813: 92 keys, 11800 bytes
+2018-01-26 10:51:10.651935 7f24b7f3f700  1 leveldb: Generated table #120814: 3 keys, 217 bytes
+2018-01-26 10:51:10.653913 7f24b7f3f700  1 leveldb: Generated table #120815: 78 keys, 1265 bytes
+2018-01-26 10:51:10.653923 7f24b7f3f700  1 leveldb: Compacted 1@0 + 2@1 files => 438862 bytes
+2018-01-26 10:51:10.654636 7f24b7f3f700  1 leveldb: compacted to: files[ 0 4 62 260 0 0 0 ]
+2018-01-26 10:51:10.654912 7f24b7f3f700  1 leveldb: Delete type=2 #120755
+
+2018-01-26 10:51:10.655026 7f24b7f3f700  1 leveldb: Delete type=2 #120756
+
+2018-01-26 10:51:10.655190 7f24b7f3f700  1 leveldb: Delete type=2 #120811
+
+2018-01-26 10:51:11.346351 7f24b7f3f700  1 leveldb: Compacting 1@1 + 12@2 files
+2018-01-26 10:51:11.348401 7f24b7f3f700  1 leveldb: Generated table #120816: 9 keys, 958 bytes
+2018-01-26 10:51:11.349940 7f24b7f3f700  1 leveldb: Generated table #120817: 3 keys, 508 bytes
+2018-01-26 10:51:11.351549 7f24b7f3f700  1 leveldb: Generated table #120818: 2 keys, 427 bytes
+2018-01-26 10:51:11.353072 7f24b7f3f700  1 leveldb: Generated table #120819: 5 keys, 655 bytes
+2018-01-26 10:51:11.354773 7f24b7f3f700  1 leveldb: Generated table #120820: 5 keys, 658 bytes
+2018-01-26 10:51:11.368555 7f24b7f3f700  1 leveldb: Generated table #120821: 14297 keys, 346494 bytes
+2018-01-26 10:51:11.369867 7f24b7f3f700  1 leveldb: Generated table #120822: 136 keys, 5456 bytes
+2018-01-26 10:51:11.371393 7f24b7f3f700  1 leveldb: Generated table #120823: 10 keys, 428 bytes
+2018-01-26 10:51:11.411582 7f24b7f3f700  1 leveldb: Generated table #120824: 33091 keys, 2156322 bytes
+2018-01-26 10:51:11.461340 7f24b7f3f700  1 leveldb: Generated table #120825: 33120 keys, 2156085 bytes
+2018-01-26 10:51:11.498793 7f24b7f3f700  1 leveldb: Generated table #120826: 33232 keys, 2155903 bytes
+2018-01-26 10:51:11.534354 7f24b7f3f700  1 leveldb: Generated table #120827: 33357 keys, 2156277 bytes
+2018-01-26 10:51:11.567353 7f24b7f3f700  1 leveldb: Generated table #120828: 33330 keys, 2156521 bytes
+2018-01-26 10:51:11.602065 7f24b7f3f700  1 leveldb: Generated table #120829: 33199 keys, 2155128 bytes
+2018-01-26 10:51:11.637715 7f24b7f3f700  1 leveldb: Generated table #120830: 33542 keys, 2156380 bytes
+2018-01-26 10:51:11.668985 7f24b7f3f700  1 leveldb: Generated table #120831: 33258 keys, 2155830 bytes
+2018-01-26 10:51:11.704962 7f24b7f3f700  1 leveldb: Generated table #120832: 39539 keys, 2147274 bytes
+2018-01-26 10:51:11.729817 7f24b7f3f700  1 leveldb: Generated table #120833: 17782 keys, 2122302 bytes
+2018-01-26 10:51:11.731923 7f24b7f3f700  1 leveldb: Generated table #120834: 640 keys, 75789 bytes
+2018-01-26 10:51:11.731931 7f24b7f3f700  1 leveldb: Compacted 1@1 + 12@2 files => 21949395 bytes
+2018-01-26 10:51:11.732849 7f24b7f3f700  1 leveldb: compacted to: files[ 0 3 69 260 0 0 0 ]
+2018-01-26 10:51:11.733012 7f24b7f3f700  1 leveldb: Delete type=2 #120812
+
+2018-01-26 10:51:11.733174 7f24b7f3f700  1 leveldb: Delete type=2 #120763
+
+2018-01-26 10:51:11.737305 7f24b7f3f700  1 leveldb: Delete type=2 #120764
+
+2018-01-26 10:51:11.737430 7f24b7f3f700  1 leveldb: Delete type=2 #120765
+
+2018-01-26 10:51:11.737866 7f24b7f3f700  1 leveldb: Delete type=2 #120766
+
+2018-01-26 10:51:11.738326 7f24b7f3f700  1 leveldb: Delete type=2 #120767
+
+2018-01-26 10:51:11.738753 7f24b7f3f700  1 leveldb: Delete type=2 #120768
+
+2018-01-26 10:51:11.739137 7f24b7f3f700  1 leveldb: Delete type=2 #120769
+
+2018-01-26 10:51:11.739708 7f24b7f3f700  1 leveldb: Delete type=2 #120770
+
+2018-01-26 10:51:11.740111 7f24b7f3f700  1 leveldb: Delete type=2 #120771
+
+2018-01-26 10:51:11.740580 7f24b7f3f700  1 leveldb: Delete type=2 #120772
+
+2018-01-26 10:51:11.741013 7f24b7f3f700  1 leveldb: Delete type=2 #120773
+
+2018-01-26 10:51:11.741698 7f24b7f3f700  1 leveldb: Delete type=2 #120774
+
+2018-01-26 10:51:14.348128 7f24b7f3f700  1 leveldb: Compacting 1@2 + 3@3 files
+2018-01-26 10:51:14.454227 7f24b7f3f700  1 leveldb: Generated table #120835: 164010 keys, 2138077 bytes
+2018-01-26 10:51:14.520676 7f24b7f3f700  1 leveldb: Generated table #120836: 170798 keys, 2141393 bytes
+2018-01-26 10:51:14.558693 7f24b7f3f700  1 leveldb: Generated table #120837: 92664 keys, 1171570 bytes
+2018-01-26 10:51:14.558701 7f24b7f3f700  1 leveldb: Compacted 1@2 + 3@3 files => 5451040 bytes
+2018-01-26 10:51:14.559018 7f24b7f3f700  1 leveldb: compacted to: files[ 0 3 68 260 0 0 0 ]
+2018-01-26 10:51:14.559478 7f24b7f3f700  1 leveldb: Delete type=2 #119710
+
+2018-01-26 10:51:14.559818 7f24b7f3f700  1 leveldb: Delete type=2 #119211
+
+2018-01-26 10:51:14.560180 7f24b7f3f700  1 leveldb: Delete type=2 #120823
+
+2018-01-26 10:51:14.560387 7f24b7f3f700  1 leveldb: Delete type=2 #119210
+
+2018-01-26 10:51:21.869874 7f24b7f3f700  1 leveldb: Compacting 1@2 + 10@3 files
+2018-01-26 10:51:21.911235 7f24b7f3f700  1 leveldb: Generated table #120838: 22226 keys, 2158871 bytes
+2018-01-26 10:51:21.943773 7f24b7f3f700  1 leveldb: Generated table #120839: 22239 keys, 2159416 bytes
+2018-01-26 10:51:21.972767 7f24b7f3f700  1 leveldb: Generated table #120840: 22230 keys, 2157730 bytes
+2018-01-26 10:51:22.003533 7f24b7f3f700  1 leveldb: Generated table #120841: 22232 keys, 2159895 bytes
+2018-01-26 10:51:22.031459 7f24b7f3f700  1 leveldb: Generated table #120842: 22236 keys, 2160564 bytes
+2018-01-26 10:51:22.058261 7f24b7f3f700  1 leveldb: Generated table #120843: 22246 keys, 2161135 bytes
+2018-01-26 10:51:22.086194 7f24b7f3f700  1 leveldb: Generated table #120844: 22228 keys, 2161588 bytes
+2018-01-26 10:51:22.115296 7f24b7f3f700  1 leveldb: Generated table #120845: 22232 keys, 2160769 bytes
+2018-01-26 10:51:22.116963 7f24b7f3f700  1 leveldb: Generated table #120846: 50 keys, 5123 bytes
+2018-01-26 10:51:22.116971 7f24b7f3f700  1 leveldb: Compacted 1@2 + 10@3 files => 17285091 bytes
+2018-01-26 10:51:22.117153 7f24b7f3f700  1 leveldb: compacted to: files[ 0 3 67 259 0 0 0 ]
+2018-01-26 10:51:22.117458 7f24b7f3f700  1 leveldb: Delete type=2 #120799
+
+2018-01-26 10:51:22.117904 7f24b7f3f700  1 leveldb: Delete type=2 #120800
+
+2018-01-26 10:51:22.118340 7f24b7f3f700  1 leveldb: Delete type=2 #120597
+
+2018-01-26 10:51:22.118813 7f24b7f3f700  1 leveldb: Delete type=2 #120820
+
+2018-01-26 10:51:22.118962 7f24b7f3f700  1 leveldb: Delete type=2 #120651
+
+2018-01-26 10:51:22.119406 7f24b7f3f700  1 leveldb: Delete type=2 #120652
+
+2018-01-26 10:51:22.119911 7f24b7f3f700  1 leveldb: Delete type=2 #120686
+
+2018-01-26 10:51:22.120853 7f24b7f3f700  1 leveldb: Delete type=2 #120687
+
+2018-01-26 10:51:22.121311 7f24b7f3f700  1 leveldb: Delete type=2 #120798
+
+2018-01-26 10:51:22.121755 7f24b7f3f700  1 leveldb: Delete type=2 #120653
+
+2018-01-26 10:51:22.122113 7f24b7f3f700  1 leveldb: Delete type=2 #120654
+
+2018-01-26 10:51:23.518952 7f24b7f3f700  1 leveldb: Compacting 1@2 + 9@3 files
+2018-01-26 10:51:23.570121 7f24b7f3f700  1 leveldb: Generated table #120847: 22251 keys, 2159955 bytes
+2018-01-26 10:51:23.610122 7f24b7f3f700  1 leveldb: Generated table #120848: 22239 keys, 2158868 bytes
+2018-01-26 10:51:23.640030 7f24b7f3f700  1 leveldb: Generated table #120849: 22226 keys, 2158463 bytes
+2018-01-26 10:51:23.676680 7f24b7f3f700  1 leveldb: Generated table #120850: 22231 keys, 2160470 bytes
+2018-01-26 10:51:23.706172 7f24b7f3f700  1 leveldb: Generated table #120851: 22232 keys, 2158081 bytes
+2018-01-26 10:51:23.734771 7f24b7f3f700  1 leveldb: Generated table #120852: 22210 keys, 2159291 bytes
+2018-01-26 10:51:23.763026 7f24b7f3f700  1 leveldb: Generated table #120853: 22241 keys, 2158551 bytes
+2018-01-26 10:51:23.791287 7f24b7f3f700  1 leveldb: Generated table #120854: 22230 keys, 2158708 bytes
+2018-01-26 10:51:23.820745 7f24b7f3f700  1 leveldb: Generated table #120855: 22235 keys, 2160158 bytes
+2018-01-26 10:51:23.822000 7f24b7f3f700  1 leveldb: Generated table #120856: 4 keys, 593 bytes
+2018-01-26 10:51:23.822007 7f24b7f3f700  1 leveldb: Compacted 1@2 + 9@3 files => 19433138 bytes
+2018-01-26 10:51:23.822303 7f24b7f3f700  1 leveldb: compacted to: files[ 0 3 66 260 0 0 0 ]
+2018-01-26 10:51:23.822538 7f24b7f3f700  1 leveldb: Delete type=2 #120776
+
+2018-01-26 10:51:23.823005 7f24b7f3f700  1 leveldb: Delete type=2 #120817
+
+2018-01-26 10:51:23.823341 7f24b7f3f700  1 leveldb: Delete type=2 #120777
