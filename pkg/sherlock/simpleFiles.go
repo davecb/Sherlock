@@ -11,7 +11,11 @@ import (
 	"time"
 )
 
-// Config provides the options for Try and Commit operations
+/*
+ * Structs
+ */
+
+// Config provides the options for the various operations
 type Config struct {
 	Verbose  bool
 	Debug    bool
@@ -19,51 +23,6 @@ type Config struct {
 	Add      string
 	Subtract string
 	Version  string
-}
-
-type rules []rule
-type rule struct {
-	pat  *regexp.Regexp
-	date time.Time
-	vers string
-}
-
-// Try running the rules on a single log file
-func Try(logFile string, cfg Config) error {
-	if cfg.Verbose {
-		PrintConfig(cfg)
-	}
-	ruleset, err := LoadRules(cfg.Ruleset)
-	if err != nil {
-		return err
-	}
-	if cfg.Add != "" {
-		ruleset, err = add(ruleset, cfg.Add, "", "")
-		if err != nil {
-			return err
-		}
-	}
-	if cfg.Subtract != "" {
-		ruleset, err = subtract(ruleset, cfg.Subtract, "", "")
-		if err != nil {
-			return err
-		}
-	}
-	if cfg.Verbose {
-		PrintRuleset(ruleset)
-	}
-	return evaluate(logFile, ruleset, cfg.Verbose)
-}
-
-// Commit will update a rule file, triggering a daemon refresh
-func Commit(cfg Config) error {
-	if cfg.Verbose {
-		PrintConfig(cfg)
-	}
-	// load(cfg.Ruleset)
-	// add(cfg.Add, cfg.Version, time.Now())
-	// save(cfg.Ruleset)   // May change daemon
-	return nil
 }
 
 // PrintConfig displays a config struct's contents
@@ -78,10 +37,28 @@ func PrintConfig(conf Config) {
 	log.Print("}\n")
 }
 
-// other operations, allowing one to try out new rules or search
-// without specific rules
+type rules []rule
+type rule struct {
+	pat  *regexp.Regexp
+	date time.Time
+	vers string
+}
 
-// LoadRules loads a rule file. FIXME, called many times
+// PrintRuleset does just that
+func PrintRuleset(ruleset rules) { // nolint
+	log.Print("type []rule {\n")
+	log.Print("    // pat, date, vers\n")
+	for _, r := range ruleset {
+		log.Printf("    { %q, %q, %q }\n", r.pat, r.date, r.vers)
+	}
+	log.Print("}\n")
+}
+
+/*
+ * Top-level functions
+ */
+
+// LoadRules loads a rule file. FIXME, called many times, hoist call
 func LoadRules(ruleFile string) (rules, error) { // nolint: gocyclo
 	var ruleset rules
 	var record []string
@@ -159,17 +136,34 @@ forloop:
 	return ruleset, nil
 }
 
-// PrintRuleset does just that
-func PrintRuleset(ruleset rules) { // nolint
-	log.Print("type []rule {\n")
-	log.Print("    // pat, date, vers\n")
-	for _, r := range ruleset {
-		log.Printf("    { %q, %q, %q }\n", r.pat, r.date, r.vers)
+// Try running the rules on a single log file
+func Try(logFile string, cfg Config) error {
+	if cfg.Verbose {
+		PrintConfig(cfg)
 	}
-	log.Print("}\n")
+	ruleset, err := LoadRules(cfg.Ruleset)
+	if err != nil {
+		return err
+	}
+	if cfg.Add != "" {
+		ruleset, err = add(ruleset, cfg.Add, "", "")
+		if err != nil {
+			return err
+		}
+	}
+	if cfg.Subtract != "" {
+		ruleset, err = subtract(ruleset, cfg.Subtract, "", "")
+		if err != nil {
+			return err
+		}
+	}
+	if cfg.Verbose {
+		PrintRuleset(ruleset)
+	}
+	return evaluate(logFile, ruleset, cfg.Verbose)
 }
 
-// evaluate tries a rule file, once.
+// evaluate tries a rule file, on a single input
 // Note that we loop across individual REs, rather that concatenating
 // them and trying to match that. The latter is ~124 times slower.
 func evaluate(logFile string, ruleset rules, verbose bool) error {
@@ -208,18 +202,11 @@ outerLoop:
 				continue outerLoop
 			}
 		}
-		fmt.Printf("this is new stuff: %q\n", s)
+		if verbose {
+			fmt.Printf("this is new stuff: %q\n", s)
+		}
 	}
 	return nil
-}
-
-// add a rule to a rule file, but only in memory.
-func add(ruleset rules, newRule, today, version string) (rules, error) {
-	regex, date, version, err := compileRule(newRule, today, version)
-	if err != nil {
-		return nil, err
-	}
-	return append(ruleset, rule{regex, date, version}), nil
 }
 
 // compileRule compiles a RE and optional date and version  FIXME used twice or more, hoist
@@ -259,6 +246,30 @@ func compileRule(rule, today, version string) (*regexp.Regexp, time.Time, string
 	}
 	return regex, date, version, nil
 
+}
+
+/*
+ * Daemon operations
+ */
+
+// Commit will update a rule file, triggering a daemon refresh
+func Commit(cfg Config) error {
+	if cfg.Verbose {
+		PrintConfig(cfg)
+	}
+	// load(cfg.Ruleset)
+	// add(cfg.Add, cfg.Version, time.Now())
+	// save(cfg.Ruleset)   // May change daemon
+	return nil
+}
+
+// add a rule to a rule file, but only in memory.
+func add(ruleset rules, newRule, today, version string) (rules, error) {
+	regex, date, version, err := compileRule(newRule, today, version)
+	if err != nil {
+		return nil, err
+	}
+	return append(ruleset, rule{regex, date, version}), nil
 }
 
 // Subtract a rule from a rule file, only in memory

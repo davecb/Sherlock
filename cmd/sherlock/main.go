@@ -1,17 +1,17 @@
 package main
 
 import (
-	"github.com/davecb/Sherlock/pkg/sherlock"   // nolint:gotype
+	"github.com/davecb/Sherlock/pkg/sherlock" // nolint:gotype
 
 	"flag"
 	"fmt"
-	"os"
 	"log"
+	"os"
 )
 
 // usage reports how to use sherlock
-func usage() {  // nolint
-	fmt.Fprint(os.Stderr, "Usage: sherlock --deamon ini-file, or\n" +   // nolint:gas
+func usage() { // nolint
+	fmt.Fprint(os.Stderr, "Usage: sherlock --deamon ini-file, or\n"+ // nolint:gas
 		"       sherlock --options log-file\n")
 	// FIXME "--commit" later
 	flag.PrintDefaults()
@@ -40,13 +40,13 @@ func main() {
 
 	log.SetFlags(0) // log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
 
-	err := testableMain(initFile, flag.Args(), sherlock.Config {  // nolint:gotype
-		Verbose:    verbose,
-		Debug:      debug,
-		Ruleset:	ruleset,
-		Add:		add,
-		Subtract:	subtract,
-		Version:    commitVersion,
+	err := testableMain(initFile, flag.Args(), sherlock.Config{ // nolint:gotype
+		Verbose:  verbose,
+		Debug:    debug,
+		Ruleset:  ruleset,
+		Add:      add,
+		Subtract: subtract,
+		Version:  commitVersion,
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -56,25 +56,25 @@ func main() {
 }
 
 // testableMain, for use with BDD tests
-func testableMain(initFile string, args []string, conf sherlock.Config) error {  // nolint: gotype
+func testableMain(initFile string, args []string, conf sherlock.Config) error { // nolint: gotype
 
 	// see if we're to be a daemon
-	if initFile != "" {
-		err := runDaemon(initFile) // nolint
-		log.Fatalf("could not run daemon, %v\n", err)
-		// never exits normally
-	}
+	//if initFile != "" {
+	//	err := runDaemon(initFile) // nolint
+	//	log.Fatalf("could not run daemon, %v\n", err)
+	//	// never exits normally
+	//}
 	// all subsequent uses require a ruleset
 	if conf.Ruleset == "" {
 		// usage()
 		return fmt.Errorf("you must provide a ruleset")
 	}
-
+	// hoist ruleset parsing to here
 
 	// see if we're to commit a change to the runDaemon
-	if conf.Version != "" {
-		return commit(conf)
-	}
+	//if conf.Version != "" {
+	//	return commit(conf)
+	//}
 
 	// Otherwise try running rules against one or more log files
 	if len(args) < 1 || args[0] == "" {
@@ -91,37 +91,8 @@ func testableMain(initFile string, args []string, conf sherlock.Config) error { 
 	return nil
 }
 
-
-// runDaemon runs a runDaemon from an ini file
-// syntactially checks config file
-func runDaemon(iniFile string) error {
-
-	log.Printf("iniFile=%s\n", iniFile)
-	err := sherlock.Run(iniFile) // nolint
-	// should never exit
-	return err
-}
-
-// commit tries to update a config file, thus updating any daemons
-// syntactially checks add and version
-func commit(conf sherlock.Config) error { // nolint: gotype
-	if conf.Add == "" && conf.Subtract == "" {
-		return fmt.Errorf("you must provide a rule to add or subtract")
-	}
-	if conf.Version == "" {
-		// belt and suspenders: this is currently unreachable
-		return fmt.Errorf("you must provide a commit version-string file")
-	}
-	err := sherlock.Commit(conf) // nolint: gotype
-	if err != nil {
-		return fmt.Errorf("update of ruleset %q with rule %q failed, %v",
-			conf.Ruleset, conf.Add, err)
-	}
-	return nil
-}
-
 // try to evaluate one file
-func try(logFile string, conf sherlock.Config ) error { // nolint: gotype
+func try(logFile string, conf sherlock.Config) error { // nolint: gotype
 	err := sherlock.Try(logFile, conf) // nolint: gotype
 	if err != nil {
 		return fmt.Errorf("failed to evaluate log %q using ruleset %q, %v",
@@ -130,3 +101,30 @@ func try(logFile string, conf sherlock.Config ) error { // nolint: gotype
 	return nil
 }
 
+// runDaemon runs a runDaemon from an ini file
+// syntactially checks config file
+//func runDaemon(iniFile string) error {
+//
+//	log.Printf("iniFile=%s\n", iniFile)
+//	err := sherlock.Run(iniFile) // nolint
+//	// should never exit
+//	return err
+//}
+
+// commit tries to update a config file, thus updating any daemons
+// syntactially checks add and version
+//func commit(conf sherlock.Config) error { // nolint: gotype
+//	if conf.Add == "" && conf.Subtract == "" {
+//		return fmt.Errorf("you must provide a rule to add or subtract")
+//	}
+//	if conf.Version == "" {
+//		// belt and suspenders: this is currently unreachable
+//		return fmt.Errorf("you must provide a commit version-string file")
+//	}
+//	err := sherlock.Commit(conf) // nolint: gotype
+//	if err != nil {
+//		return fmt.Errorf("update of ruleset %q with rule %q failed, %v",
+//			conf.Ruleset, conf.Add, err)
+//	}
+//	return nil
+//}
