@@ -137,27 +137,9 @@ forloop:
 }
 
 // Try running the rules on a single log file
-func Try(logFile string, cfg Config) error {
+func Try(logFile string, cfg Config, ruleset rules) error {
 	if cfg.Verbose {
 		PrintConfig(cfg)
-	}
-	ruleset, err := LoadRules(cfg.Ruleset)
-	if err != nil {
-		return err
-	}
-	if cfg.Add != "" {
-		ruleset, err = add(ruleset, cfg.Add, "", "")
-		if err != nil {
-			return err
-		}
-	}
-	if cfg.Subtract != "" {
-		ruleset, err = subtract(ruleset, cfg.Subtract, "", "")
-		if err != nil {
-			return err
-		}
-	}
-	if cfg.Verbose {
 		PrintRuleset(ruleset)
 	}
 	return evaluate(logFile, ruleset, cfg.Verbose)
