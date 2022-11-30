@@ -16,6 +16,9 @@ main() {
 			Skip=$2
 			shift
 			;;
+	  -) # just a -, meaning read stdin
+	    break
+	    ;;
 		-*) # bad
 			say "$ProgName: unknown option $2 ignored"
 			;;
@@ -47,7 +50,8 @@ main() {
     	    -e 's/\+/\\\+/g' \
 	    -e 's/\?/\\\?/g' \
 	    -e 's/{/\\{/g' \
-	    -e 's/}/\\}/g' |\
+	    -e 's/}/\\}/g' \
+	    -e 's/^[ \t]*//' |\
 	# Unique what we have thus far
 	sort -u
 }

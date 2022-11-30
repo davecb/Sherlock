@@ -1,7 +1,0 @@
-/unable to decode label at offset/ { next }
-/ceph version/ { next }
-/journal close/ { next }
-/journal _open/ { next }
-/probe_block_device_fsid/ { next }
-/^[ \t]*$/ { next }
-/.*/ { print $0 }

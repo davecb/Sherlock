@@ -1,0 +1,999 @@
+[2022-06-09T17:23:39Z INFO  rivr_server] Starting Rivr server
+[2022-06-09T17:23:39Z INFO  rivr_server] Server Version: 0.8.1
+[2022-06-09T17:23:39Z INFO  rivr_server] Server Instance Id (Suffix): jRg9GaxhSNxYhxWr7i29 (Some("fizzbuzz"))
+[2022-06-09T17:23:39Z WARN  rivr::env] Env var RIVR_MODEL_PATH_REGION is not set, using default value [UsEast1]
+[2022-06-09T17:23:39Z INFO  rivr::optimizer] Starting library init with [1] v8 engine(s)
+[2022-06-09T17:23:39Z INFO  rivr::aggregator] Each aggregator thread will use up to 512Mb
+[2022-06-09T17:23:39Z INFO  rivr::aggregator] Using ["/tmp/.tmpdgCOSk"] to store data files
+[2022-06-09T17:23:39Z WARN  rivr::model_watcher] No DSA public key provided, skipping model verification.
+[2022-06-09T17:23:39Z WARN  rivr_server] RIVR_SOCKET_FILE env var is not set, skipping UDS connector
+[2022-06-09T17:23:39Z WARN  rivr_server] RIVR_TCP_PORT env var is not set, skipping TCP connector
+[2022-06-09T17:23:39Z INFO  rivr::stats] Starting stats collector
+[2022-06-09T17:23:39Z INFO  rivr::aggregator] Starting aggregator
+[2022-06-09T17:23:39Z INFO  rivr_server] Starting actix HTTP listener on 0.0.0.0:7487
+[2022-06-09T17:23:39Z INFO  rivr::local_loader] Starting watcher for /opt/rivr/models/model.zip
+[2022-06-09T17:23:39Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-09T17:23:39Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-09T17:23:39Z INFO  rivr::model] Read: Models { timestamp: 1883456000, combined_path: Some("mock/day=20211003/hour=00/combined-mock/model.zip"), models: [Model { folder: "mock", main: "rivr_model.js", api_version: "2.0", traffic: 100, version_alias: Some("mock") }] }
+[2022-06-09T17:23:39Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-09T17:23:39Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-09T17:23:39Z INFO  rivr::engine] Updating model: Some("mock")
+[2022-06-09T17:23:39Z INFO  actix_server::builder] Starting 20 workers
+[2022-06-09T17:23:39Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
+[2022-06-09T17:23:39Z INFO  rivr::engine] Used heap size: 2 Mb
+[2022-06-09T17:23:39Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("dummy"), demand: Some("demand_selection;image_tag:20211008-1353.f47880e"), umbrella: Some("smaato;20211003;0;web;smaato/day=20211003/hour=00/umbrella_model/mock;20210924-1152.bfcc0e4"), alias: Some("mock_08122021"), trained_on: Some("20211208-0000") }
+[2022-06-09T17:23:39Z INFO  rivr::engine] Model will expire in 3812449 minutes
+[2022-06-09T17:23:39Z INFO  rivr::engine] v8 init took 25 ms
+[2022-06-09T17:23:39Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-09T17:23:39Z INFO  rivr::engine] Stopped serving ∅
+[2022-06-09T17:24:22Z INFO  rivr_server] Starting Rivr server
+[2022-06-09T17:24:22Z INFO  rivr_server] Server Version: 0.8.1
+[2022-06-09T17:24:22Z INFO  rivr_server] Server Instance Id (Suffix): 6cbTSbxDbhoLrkWPywyF (Some("fizzbuzz"))
+[2022-06-09T17:24:22Z WARN  rivr::env] Env var RIVR_MODEL_PATH_REGION is not set, using default value [UsEast1]
+[2022-06-09T17:24:22Z INFO  rivr::optimizer] Starting library init with [1] v8 engine(s)
+[2022-06-09T17:24:22Z INFO  rivr::aggregator] Each aggregator thread will use up to 512Mb
+[2022-06-09T17:24:22Z INFO  rivr::aggregator] Using ["/tmp/.tmpH308aX"] to store data files
+[2022-06-09T17:24:22Z WARN  rivr::model_watcher] No DSA public key provided, skipping model verification.
+[2022-06-09T17:24:22Z INFO  rivr::stats] Starting stats collector
+[2022-06-09T17:24:22Z WARN  rivr_server] RIVR_SOCKET_FILE env var is not set, skipping UDS connector
+[2022-06-09T17:24:22Z WARN  rivr_server] RIVR_TCP_PORT env var is not set, skipping TCP connector
+[2022-06-09T17:24:22Z INFO  rivr::local_loader] Starting watcher for /opt/rivr/models/model.zip
+[2022-06-09T17:24:22Z INFO  rivr::aggregator] Starting aggregator
+[2022-06-09T17:24:22Z INFO  rivr_server] Starting actix HTTP listener on 0.0.0.0:7487
+[2022-06-09T17:24:22Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-09T17:24:22Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-09T17:24:22Z INFO  rivr::model] Read: Models { timestamp: 1883456000, combined_path: Some("mock/day=20211003/hour=00/combined-mock/model.zip"), models: [Model { folder: "mock", main: "rivr_model.js", api_version: "2.0", traffic: 100, version_alias: Some("mock") }] }
+[2022-06-09T17:24:22Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-09T17:24:22Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-09T17:24:22Z INFO  rivr::engine] Updating model: Some("mock")
+[2022-06-09T17:24:22Z INFO  actix_server::builder] Starting 20 workers
+[2022-06-09T17:24:22Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
+[2022-06-09T17:24:22Z INFO  rivr::engine] Used heap size: 2 Mb
+[2022-06-09T17:24:22Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("dummy"), demand: Some("demand_selection;image_tag:20211008-1353.f47880e"), umbrella: Some("smaato;20211003;0;web;smaato/day=20211003/hour=00/umbrella_model/mock;20210924-1152.bfcc0e4"), alias: Some("mock_08122021"), trained_on: Some("20211208-0000") }
+[2022-06-09T17:24:22Z INFO  rivr::engine] Model will expire in 3812448 minutes
+[2022-06-09T17:24:22Z INFO  rivr::engine] v8 init took 24 ms
+[2022-06-09T17:24:22Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-09T17:24:22Z INFO  rivr::engine] Stopped serving ∅
+[2022-06-09T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654794000000, client: None, server: Some({}) }, client stats: None
+[2022-06-09T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654797600000, client: None, server: Some({}) }, client stats: None
+[2022-06-09T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654801200000, client: None, server: Some({}) }, client stats: None
+[2022-06-09T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654804800000, client: None, server: Some({}) }, client stats: None
+[2022-06-09T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654808400000, client: None, server: Some({}) }, client stats: None
+[2022-06-09T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-09T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654812000000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654815600000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654819200000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654822800000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654826400000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654830000000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654833600000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654837200000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654840800000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654844400000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654848000000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654851600000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654855200000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654858800000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654862400000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654866000000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654869600000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654873200000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654876800000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654880400000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654884000000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654887600000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654891200000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654894800000, client: None, server: Some({}) }, client stats: None
+[2022-06-10T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-10T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654898400000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654902000000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654905600000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654909200000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654912800000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654916400000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654920000000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654923600000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654927200000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654930800000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654934400000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654938000000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654941600000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654945200000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654948800000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654952400000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654956000000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654959600000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654963200000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654966800000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654970400000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654974000000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654977600000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654981200000, client: None, server: Some({}) }, client stats: None
+[2022-06-11T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-11T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654984800000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654988400000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654992000000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654995600000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1654999200000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655002800000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655006400000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655010000000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655013600000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655017200000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655020800000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655024400000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655028000000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655031600000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655035200000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655038800000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655042400000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655046000000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655049600000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655053200000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655056800000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655060400000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655064000000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655067600000, client: None, server: Some({}) }, client stats: None
+[2022-06-12T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-12T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655071200000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655074800000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655078400000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655082000000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655085600000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655089200000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655092800000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655096400000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655100000000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655103600000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655107200000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655110800000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655114400000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655118000000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655121600000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655125200000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655128800000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655132400000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655136000000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655139600000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655143200000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655146800000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655150400000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655154000000, client: None, server: Some({}) }, client stats: None
+[2022-06-13T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-13T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655157600000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655161200000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655164800000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655168400000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655172000000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655175600000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655179200000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655182800000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655186400000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655190000000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655193600000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655197200000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655200800000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655204400000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655208000000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655211600000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655215200000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655218800000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655222400000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655226000000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655229600000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655233200000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655236800000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655240400000, client: None, server: Some({}) }, client stats: None
+[2022-06-14T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-14T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655244000000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655247600000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655251200000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655254800000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655258400000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655262000000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655265600000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655269200000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655272800000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655276400000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655280000000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655283600000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655287200000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655290800000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655294400000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655298000000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655301600000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655305200000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655308800000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655312400000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655316000000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655319600000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655323200000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655326800000, client: None, server: Some({}) }, client stats: None
+[2022-06-15T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-15T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655330400000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655334000000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655337600000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655341200000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655344800000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655348400000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655352000000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655355600000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655359200000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655362800000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655366400000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655370000000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655373600000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655377200000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655380800000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655384400000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655388000000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655391600000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655395200000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655398800000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655402400000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655406000000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655409600000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655413200000, client: None, server: Some({}) }, client stats: None
+[2022-06-16T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-16T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655416800000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655420400000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655424000000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655427600000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655431200000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655434800000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655438400000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655442000000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655445600000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655449200000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655452800000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655456400000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655460000000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655463600000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655467200000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655470800000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655474400000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655478000000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655481600000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655485200000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655488800000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655492400000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655496000000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655499600000, client: None, server: Some({}) }, client stats: None
+[2022-06-17T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-17T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655503200000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655506800000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655510400000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655514000000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655517600000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655521200000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655524800000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655528400000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655532000000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655535600000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655539200000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655542800000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655546400000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655550000000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655553600000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655557200000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655560800000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655564400000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655568000000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655571600000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655575200000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655578800000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655582400000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655586000000, client: None, server: Some({}) }, client stats: None
+[2022-06-18T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-18T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655589600000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655593200000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655596800000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655600400000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655604000000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655607600000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655611200000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655614800000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655618400000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655622000000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655625600000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655629200000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655632800000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655636400000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655640000000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655643600000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655647200000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655650800000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655654400000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655658000000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655661600000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655665200000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655668800000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655672400000, client: None, server: Some({}) }, client stats: None
+[2022-06-19T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-19T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655676000000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655679600000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655683200000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655686800000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655690400000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655694000000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655697600000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655701200000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655704800000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655708400000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655712000000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655715600000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655719200000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655722800000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655726400000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655730000000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655733600000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655737200000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655740800000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655744400000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655748000000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655751600000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655755200000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655758800000, client: None, server: Some({}) }, client stats: None
+[2022-06-20T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-20T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655762400000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655766000000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655769600000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655773200000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655776800000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655780400000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655784000000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655787600000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655791200000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655794800000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655798400000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655802000000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655805600000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655809200000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655812800000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655816400000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655820000000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655823600000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655827200000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655830800000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655834400000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655838000000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655841600000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655845200000, client: None, server: Some({}) }, client stats: None
+[2022-06-21T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-21T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655848800000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655852400000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655856000000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655859600000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655863200000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655866800000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655870400000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655874000000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655877600000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655881200000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655884800000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655888400000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655892000000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655895600000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655899200000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655902800000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655906400000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655910000000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655913600000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655917200000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655920800000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655924400000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655928000000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655931600000, client: None, server: Some({}) }, client stats: None
+[2022-06-22T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-22T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655935200000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655938800000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655942400000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655946000000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655949600000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655953200000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655956800000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T06:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T06:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655960400000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T07:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T07:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655964000000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T08:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T08:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655967600000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T09:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T09:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655971200000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T10:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T10:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655974800000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T11:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T11:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655978400000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T12:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T12:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655982000000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T13:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T13:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655985600000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T14:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T14:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.1", internal: "6cbTSbxDbhoLrkWPywyF", external: Some("fizzbuzz") }, timestamp_ms: 1655989200000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T14:29:36Z INFO  rivr_server] Starting Rivr server
+[2022-06-23T14:29:36Z INFO  rivr_server] Server Version: 0.8.3
+[2022-06-23T14:29:36Z INFO  rivr_server] Server Instance Id (Suffix): 2RqU90Tze1uY6rl1IO4G (Some("fizzbuzz"))
+[2022-06-23T14:29:36Z WARN  rivr::env] Env var RIVR_MODEL_PATH_REGION is not set, using default value [UsEast1]
+[2022-06-23T14:29:36Z INFO  rivr::optimizer] Starting library init with [1] v8 engine(s)
+[2022-06-23T14:29:36Z INFO  rivr::aggregator] Each aggregator thread will use up to 512Mb
+[2022-06-23T14:29:36Z INFO  rivr::aggregator] Using ["/tmp/.tmpLGdxmH"] to store data files
+[2022-06-23T14:29:36Z WARN  rivr::model_watcher] No DSA public key provided, skipping model verification.
+[2022-06-23T14:29:36Z INFO  rivr::stats] Starting stats collector
+[2022-06-23T14:29:36Z INFO  rivr::local_loader] Starting watcher for /opt/viper/data/rules/model.zip
+[2022-06-23T14:29:36Z WARN  rivr_server] RIVR_SOCKET_FILE env var is not set, skipping UDS connector
+[2022-06-23T14:29:36Z WARN  rivr_server] RIVR_TCP_PORT env var is not set, skipping TCP connector
+[2022-06-23T14:29:36Z INFO  rivr::aggregator] Starting aggregator
+[2022-06-23T14:29:36Z INFO  rivr_server] Starting actix HTTP listener on 0.0.0.0:7487
+[2022-06-23T14:29:36Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T14:29:36Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T14:29:36Z INFO  rivr::model] Read: Models { timestamp: 1655992450, combined_path: Some("ix/day=20220623/hour=09/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T14:29:36Z INFO  actix_server::builder] Starting 20 workers
+[2022-06-23T14:29:36Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
+[2022-06-23T14:29:37Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T14:29:37Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T14:29:37Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T14:29:41Z INFO  rivr::engine] Used heap size: 526 Mb
+[2022-06-23T14:29:41Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062313;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;9;ix/day=20220623/hour=09/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1353") }
+[2022-06-23T14:29:41Z INFO  rivr::engine] Model will expire in 1404 minutes
+[2022-06-23T14:29:41Z INFO  rivr::engine] v8 init took 3780 ms
+[2022-06-23T14:29:41Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T14:29:41Z INFO  rivr::engine] Stopped serving ∅
+[2022-06-23T14:31:23Z INFO  rivr_server] Starting Rivr server
+[2022-06-23T14:31:23Z INFO  rivr_server] Server Version: 0.8.3
+[2022-06-23T14:31:23Z INFO  rivr_server] Server Instance Id (Suffix): CkwDSpjtf1oks1iHr32v (Some("fizzbuzz"))
+[2022-06-23T14:31:23Z WARN  rivr::env] Env var RIVR_MODEL_PATH_REGION is not set, using default value [UsEast1]
+[2022-06-23T14:31:23Z INFO  rivr::optimizer] Starting library init with [1] v8 engine(s)
+[2022-06-23T14:31:23Z INFO  rivr::aggregator] Each aggregator thread will use up to 512Mb
+[2022-06-23T14:31:23Z INFO  rivr::aggregator] Using ["/tmp/.tmp2anYQR"] to store data files
+[2022-06-23T14:31:23Z WARN  rivr::model_watcher] No DSA public key provided, skipping model verification.
+[2022-06-23T14:31:23Z WARN  rivr_server] RIVR_SOCKET_FILE env var is not set, skipping UDS connector
+[2022-06-23T14:31:23Z WARN  rivr_server] RIVR_TCP_PORT env var is not set, skipping TCP connector
+[2022-06-23T14:31:23Z INFO  rivr::stats] Starting stats collector
+[2022-06-23T14:31:23Z INFO  rivr::local_loader] Starting watcher for /opt/viper/data/rules/model.zip
+[2022-06-23T14:31:23Z INFO  rivr::aggregator] Starting aggregator
+[2022-06-23T14:31:23Z INFO  rivr_server] Starting actix HTTP listener on 0.0.0.0:7487
+[2022-06-23T14:31:23Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T14:31:23Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T14:31:23Z INFO  rivr::model] Read: Models { timestamp: 1655992450, combined_path: Some("ix/day=20220623/hour=09/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T14:31:23Z INFO  actix_server::builder] Starting 20 workers
+[2022-06-23T14:31:23Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
+[2022-06-23T14:31:23Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T14:31:23Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T14:31:23Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T14:31:27Z INFO  rivr::engine] Used heap size: 526 Mb
+[2022-06-23T14:31:27Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062313;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;9;ix/day=20220623/hour=09/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1353") }
+[2022-06-23T14:31:27Z INFO  rivr::engine] Model will expire in 1402 minutes
+[2022-06-23T14:31:27Z INFO  rivr::engine] v8 init took 3771 ms
+[2022-06-23T14:31:27Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T14:31:27Z INFO  rivr::engine] Stopped serving ∅
+[2022-06-23T15:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T15:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1655992800000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T15:12:26Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T15:12:36Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T15:12:36Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T15:12:36Z INFO  rivr::model] Read: Models { timestamp: 1655996993, combined_path: Some("ix/day=20220623/hour=10/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T15:12:37Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T15:12:37Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T15:12:37Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T15:12:41Z INFO  rivr::engine] Used heap size: 518 Mb
+[2022-06-23T15:12:41Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062314;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;10;ix/day=20220623/hour=10/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1509") }
+[2022-06-23T15:12:41Z INFO  rivr::engine] Model will expire in 1437 minutes
+[2022-06-23T15:12:41Z INFO  rivr::engine] v8 init took 3655 ms
+[2022-06-23T15:12:41Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T15:12:41Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=09/combined_production/model.zip]
+[2022-06-23T16:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T16:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1655996400000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T16:03:23Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T16:03:33Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T16:03:33Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T16:03:33Z INFO  rivr::model] Read: Models { timestamp: 1656000017, combined_path: Some("ix/day=20220623/hour=11/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T16:03:33Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T16:03:33Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T16:03:33Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T16:03:37Z INFO  rivr::engine] Used heap size: 513 Mb
+[2022-06-23T16:03:37Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062315;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;11;ix/day=20220623/hour=11/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1559") }
+[2022-06-23T16:03:37Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-23T16:03:37Z INFO  rivr::engine] v8 init took 3764 ms
+[2022-06-23T16:03:37Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T16:03:37Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=10/combined_production/model.zip]
+[2022-06-23T17:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T17:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656000000000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T17:02:27Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T17:02:37Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T17:02:37Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T17:02:37Z INFO  rivr::model] Read: Models { timestamp: 1656003366, combined_path: Some("ix/day=20220623/hour=12/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T17:02:37Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T17:02:37Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T17:02:37Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T17:02:41Z INFO  rivr::engine] Used heap size: 510 Mb
+[2022-06-23T17:02:41Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062316;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;12;ix/day=20220623/hour=12/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1654") }
+[2022-06-23T17:02:41Z INFO  rivr::engine] Model will expire in 1433 minutes
+[2022-06-23T17:02:41Z INFO  rivr::engine] v8 init took 3694 ms
+[2022-06-23T17:02:41Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T17:02:41Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=11/combined_production/model.zip]
+[2022-06-23T18:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T18:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656003600000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T18:03:35Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T18:03:45Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T18:03:45Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T18:03:45Z INFO  rivr::model] Read: Models { timestamp: 1656007224, combined_path: Some("ix/day=20220623/hour=13/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T18:03:46Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T18:03:46Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T18:03:46Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T18:03:50Z INFO  rivr::engine] Used heap size: 509 Mb
+[2022-06-23T18:03:50Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062317;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;13;ix/day=20220623/hour=13/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1759") }
+[2022-06-23T18:03:50Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-23T18:03:50Z INFO  rivr::engine] v8 init took 3612 ms
+[2022-06-23T18:03:50Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T18:03:50Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=12/combined_production/model.zip]
+[2022-06-23T19:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T19:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656007200000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T19:13:02Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T19:13:12Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T19:13:12Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T19:13:12Z INFO  rivr::model] Read: Models { timestamp: 1656011396, combined_path: Some("ix/day=20220623/hour=14/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T19:13:13Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T19:13:13Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T19:13:13Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T19:13:16Z INFO  rivr::engine] Used heap size: 509 Mb
+[2022-06-23T19:13:16Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062318;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;14;ix/day=20220623/hour=14/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-1908") }
+[2022-06-23T19:13:16Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-23T19:13:16Z INFO  rivr::engine] v8 init took 3524 ms
+[2022-06-23T19:13:16Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T19:13:17Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=13/combined_production/model.zip]
+[2022-06-23T20:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T20:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656010800000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T20:27:14Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T20:27:24Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T20:27:24Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T20:27:24Z INFO  rivr::model] Read: Models { timestamp: 1656015872, combined_path: Some("ix/day=20220623/hour=15/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T20:27:24Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T20:27:24Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T20:27:24Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T20:27:28Z INFO  rivr::engine] Used heap size: 513 Mb
+[2022-06-23T20:27:28Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062320;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;15;ix/day=20220623/hour=15/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-2023") }
+[2022-06-23T20:27:28Z INFO  rivr::engine] Model will expire in 1437 minutes
+[2022-06-23T20:27:28Z INFO  rivr::engine] v8 init took 3705 ms
+[2022-06-23T20:27:28Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T20:27:28Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=14/combined_production/model.zip]
+[2022-06-23T21:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T21:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656014400000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T21:01:07Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T21:01:17Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T21:01:17Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T21:01:17Z INFO  rivr::model] Read: Models { timestamp: 1656017905, combined_path: Some("ix/day=20220623/hour=16/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T21:01:17Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T21:01:17Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T21:01:17Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T21:01:21Z INFO  rivr::engine] Used heap size: 519 Mb
+[2022-06-23T21:01:21Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062320;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;16;ix/day=20220623/hour=16/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-2057") }
+[2022-06-23T21:01:21Z INFO  rivr::engine] Model will expire in 1437 minutes
+[2022-06-23T21:01:21Z INFO  rivr::engine] v8 init took 3775 ms
+[2022-06-23T21:01:21Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T21:01:21Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=15/combined_production/model.zip]
+[2022-06-23T22:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T22:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656018000000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T22:09:11Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T22:09:21Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T22:09:21Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T22:09:21Z INFO  rivr::model] Read: Models { timestamp: 1656021977, combined_path: Some("ix/day=20220623/hour=17/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T22:09:21Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T22:09:21Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T22:09:21Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T22:09:25Z INFO  rivr::engine] Used heap size: 522 Mb
+[2022-06-23T22:09:25Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062321;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;17;ix/day=20220623/hour=17/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-2204") }
+[2022-06-23T22:09:25Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-23T22:09:25Z INFO  rivr::engine] v8 init took 3988 ms
+[2022-06-23T22:09:25Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T22:09:25Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=16/combined_production/model.zip]
+[2022-06-23T23:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-23T23:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656021600000, client: None, server: Some({}) }, client stats: None
+[2022-06-23T23:03:21Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-23T23:03:31Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-23T23:03:31Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-23T23:03:31Z INFO  rivr::model] Read: Models { timestamp: 1656025213, combined_path: Some("ix/day=20220623/hour=18/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-23T23:03:31Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-23T23:03:31Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-23T23:03:31Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-23T23:03:35Z INFO  rivr::engine] Used heap size: 523 Mb
+[2022-06-23T23:03:35Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062322;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;18;ix/day=20220623/hour=18/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220623-2259") }
+[2022-06-23T23:03:35Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-23T23:03:35Z INFO  rivr::engine] v8 init took 3835 ms
+[2022-06-23T23:03:35Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-23T23:03:35Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=17/combined_production/model.zip]
+[2022-06-24T00:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T00:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656025200000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T00:06:23Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T00:06:33Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T00:06:33Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T00:06:33Z INFO  rivr::model] Read: Models { timestamp: 1656028986, combined_path: Some("ix/day=20220623/hour=19/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T00:06:34Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T00:06:34Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T00:06:34Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T00:06:38Z INFO  rivr::engine] Used heap size: 524 Mb
+[2022-06-24T00:06:38Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062323;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;19;ix/day=20220623/hour=19/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0002") }
+[2022-06-24T00:06:38Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-24T00:06:38Z INFO  rivr::engine] v8 init took 3698 ms
+[2022-06-24T00:06:38Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-24T00:06:38Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=18/combined_production/model.zip]
+[2022-06-24T01:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T01:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656028800000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T01:09:53Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T01:10:03Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T01:10:03Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T01:10:03Z INFO  rivr::model] Read: Models { timestamp: 1656032539, combined_path: Some("ix/day=20220623/hour=20/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T01:10:03Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T01:10:03Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T01:10:03Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T01:10:07Z INFO  rivr::engine] Used heap size: 527 Mb
+[2022-06-24T01:10:07Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062400;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;20;ix/day=20220623/hour=20/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0101") }
+[2022-06-24T01:10:07Z INFO  rivr::engine] Model will expire in 1432 minutes
+[2022-06-24T01:10:07Z INFO  rivr::engine] v8 init took 3753 ms
+[2022-06-24T01:10:07Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-24T01:10:07Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=19/combined_production/model.zip]
+[2022-06-24T01:59:25Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T01:59:35Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T01:59:35Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T01:59:35Z INFO  rivr::model] Read: Models { timestamp: 1656035774, combined_path: Some("ix/day=20220623/hour=21/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T01:59:35Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T01:59:35Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T01:59:35Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T01:59:40Z INFO  rivr::engine] Used heap size: 534 Mb
+[2022-06-24T01:59:40Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062401;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;21;ix/day=20220623/hour=21/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0155") }
+[2022-06-24T01:59:40Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-24T01:59:40Z INFO  rivr::engine] v8 init took 4327 ms
+[2022-06-24T01:59:40Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-24T01:59:40Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=20/combined_production/model.zip]
+[2022-06-24T02:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T02:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656032400000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T03:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T03:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656036000000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T03:11:05Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T03:11:15Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T03:11:15Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T03:11:15Z INFO  rivr::model] Read: Models { timestamp: 1656039807, combined_path: Some("ix/day=20220623/hour=22/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T03:11:16Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T03:11:16Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T03:11:16Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T03:11:20Z INFO  rivr::engine] Used heap size: 541 Mb
+[2022-06-24T03:11:20Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062402;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;22;ix/day=20220623/hour=22/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0302") }
+[2022-06-24T03:11:20Z INFO  rivr::engine] Model will expire in 1432 minutes
+[2022-06-24T03:11:20Z INFO  rivr::engine] v8 init took 3968 ms
+[2022-06-24T03:11:20Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-24T03:11:20Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=21/combined_production/model.zip]
+[2022-06-24T04:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T04:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656039600000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T04:00:31Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T04:00:41Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T04:00:41Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T04:00:41Z INFO  rivr::model] Read: Models { timestamp: 1656043028, combined_path: Some("ix/day=20220623/hour=23/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T04:00:42Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T04:00:42Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T04:00:42Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T04:00:46Z INFO  rivr::engine] Used heap size: 548 Mb
+[2022-06-24T04:00:46Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062403;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220623;23;ix/day=20220623/hour=23/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0356") }
+[2022-06-24T04:00:46Z INFO  rivr::engine] Model will expire in 1436 minutes
+[2022-06-24T04:00:46Z INFO  rivr::engine] v8 init took 3892 ms
+[2022-06-24T04:00:46Z INFO  rivr::engine] Replacing v8 #0
+[2022-06-24T04:00:46Z INFO  rivr::engine] Stopped serving model [main] from [ix/day=20220623/hour=22/combined_production/model.zip]
+[2022-06-24T05:00:00Z INFO  rivr::stats] Flushing stats on switching to next hour
+[2022-06-24T05:00:00Z INFO  rivr::stats] Server stats: ServerStats { ssp: None, server_instance: RivrInstance { version: "0.8.3", internal: "CkwDSpjtf1oks1iHr32v", external: Some("fizzbuzz") }, timestamp_ms: 1656043200000, client: None, server: Some({}) }, client stats: None
+[2022-06-24T05:10:19Z ERROR rivr::local_loader] Watcher failed on /opt/viper/data/rules/model.zip: "/opt/viper/data/rules/model.zip" was deleted, restarting...
+[2022-06-24T05:10:29Z INFO  rivr::model] Could not read from aggregator_config.json, specified file not found in archive
+[2022-06-24T05:10:29Z INFO  rivr::model] Could not read from proxy_config.json, specified file not found in archive
+[2022-06-24T05:10:29Z INFO  rivr::model] Read: Models { timestamp: 1656047255, combined_path: Some("ix/day=20220624/hour=00/combined_production/model.zip"), models: [Model { folder: "main", main: "rivr_model.js", api_version: "4.0", traffic: 100, version_alias: Some("main") }] }
+[2022-06-24T05:10:30Z INFO  rivr::stats] Updating stats url for None to None
+[2022-06-24T05:10:30Z INFO  rivr_server::proxy] No proxy config specified, using defaults
+[2022-06-24T05:10:30Z INFO  rivr::engine] Updating model: Some("main")
+[2022-06-24T05:10:34Z INFO  rivr::engine] Used heap size: 557 Mb
+[2022-06-24T05:10:34Z INFO  rivr::engine] Using model: Version { price: Some("dummy"), traffic: Some("ssp:ix;date:2022062404;image_tag:20220525-0935.074d70a"), demand: Some("demand_selection;image_tag:20220621-1019.c8c9384-master"), umbrella: Some("ix;20220624;0;ix/day=20220624/hour=00/umbrella_model/main;20220622-1734.31dc06d"), alias: Some("main"), trained_on: Some("20220624-0506") }
