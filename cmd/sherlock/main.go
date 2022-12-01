@@ -18,7 +18,7 @@ func usage() { // nolint
 // main parses options and starts the work
 func main() {
 	var initFile, ruleset string
-	var verbose, debug bool
+	var verbose, debug, stop bool
 
 	// run from the command-line
 	flag.StringVar(&ruleset, "ruleset", "", "specify a ruleset")
@@ -34,6 +34,8 @@ func main() {
 
 	flag.BoolVar(&verbose, "v", false, "Turn verbose logging on")
 	flag.BoolVar(&debug, "d", false, "Turn debug logging on")
+	flag.BoolVar(&stop, "stop", false, "Stop on first line that doesn't match")
+
 	flag.Parse()
 
 	log.SetFlags(0) // log.Lshortfile | log.Ldate | log.Ltime) // show file:line in logs
@@ -42,6 +44,7 @@ func main() {
 		Verbose: verbose,
 		Debug:   debug,
 		Ruleset: ruleset,
+		Stop:    stop,
 	})
 	if err != nil {
 		log.Fatal(err)
