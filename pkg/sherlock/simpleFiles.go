@@ -162,6 +162,9 @@ outerLoop:
 		}
 
 		for _, r := range ruleset {
+			//if verbose {
+			//	log.Printf("trying %q\n", r.pat.String())
+			//}
 			if r.pat.FindStringIndex(s) != nil {
 				// we found it in the rules, continue to the next line
 				if verbose {

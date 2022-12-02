@@ -40,10 +40,10 @@ main() {
 		cat $1
 	fi |\
 	# Quote any RE characters in the raw input file
-	# plus any commas: the rules file will be a .csv
+	# plus imaybe any commas: the rules file will be a .csv
 	sed -e 's/\\/\\\\/g' \
 	    -e 's/\./\\\./g ' \
-	    -e 's/,/./g ' \
+	    -e 's/,/\\,/g ' \
 	    -e 's/\*/s\\\*./g' \
 	    -e 's/\[/\\\[/g' \
 	    -e 's/\]/\\\]/g' \
